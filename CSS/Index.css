@@ -1,0 +1,26 @@
+#container{
+    margin: -.7%;
+    width: 100%;
+    height: 100%;
+}
+.headDiv{
+    width: 100%;
+    height: 40px;
+    background-color: #ff7451;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.headDiv>p{
+    font-family:Poppins, sans-serif;
+    font-size: 17px;
+    color: white;
+}
+.headDiv>span{
+    font-family:Poppins, sans-serif;
+    color: white;
+    font-weight: 400;
+}
