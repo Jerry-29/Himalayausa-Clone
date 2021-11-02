@@ -583,3 +583,30 @@ cursor: pointer;
   padding: 1.5;
   flex-direction: column;
 }
+.productTopDIv{
+  width: 85%;
+  display: flex;
+  margin:0px;
+  justify-content: flex-end;
+}
+.filtertop{
+  width: 15%;
+}
+.filtertop>select{
+  width: 100%;
+}
+.filterQuant{
+width: 6%;
+}
+.filterQuant>select{
+  width: 100%;
+}
+.filterview{
+  width: 12%;
+  display: flex;
+  flex-direction: row;
+}
+.filterview>button{
+  width: 50%;
+  height: 20px;
+}
