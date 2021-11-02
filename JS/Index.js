@@ -103,3 +103,22 @@ imghoverinsta1.onmouseenter=function(){
 imghoverinsta1.onmouseleave=function(){
     instalogo1.style.visibility="hidden"
 }
+
+// hovering on shop
+
+var shop=document.getElementById("hoverover")
+var upline=document.getElementById("upline")
+var s=document.getElementById("shophover")
+var shopOnHoverDiv=document.getElementById("shopOnHoverDiv")
+shop.onpointerenter=function(){
+    shopOnHoverDiv.style.visibility="visible"
+    upline.style.visibility="visible"
+}
+shop.onmouseout=function(){
+    shopOnHoverDiv.style.visibility="hidden"
+    upline.style.visibility="hidden"
+}
+s.onmouseover=function(){
+    shopOnHoverDiv.style.visibility="visible"
+    upline.style.visibility="visible"
+}
