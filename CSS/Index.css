@@ -610,3 +610,21 @@ width: 6%;
   width: 50%;
   height: 20px;
 }
+
+/* products adding to products page */
+
+#productsAddingMaindiv{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,30%);
+}
+
+#productdetailsDiv{
+  width: 30%;
+  height: 250px;
+}
+
+#pImage{
+  width: 80%;
+
+}
