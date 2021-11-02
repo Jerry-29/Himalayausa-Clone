@@ -1,28 +1,110 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-      div{
-          width: 400px;
-          height: 400px;
-          background-color: aquamarine;
-      }
-      h1::before{
-      content: " ";
-      position: absolute;
-      z-index: -1;
-      background-color: blue;
-      opacity: .8;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img{
+      width: 200px;
+    }
+    button{
+      width: 70px;
+      margin: auto auto;
+      margin-left: 80px;
+    }
+    div{
+      display: flex;
+      align-items: center;
+      margin-left: 100px;
+    }
+  </style>
 </head>
 <body>
-    <div id="mydiv" >
-        <h1>Hellow</h1>
+  <div>
+    <div>
+     <img id="img1" src="" alt="">
+      <button id="del1">remove</button>
     </div>
+    <div>
+      <img id="img2" src="" alt="">
+      <button id="del2">remove</button>
+    </div>
+    <div>
+     <img id="img3" src="" alt="">
+      <button id="del3">remove</button>
+    </div>
+  <button id="click"> click Me</button>
+  </div>
 </body>
 </html>
+<script>
+  var myArr=[{
+    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Ashwagandha_BoxBottle_30_800x.jpg?v=1591028054",
+    productName:"Organic Ashwagandha",
+    productPrice:"13.95",
+},{
+    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Whitening-Mint---Box-Tube_800x.png?v=1597743896",
+    productName:"Simply Mint Whitening",
+    productPrice:"5.99",
+},{
+    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/LiverCare-90---Box-Bottle_800x.png?v=1595815804",
+    productName:"Liver Care",
+    productPrice:"27.95",
+},{
+    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/ImmunoCare-120---Box-Bottle_800x.png?v=1595814320",
+    productName:"ImmunoCare",
+    productPrice:"23.95",
+},{
+    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Neem-and-Pom---Box-Tube_800x.png?v=1597744049",
+    productName:"Neem & Promegranate Original Toothpaste",
+    productPrice:"5.99",
+},{
+    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-23_800x.png?v=1590836890",
+    productName:"Organic Amla",
+    productPrice:"18.95",
+},{
+    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Bitter-Melon-30---Box-Bottle_800x.png?v=1595862276",
+    productName:"Organic Bitter Melon",
+    productPrice:"11.95",
+},{
+    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Gymnema_Box_Bottle_30s_800x.png?v=1591028093",
+    productName:"Organic Gymnema",
+    productPrice:"12.95",
+},{
+    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Whitening-Mint---Box-Tube_800x.png?v=1597743896",
+    productName:"Simply Mint Whitening Toothpaste",
+    productPrice:"5.99",
+},
+]
+  var p1=document.getElementById("img1")
+  var p2=document.getElementById("img2")
+  var p3=document.getElementById("img3")
+  var btn=document.getElementById("click")
+  var del=document.getElementById("del")
+  
+  var i=0;
+  var j=1;
+  var k=2
+  p1.src=myArr[i].productImage
+  p2.src=myArr[j].productImage
+  p3.src=myArr[k].productImage
+  btn.onclick=function(){
+    p1.src=myArr[++i].productImage
+    p2.src=myArr[++j].productImage
+    p3.src=myArr[++k].productImage
+    if(k==myArr.length-1){
+      i=0;
+      j=1;
+      k=2;
+    }
+  }
+  del1.onclick=function(){
+    var index=k
+    myArr.splice(index,1)
+  }
+
+</script>
