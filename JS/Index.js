@@ -122,3 +122,66 @@ s.onmouseover=function(){
     shopOnHoverDiv.style.visibility="visible"
     upline.style.visibility="visible"
 }
+
+// product page 
+var c=0;
+var hid1=document.getElementById("hidden1")
+var show1=document.getElementById("click1toshowhidden")
+show1.onclick=function(){
+    c++;
+    if(c%2!==0){
+        hid1.style.display="block"
+    }else{
+        hid1.style.display="none"
+    }
+ 
+}
+
+var c=0;
+var hid2=document.getElementById("hidden2")
+var show2=document.getElementById("click2toshowhidden")
+show2.onclick=function(){
+    c++;
+    if(c%2!==0){
+        hid2.style.display="block"
+        hid2.style.display="flex"
+    }else{
+        hid2.style.display="none"
+    }
+}
+var c=0;
+var hid3=document.getElementById("hidden3")
+var show3=document.getElementById("click3toshowhidden")
+show3.onclick=function(){
+    c++;
+    if(c%2!==0){
+        hid3.style.display="block"
+        hid3.style.display="flex"
+    }else{
+        hid3.style.display="none"
+    }
+}
+var c=0;
+var hid4=document.getElementById("hidden4")
+var show4=document.getElementById("click4toshowhidden")
+show4.onclick=function(){
+    c++;
+    if(c%2!==0){
+        hid4.style.display="block"
+        hid4.style.display="flex"
+    }else{
+        hid4.style.display="none"
+    }
+}
+var c=0;
+var hid5=document.getElementById("hidden5")
+var show5=document.getElementById("click5toshowhidden")
+show5.onclick=function(){
+    c++;
+    if(c%2!==0){
+        hid5.style.display="block"
+        hid5.style.display="flex"
+    }else{
+        hid5.style.display="none"
+    }
+}

@@ -392,7 +392,7 @@ opacity: 0.5;
   padding-left: 8%;
   padding-right: 8%;
   background-color:#ffffff;
-  visibility: hidden;
+  visibility: visible;                          /*visible*/
 }
 .lefthoverdiv{
   width: 60%;
@@ -478,4 +478,108 @@ cursor: pointer;
   z-index: 4;
   position:absolute;
   cursor: pointer;
+}
+#productPageDiv{
+  left: 0px;
+  z-index: 6;
+  position: absolute;
+  background-color: white;
+  height: 2760px;
+  width: 87%;
+}
+.homeherb{
+  background-color: rgb(252, 250, 250);
+  text-align: left;
+  color: #777777;
+  font-size: 12px;
+}
+.productMainDiv{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+#productleftdiv{
+  width: 31%;
+  height: 100%;
+  background-color: turquoise;
+}
+.productrightDiv{
+  width: 69%;
+  height: 100%;
+  background-color: violet;
+}
+#productleftdivclick{
+  width: 100%;
+}
+#productleftdivclick>h4{
+  margin-left: 40%;
+  width: 50%;
+  font-size: 16px;
+  padding: 1.5%;
+  border-bottom: 1px solid lightslategrey;
+}
+#hidden1{
+  display: none;
+  margin-left: 40%;
+  width: 50%;
+  font-size: 14px;
+  padding: 1.5;
+}
+#productleftdivclick2>h4{
+  margin-left: 40%;
+  width: 50%;
+  font-size: 16px;
+  padding: 1.5%;
+  border-bottom: 1px solid lightslategrey;
+}
+#hidden2{
+  display: none;
+  margin-left: 40%;
+  width: 50%;
+  font-size: 14px;
+  padding: 1.5;
+  flex-direction: column;
+}
+#productleftdiv h4{
+  margin-left: 40%;
+  width: 50%;
+  font-size: 16px;
+  padding: 1.5%;
+  border-bottom: 1px solid lightslategrey;
+}
+/* #productleftdiv h4:before{
+  content: '\02795'
+}
+#productleftdiv h4:after{
+  content: "\2796";
+} */
+#hidden3{
+  display: none;
+  margin-left: 40%;
+  width: 50%;
+  font-size: 14px;
+  padding: 1.5;
+  flex-direction: column;
+}
+#hidden4{
+  display: none;
+  margin-left: 40%;
+  width: 50%;
+  font-size: 14px;
+  padding: 1.5;
+  flex-direction: column;
+}
+/* #hidden4::after{
+  content: '\02795'
+}
+#hidden4::before{
+  content: "\2796";
+} */
+#hidden5{
+  display: none;
+  margin-left: 40%;
+  width: 50%;
+  font-size: 14px;
+  padding: 1.5;
+  flex-direction: column;
 }
