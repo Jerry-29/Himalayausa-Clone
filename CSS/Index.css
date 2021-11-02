@@ -484,8 +484,9 @@ cursor: pointer;
   z-index: 6;
   position: absolute;
   background-color: white;
-  height: 2760px;
+  height: 1200px;
   width: 87%;
+  display: none;
 }
 .homeherb{
   background-color: rgb(252, 250, 250);
@@ -493,7 +494,7 @@ cursor: pointer;
   color: #777777;
   font-size: 12px;
 }
-.productMainDiv{
+#productMainDiv{
   width: 100%;
   height: 100%;
   display: flex;
@@ -501,12 +502,10 @@ cursor: pointer;
 #productleftdiv{
   width: 31%;
   height: 100%;
-  background-color: turquoise;
 }
 .productrightDiv{
   width: 69%;
   height: 100%;
-  background-color: violet;
 }
 #productleftdivclick{
   width: 100%;
@@ -616,7 +615,8 @@ width: 6%;
 #productsAddingMaindiv{
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3,30%);
+  padding: 1%;
+  grid-template-columns: repeat(4,24%);
 }
 
 #productdetailsDiv{
@@ -626,5 +626,22 @@ width: 6%;
 
 #pImage{
   width: 80%;
-
+}
+#btnAndPrice{
+  display: flex;
+}
+#pPrice{
+  margin-left: 20%;
+  z-index: 0;
+  position: relative;
+}
+#addCartBt{
+  width: 3%;
+  height: 34px;
+  align-self: center;
+  z-index: 5;
+  position:absolute;
+}
+#addCartBt:hover{
+  width:9%;
 }

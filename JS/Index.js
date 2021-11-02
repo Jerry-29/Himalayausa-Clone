@@ -279,13 +279,15 @@ var proArr=[
       var productName=document.createElement("p")
       var productPrice=document.createElement("p")
       var addToCartBt=document.createElement("button")
+      var btnAndPrice=document.createElement("div")
 
       productdetailContainer.setAttribute("class","productdetailsDiv")
       productImage.setAttribute("id","pImage")
       productName.setAttribute("id","pName")
       productPrice.setAttribute("id","pPrice")
       addToCartBt.setAttribute("id","addCartBt")
-
+      btnAndPrice.setAttribute("id","btnAndPrice")
+      
       addToCartBt.addEventListener("click",addToCart)
       function addToCart (){
 
@@ -294,10 +296,13 @@ var proArr=[
       productImage.src=element.Image
       productName.innerHTML=element.Name
       productPrice.innerHTML=element.Price
-
-      productdetailContainer.append(productImage,productName,productPrice,addToCartBt)
+      btnAndPrice.append(addToCartBt,productPrice)
+      productdetailContainer.append(productImage,productName,btnAndPrice)
       parent.appendChild(productdetailContainer)
   });
+
+  var productMainDiv=document.getElementById("productPageDiv")
+  productMainDiv.style.visibility="none"
 
 //   if(localStorage.getItem("himalayausCart")===undefined){
 //       localStorage.setItem("himalayausCart",JSON.stringify([]))
