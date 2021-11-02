@@ -302,8 +302,18 @@ var proArr=[
   });
 
   var productMainDiv=document.getElementById("productPageDiv")
-  productMainDiv.style.visibility="none"
-
-//   if(localStorage.getItem("himalayausCart")===undefined){
-//       localStorage.setItem("himalayausCart",JSON.stringify([]))
-//   }
+  var slideshowMainDiv=document.getElementById("slideshowMainDiv")
+  var m=document.getElementById("unlockWisdomDivid")
+  var r=document.getElementById("reivewboxes")
+  var inst=document.getElementById("instafollowdivbox")
+  var fd=document.getElementById("footdiv")
+  var hoverforproductpageToshow=document.getElementById("hoverforproductpageToshow")
+  hoverforproductpageToshow.onclick=function(){
+    productMainDiv.style.display="block"
+    slideshowMainDiv.style.display="none"
+     r.style.display="none"
+     m.style.display="none"
+     inst.style.display="none"
+     fd.style.marginTop="12%"
+  }
+  

@@ -221,7 +221,7 @@ margin-left: 8%;
   position: absolute;
   height: 7%;
 }
-.unlockWisdomDiv{
+#unlockWisdomDivid{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -472,7 +472,7 @@ cursor: pointer;
 }
 #hoverover{
   width: 5%;
-  height: 8%;
+  height: 25%;
    top: 60px;
   background-color: inherit;
   z-index: 4;
@@ -484,7 +484,7 @@ cursor: pointer;
   z-index: 6;
   position: absolute;
   background-color: white;
-  height: 1200px;
+  height: 1100px;
   width: 87%;
   display: none;
 }
@@ -623,7 +623,9 @@ width: 6%;
   width: 30%;
   height: 250px;
 }
-
+#pName{
+  margin: 4%;
+}
 #pImage{
   width: 80%;
 }
@@ -636,12 +638,23 @@ width: 6%;
   position: relative;
 }
 #addCartBt{
+  content: "";
   width: 3%;
   height: 34px;
   align-self: center;
   z-index: 5;
   position:absolute;
+  overflow: hidden;
+  background-image: url(/Images/shopping-bag.png);
+  background-size: cover;
 }
 #addCartBt:hover{
   width:9%;
+}
+#addCartBt::before{
+ background-color: greenyellow;
+}
+#addCartBt::after{
+  background-image: none;
+  content: "AddToCart";
 }
