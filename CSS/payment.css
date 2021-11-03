@@ -3,19 +3,18 @@
 }
 .main{
     width: 100%;
-    height: 1200px;
-    background-color: maroon;
     display: flex;
     gap: .1%;
 }
 .mainhalf{
     width: 50%;
     height: 100%;
+    height: 900px;
     padding: 5%;
     background-color: white;
 }
 .leftmain{
-    height: 1200px;
+    /* height: 1200px; */
 }
 .rightmain{
 background-color:#f4f7f3;
@@ -144,9 +143,51 @@ border-color: rgb(225, 226, 228);
 .refundpolicy{
     width: 40%;
     display: flex;
-    background-color: lime;
 }
 .refundpolicy>p{
     width:50%;
     font-size: 14px;
+}
+.Imagenameprice{
+    display: flex;
+    width: 100%;
+}
+.Imagenameprice>div>img{
+    width: 15%;
+    height: 70%;
+}
+.imageName{
+    display: flex;
+}
+.coupnAndApply{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+}
+.coupnAndApply>input{
+    width: 80%;
+    padding: 3%;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: rgb(225, 226, 228);
+}
+.coupnAndApply>button{
+    width: 20%;
+    padding: 3%;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: rgb(225, 226, 228);
+    background-color: #c3c6c2
+}
+.secondline{
+    margin-top: 5%;
+}
+.subtotal{
+    display: flex;
+    gap: 75%;
+}
+.nextstep{
+    font-size: 14px;
+    color: #6e6f6d;
 }
