@@ -1,0 +1,267 @@
+* {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+  
+    /* border: 1px solid black; */
+  }
+  body {
+    width: 100%;
+  }
+  
+  #container {
+    margin: -0.6%;
+    width: 100%;
+    /* height: 100%; */
+  }
+  .headDiv {
+    width: 100%;
+    height: 40px;
+    background-color: #ff7451;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    cursor: grab;
+  }
+  .headDiv:active {
+    cursor: grabbing;
+  }
+  .headDiv > p {
+    font-size: 17px;
+    color: white;
+  }
+  .headDiv > span {
+    color: white;
+    font-weight: 400;
+  }
+  #NavBar {
+   
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+  #logoDiv {
+    margin-right: 240%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 20px;
+    margin-bottom: 0px;
+    margin-right: 4%;
+    height: 38%;
+  }
+  #searchAccountdiv {
+    width: 30%;
+    text-align: end;
+    margin-left: -15%;
+  }
+  .himalayalogo {
+    width: 105%;
+    margin-left: 50px;
+  }
+  #shopAboutStore {
+    width: 30%;
+    margin-left: 10%;
+    margin-right: 25%;
+  }
+  .navbutton{
+      width: 100%;
+      display: flex;
+      font-size: 11px;
+      color: #6d706b;
+      padding:.7%;
+      font-weight: 400;
+      background-color: rgb(250, 250, 250);
+  }
+  #ProductDescription{
+      width: 100%;
+      height: 2000px;
+      display: flex;
+  }
+  #ProductDescriptionleftDiv{
+      width: 50%;
+      height: 100%;
+      /* display: flex; */
+  }
+  #ProductDescriptionrightDiv{
+    width: 50%;
+    height: 100%;
+  }
+  
+  #ProductDescriptionImgDiv{
+      width: 100%;
+      height: 28%;
+  }
+  #ProductDescriptionImgDiv>img{
+      height: 100%;
+      width: 100%;
+  }
+#clicktochangeimage{
+    display: flex;
+    width: 100%;
+    height: 25%;
+    gap: 2% 2%;
+    justify-content: center;
+    align-items: center;
+}
+#clicktochangeimage>div{
+    width: 20%;
+    height: 20%;
+}
+#clicktochangeimage>div>img{
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+} 
+#ProductDescriptionrightDiv>div>h1{
+    width: 70%;
+}
+.TwoButtonProduct{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.addToCartProduct{
+    width: 70%;
+    height: 100%;
+}
+#addToCartProduct>button{
+    margin-left: -40%;
+    width: 418%;
+    height: 100%;
+    background-color: #a3b49b;
+    border: none;
+    color: whitesmoke;
+}
+.buttonCounter{
+    width: 30%;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+.buttonCounter>button{
+    width: 30%;
+    background-color:  #f8f8f8;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+}
+.buttonCounter>span{
+    width: 10%;
+    background-color: #f8f8f8;
+    border: none;
+    height: 100%;
+   padding-top: 8%;
+}
+.buyitnowdiv{
+    width: 84%;
+    height: 50px;
+    margin: 7%;
+    margin-left: 1%;
+
+   
+}
+.buyitnowdiv>button{
+    background-color: #a3b49b;
+    border: none;
+    height: 100%;
+    width: 100%;
+    color: whitesmoke;
+}
+#descriptionList{
+    width: 70%;
+    text-align: justify;
+}
+.describ>h4{
+    height: 25px;
+    background-color: #eef2f0;
+    width: 82%;
+    padding: 2%;
+}
+#descriptionList>ul{
+    margin-top: -4%;
+    color: #777777;
+    font-size: 18px;
+ padding: 3%;
+ line-height: 28px;
+ margin-left: 6%;
+}
+.describeImg{
+    width: 80%;
+    display: grid;
+    /* gap: 10%; */
+    grid-template-columns: repeat(4,24%);
+}
+.describeImg>img{
+    margin-top: 4%;
+    width: 40%;
+}
+.bgimg{
+    width: 90%;
+}
+.bgimg>img{
+width: 100%;
+}
+
+/* footer start */
+
+.foot{
+    margin-top: 1%;
+    background-color: #eef2f0;
+    padding: 7.8%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+  }
+  .footerdiv{
+    display: flex     ;
+  }
+  .footerdiv>div{
+    width: 24%;
+  }
+  .footerdiv>div>p{
+    color: #919795;
+    line-height: 18px;
+  }
+  .footerdiv>div>h4{
+    color: #595c5b;
+  }
+  .logoandtextDiv>input{
+     width: 82%;
+    height: 10%;
+    border: none;
+  }
+  .logoandtextfollowdiv{
+     width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+  }
+  .logoDivbottom>img{
+    width: 15px;
+    height: 15px;
+    margin-left: 16px;
+    opacity: 0.3;
+  }
+  .bottomlastdiv{
+    color: #595c5b;
+  }
+  .headtxt{
+    font-size: 14px;
+    opacity: .6;
+  }
+  .bottolasttext{
+    width: 100%;
+    border: 1px solid #8d8d8d;
+    opacity: 0.6;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+/* footer end */

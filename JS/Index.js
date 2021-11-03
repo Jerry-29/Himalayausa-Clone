@@ -109,19 +109,20 @@ imghoverinsta1.onmouseleave=function(){
 var shop=document.getElementById("hoverover")
 var upline=document.getElementById("upline")
 var s=document.getElementById("shophover")
+var navbar=document.getElementById("NavBar")
 var shopOnHoverDiv=document.getElementById("shopOnHoverDiv")
 shop.onpointerenter=function(){
     shopOnHoverDiv.style.visibility="visible"
     upline.style.visibility="visible"
 }
-shop.onmouseout=function(){
+shopOnHoverDiv.onmouseleave=function(){
     shopOnHoverDiv.style.visibility="hidden"
     upline.style.visibility="hidden"
 }
-s.onmouseover=function(){
-    shopOnHoverDiv.style.visibility="visible"
-    upline.style.visibility="visible"
-}
+// s.onmouseover=function(){
+//     shopOnHoverDiv.style.visibility="visible"
+//     upline.style.visibility="visible"
+// }
 
 // product page 
 var c=0;
