@@ -499,12 +499,17 @@ cursor: pointer;
   width: 87%;
   display: none;
 }
+
+/* navagationDivAddressBar */
 .homeherb{
   background-color: rgb(252, 250, 250);
   text-align: left;
   color: #777777;
   font-size: 12px;
 }
+
+/* navagationDivAddressBar */
+
 #productMainDiv{
   width: 100%;
   height: 100%;
