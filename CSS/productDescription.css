@@ -157,12 +157,10 @@
    padding-top: 8%;
 }
 .buyitnowdiv{
-    width: 84%;
+    width: 90%;
     height: 50px;
     margin: 7%;
-    margin-left: 1%;
-
-   
+    margin-left: 1%; 
 }
 .buyitnowdiv>button{
     background-color: #a3b49b;
@@ -178,10 +176,12 @@
 .describ>h4{
     height: 25px;
     background-color: #eef2f0;
-    width: 82%;
+    width: 87%;
     padding: 2%;
+    margin-left: 1%;
 }
 #descriptionList>ul{
+    display: none;
     margin-top: -4%;
     color: #777777;
     font-size: 18px;
@@ -265,3 +265,42 @@ width: 100%;
   }
 
 /* footer end */
+
+/* popupScreenWhenAddtoCartClicked */
+#popupcartDetailDiv{
+    z-index: 1;
+    width: 40%;
+    height: 580px;
+    background-color: white;
+    position: absolute;
+   left: 30%;
+   top:0%;
+   display: flex;          
+   flex-direction: column;
+  align-items: center;
+  display: none;
+}
+#popupcartDetailDiv>img{
+    height: 20%;
+    width: 20%;
+}
+.itemsInCart p{
+    text-align: justify;
+}
+.itemsInCart{
+    width: 60%;
+}
+.shop{
+    text-align: center;
+    width: 70%;
+    padding: 3%;
+    background-color: #a3b49b;
+}
+.viewCart{
+    background-color: white;
+    border: 1px solid rgb(199, 202, 206);
+}
+.viewCart:hover{
+    border: 2px solid black;
+    
+}
