@@ -127,6 +127,9 @@ body {
   height: 20%;
   text-align: center;
 }
+.bseller{
+  text-align: center;
+}
 #backgroundHimalaya2 > p {
   width: 30%;
   font-size: 18px;
@@ -484,6 +487,9 @@ cursor: pointer;
   position:absolute;
   cursor: pointer;
 }
+
+/* third layer */
+
 #productPageDiv{
   left: 0px;
   z-index: 6;

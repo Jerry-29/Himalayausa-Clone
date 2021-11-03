@@ -1,0 +1,198 @@
+#container {
+    margin: -0.6%;
+    width: 100%;
+    /* height: 100%; */
+  }
+  .headDiv {
+    width: 100%;
+    height: 40px;
+    background-color: #ff7451;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    cursor: grab;
+  }
+  .headDiv:active {
+    cursor: grabbing;
+  }
+  .headDiv > p {
+    font-size: 17px;
+    color: white;
+  }
+  .headDiv > span {
+    color: white;
+    font-weight: 400;
+  }
+  #NavBar {
+   
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+  #logoDiv {
+    margin-right: 240%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 20px;
+    margin-bottom: 0px;
+    margin-right: 4%;
+    height: 38%;
+  }
+  #searchAccountdiv {
+    width: 30%;
+    text-align: end;
+    margin-left: -15%;
+  }
+  .himalayalogo {
+    width: 105%;
+    margin-left: 50px;
+  }
+  #shopAboutStore {
+    width: 30%;
+    margin-left: 10%;
+    margin-right: 25%;
+  }
+  
+  #shopAboutStore > span {
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
+  
+  }
+  #shopAboutStore > span:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 48px;
+    bottom: 0px;
+    left: 0;
+    background-color: #a3b49b;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  #shopAboutStore > span:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+  .logotext {
+    color: #798673;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-right: 30px;
+  }
+  #shopbyCategoryDiv {
+    margin-top: 7%;
+    width: 100%;
+    text-align: center;
+  }
+  .shopbycatflex {
+    display: flex;
+    width: 95%;
+    margin: auto;
+  }
+  .shopbycatflex > div > img {
+    width: 86%;
+  }#shopOnHoverDiv{
+    width: 100%;
+    height: 500px;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color:#ffffff;
+    visibility: hidden;                        /*visible*/
+  }
+  .lefthoverdiv{
+    width: 60%;
+    height: 100%;
+  }
+  .lefthoverdiv h4,p:hover{
+  color: #838b7e;
+  cursor: pointer;
+  }
+  .righthoverdiv{
+    width: 25%;
+    height: 100%;
+    display: flex;
+   align-items: center;
+   height: 440px;
+   flex-direction: column;
+   text-align: center;
+  }
+  .righthoverdiv>img{
+    width: 100%;
+    height: 300px;
+  }
+  .shonOnhoverupperdiv{
+    border-top: 1px solid rgb(235, 233, 233);
+    display: flex;
+  }
+  .featuredprod{
+    background-color: tomato;
+    width: 50%;
+    color: white;
+    font-weight: 600;
+    padding: 3%;
+    z-index: 3;
+    position: relative;
+    bottom: 30px;
+  }
+  .featuredprod+p{
+    margin-top: -12%;
+    padding: 0px;
+  }
+  .shonOnhoverupperdiv>div{
+    width: 33%;
+  }
+  .lefthoverdiv h4{
+    color: rgb(70, 70, 60);
+    opacity: .9;
+    font-weight: 900;
+  }
+  .lefthoverdiv h4:hover{
+    opacity: 0.4;
+  }
+  .shonOnhoverupperdiv>div>p{
+    line-height: 10px;
+  }
+  .shoponhoverlowerdiv{
+    display: flex;
+  }
+  .shoponhoverlowerdiv>div{
+    width: 33%;
+  }
+  .shoponhoverlowerdiv>div>p{
+    line-height: 10px;
+  }
+  .lasthoverdivtext1{
+    margin-top: 5.7%;
+  }
+  .lasthoverdivtext2{
+    margin-top: 5.7%;
+  }
+  .centerline{
+    background-color:#777777 ;
+    opacity: .1;
+  }
+  .upperLine{
+    opacity: .2;
+    visibility: hidden;
+  }
+  #hoverover{
+    width: 5%;
+    height: 25%;
+     top: 60px;
+    background-color: inherit;
+    z-index: 4;
+    position:absolute;
+    cursor: pointer;
+  }

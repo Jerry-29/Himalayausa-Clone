@@ -111,7 +111,7 @@ var upline=document.getElementById("upline")
 var s=document.getElementById("shophover")
 var navbar=document.getElementById("NavBar")
 var shopOnHoverDiv=document.getElementById("shopOnHoverDiv")
-shop.onpointerenter=function(){
+shop.onmouseover=function(){
     shopOnHoverDiv.style.visibility="visible"
     upline.style.visibility="visible"
 }
