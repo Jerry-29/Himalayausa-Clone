@@ -108,7 +108,8 @@
   }
   .shopbycatflex > div > img {
     width: 86%;
-  }#shopOnHoverDiv{
+  }
+  #shopOnHoverDiv{
     width: 100%;
     height: 500px;
     z-index: 4;
@@ -118,8 +119,10 @@
     padding-right: 8%;
     top: 19.5%;
     background-color:#ffffff;
-    visibility: hidden;                     /*visible*/
+    visibility: hidden;                                                                                
   }
+   /* /                         hidden                                               */
+
   .lefthoverdiv{
     width: 60%;
     height: 100%;
@@ -199,12 +202,11 @@
   #hoverover{
     width: 5%;
     height: 25%;
-    top: 60px;
+     top: 60px;
     background-color: inherit;
     z-index: 4;
     position:absolute;
     cursor: pointer;
-
   }
   .homeherb{
     width: 100%;
@@ -270,42 +272,46 @@
     padding-top: 1%;
   }
 
-  /* signin */
+  /* signupStart */
 
-  .signinMainDiv{
-      width: 100%;
-      margin: auto;
+  .createAccount{
+    width: 100%;
   }
-  .signinDiv{
-      text-align: center;
-      width: 30%;
-      background-color: yellowgreen;
-      margin: auto;
+  .createAccountdetail{
+    margin: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
   }
-  .signinDiv>h2{
-      text-align: start;
-  }
-  .emailhead{
-      display: flex;
-      gap: 10%;
-  }
-  .emailhd1{
-      width:30%;
-  }
-  .emailhd2{
-      width: 100%;
-  }
-  .emailhd1>p{
-   width: 90%;
-  }
-  .emailhead2>p{
-      width: 100%;
-  }
-  .signinDiv input{
-      width: 91%;
-      padding: 4%;
-  }
-  .signinDiv button{
-     width: 100%;
-     padding: 4%;
-  }
+ .createAccountdetail>input{
+   padding: 4%;
+ }
+ .createAccountdetail>button{
+   border: none;
+   background-color: #a3b49b;
+   margin-top: 4%;
+   padding: 3%;
+   font-size: 13px;
+   color: #ffffff;
+   font-weight: 400;
+
+ }
+ .createAccountdetail>button:hover{
+   background-color: #5a6157;
+ }
+.firstAndLastName{
+  display: flex;
+  gap: 45%;
+}
+.createAccountdetail p{
+  color: #777777;
+  font-size: 16px;
+  line-height: 28px;
+}
+.createAccountdetail>h1{
+  color: rgba(44, 42, 42, 0.897);
+}
+.createAccountdetail>h2{
+  color: rgba(44, 42, 42, 0.897);
+  font-weight: 550;
+}
