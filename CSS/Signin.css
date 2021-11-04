@@ -279,7 +279,6 @@
   .signinDiv{
       text-align: center;
       width: 30%;
-      background-color: yellowgreen;
       margin: auto;
   }
   .signinDiv>h2{
@@ -308,4 +307,7 @@
   .signinDiv button{
      width: 100%;
      padding: 4%;
+  }
+  #login{
+    margin-top: 8%
   }

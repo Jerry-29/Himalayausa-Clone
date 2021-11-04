@@ -52,7 +52,174 @@ body {
   margin-bottom: 0px;
   margin-right: 4%;
   height: 38%;
+  cursor: pointer;
 }
+.hoversearch{
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 3px;
+  position: absolute;
+  z-index: 1;
+  top: 18%;
+  right: 9%;
+  margin-left: -60px;
+ font-size: 14px;
+}
+.hoversearch::after{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.showSearchText:hover .hoversearch{
+  visibility: visible;
+}
+
+.hoveruser{
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 3px;
+  position: absolute;
+  z-index: 1;
+  top: 18%;
+  right: 5%;
+  margin-left: -60px;
+  font-size: 14px;
+}
+.hoveruser::after{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.hoverusertext:hover .hoveruser{
+  visibility: visible;
+}
+
+.hovercart{
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 3px;
+  position: absolute;
+  z-index: 1;
+  top: 18%;
+  right: 4%;
+  margin-left: -60px;
+  font-size: 14px;
+}
+.hovercart::after{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.hovercarttxt:hover .hovercart{
+  visibility: visible;
+}
+
+/* clickOnUser */
+
+.clickOnUser{
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 5%;
+  height: 10%;
+  top: 20%;
+  right: 6%;
+  background-color: white;
+  text-align: center;
+  padding: 6%;
+  padding-top: 2%;
+}
+.clickOnUser>p{
+  margin-left: -50%;
+  text-align: start;
+  font-size: 14px;
+  color: #6c7568;
+}
+
+/* clickOnUserEnd */
+
+/* searchStart */
+#clickonSearchOption{
+  visibility: hidden;                  
+  position: absolute;
+  z-index: 5;
+  width: 92%;
+  right:0%;
+  top: 0%;
+  height: 26%;
+  padding: 4%;
+  padding-top: 2%;
+  background-color: white;
+ 
+}                                
+                                                        /* visibility */
+.whatAreYouLookingFor{
+  width: 100%;
+  display: flex;
+  gap: 76%;
+  margin-left: 2%;
+}
+.whatAreYouLookingFor>p{
+  color: #777777;
+  font-size: 16px;
+}
+.whatAreYouLookingFor>button{
+  width: 5%;
+  border: none;
+  font-size: 20px;
+  background-color: inherit;
+  cursor: pointer;
+}
+.searchAndbutton{
+  display: flex;
+}
+.searchAndbutton>input{
+  padding: 2%;
+  width: 80%;
+  margin-top: 1%;
+  font-size: 24px;
+  font-weight: 500;
+  color:#333333;
+  border: none;
+  border-bottom: 1px solid lightslategray;
+}
+.searchAndbutton>button{
+  width: 20%;
+  margin-top: 1%;
+  margin-left: 60%;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+.btnimg{
+  width: 30px;
+  height: 30px;
+}
+
+
+/* searchEnd */
+
 #searchAccountdiv {
   width: 30%;
   text-align: end;

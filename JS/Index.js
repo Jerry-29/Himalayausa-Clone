@@ -1,4 +1,17 @@
 
+// search
+
+var closeSearch=document.getElementById("searchClose")
+closeSearch.onmouseover=function(){
+  clickonSearchOption.style.visibility="hidden"
+}
+var cLICKSEARCH=document.getElementById("cLICKSEARCH")
+var clickonSearchOption=document.getElementById("clickonSearchOption")
+cLICKSEARCH.onclick=function(){
+  clickonSearchOption.style.visibility="visible"
+}
+  
+
 // Data
 
 var myArr=[{
@@ -318,3 +331,23 @@ var proArr=[
      fd.style.marginTop="12%"
   }
   
+  var a=0;
+  var clickedOnuser=document.getElementById("clickedOnuser")
+  var clickUser=document.getElementById("clickUser")
+  clickUser.onclick=function(){
+      a++;
+      if(a%2!==0){
+        clickedOnuser.style.visibility="visible"
+      }else{
+        clickedOnuser.style.visibility="hidden"
+      }
+     
+  }
+
+  // signin&up
+
+  var signIn=document.getElementById("signIn")
+  signIn.onclick=function(){
+    window.location.href="../HTML/Signin.html"
+  }
+ 

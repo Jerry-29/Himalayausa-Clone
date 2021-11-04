@@ -283,21 +283,27 @@
     display: flex;
     flex-direction: column;
   }
- .createAccountdetail>input{
-   padding: 4%;
+ #myForm>input{
+   padding: 3%;
+   width: 90%;
+   border: none;
+   font-weight: 500;
+   font-size: 16px;
  }
- .createAccountdetail>button{
+ #myForm>.submit{
    border: none;
    background-color: #a3b49b;
    margin-top: 4%;
-   padding: 3%;
+   padding: 4%;
    font-size: 13px;
    color: #ffffff;
    font-weight: 400;
+   width: 98%;
 
  }
- .createAccountdetail>button:hover{
+ #myForm>.submit:hover{
    background-color: #5a6157;
+   cursor: pointer;
  }
 .firstAndLastName{
   display: flex;
@@ -306,7 +312,7 @@
 .createAccountdetail p{
   color: #777777;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 2px;
 }
 .createAccountdetail>h1{
   color: rgba(44, 42, 42, 0.897);
@@ -314,4 +320,10 @@
 .createAccountdetail>h2{
   color: rgba(44, 42, 42, 0.897);
   font-weight: 550;
+}
+.or{
+  cursor:default;
+}
+.createAccountdetail sup{
+  font-size: 30px;
 }
