@@ -4,8 +4,9 @@
 
   /* border: 1px solid black; */
 }
-body {
-  width: 100%;
+body,html {
+  max-width:100%;
+  overflow-x: hidden;
 }
 
 #container {
@@ -265,6 +266,9 @@ body {
   line-height: 20px;
   margin-right: 30px;
 }
+
+/* background */
+
 #backgroundHimalayamain{
   margin-top: -5px;
 }

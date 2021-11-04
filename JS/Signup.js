@@ -34,7 +34,6 @@ arr.forEach(function check(u) {
 });
 
 
-
 if (userLoginData.uPass.length < 8) { 
     window.alert("Password should be more than 8 charecter.")
  }
@@ -43,4 +42,19 @@ else if(userLoginData.uMail.length>5 && userLoginData.uPass.length>8){
 }
 localStorage.setItem("userHimalaya",JSON.stringify(arr))
 }
+}
+
+let goStore=document.getElementById("return")
+goStore.onclick=function(){
+    window.location.href="../Index.html"
+}
+
+var gohome=document.getElementById("goHome")
+gohome.onclick=function(){
+    window.location.href="../Index.html"
+}
+
+var gologinPage=document.getElementById("goAccount")
+gologinPage.onclick=function(){
+    window.location.href="../HTML/Signin.html"
 }
