@@ -307,7 +307,7 @@
 .foot{
     margin-top: 1%;
     background-color: #eef2f0;
-    padding: 7.8%;
+    padding: 5%;
     padding-top: 1%;
     padding-bottom: 2%;
   }
@@ -464,7 +464,6 @@
   
   #productPageDiv{
     background-color: white;
-    height: 1100px;
     width: 100%;
     text-align: center;
   }
