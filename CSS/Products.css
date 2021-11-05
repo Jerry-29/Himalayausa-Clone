@@ -369,7 +369,7 @@
   #shopOnHoverDiv{
     width: 82.8%;
     height: 500px;
-    z-index: 2;
+    z-index: 6;
     position: absolute;
     display: flex;
     padding-left: 8%;

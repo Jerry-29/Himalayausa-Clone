@@ -180,7 +180,7 @@ var proArr=[
   ]
 
   var parent=document.getElementById("productsAddingMaindiv")
-
+function showprod(){
   proArr.forEach(function(element,index){
       var productdetailContainer=document.createElement("div")
       var productImage=document.createElement("img")
@@ -196,10 +196,10 @@ var proArr=[
       addToCartBt.setAttribute("id","addCartBt")
       btnAndPrice.setAttribute("id","btnAndPrice")
       
-      addToCartBt.addEventListener("click",addToCart)
-      function addToCart (){
-
-      }
+    addToCartBt.onclick=function(){
+      AddToCart(element)
+     
+    }
 
       productImage.src=element.Image
       productName.innerHTML=element.Name
@@ -209,6 +209,8 @@ var proArr=[
       parent.appendChild(productdetailContainer)
   });
 
+}
+showprod()
   var a=0;
   var clickedOnuser=document.getElementById("clickedOnuser")
   var clickUser=document.getElementById("clickUser")
@@ -229,10 +231,30 @@ var proArr=[
     window.location.href="../HTML/Signin.html"
   }
  
+// localStorage
+
+if (localStorage.getItem("HimalayaUsStorage") === null) {
+  localStorage.setItem("HimalayaUsStorage", JSON.stringify([]));
+};
+
+
   // addcartbutton
 
-  // var addcartbthovr=document.getElementById("addCartBt")
-  // addcartbthovr.onmouseover=function(){
-  //   addcartbthovr.style.backgroundImage="none"
-  //   addcartbthovr.innerHTML="ADD TO CART"
-  // }
+  var ProductArr=JSON.parse(localStorage.getItem("HimalayaUsStorage"))
+
+  function AddToCart(element){
+   for(var i=0;i<ProductArr.length;i++){
+     if(element.Image==ProductArr[i].Image){
+       alert("Product is already in Cart")
+       return
+     }
+    }
+    ProductArr.push(element)
+    alert("Product is Added in Cart")
+   localStorage.setItem("HimalayaUsStorage",JSON.stringify(ProductArr))
+  }
+   
+
+ 
+
+  
