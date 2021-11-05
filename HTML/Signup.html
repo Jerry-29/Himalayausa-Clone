@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../CSS/Signup.css">
 </head>
 <body>
-    <div>
+    <div id="container">
         <div class="headDiv">
             <p><strong>FREE SHIPPING</strong><span> ON ALL ORDERS OVER $35!</span></p>
         </div>
@@ -30,9 +30,32 @@
                     <div id="hoverover"></div>
                 </div>
                 <div id="searchAccountdiv">
-                    <span><img class="logo" src="/Images/search.png" alt=""></span>
-                    <span><img class="logo" src="/Images/userlogo.png" alt=""></span>
-                    <span><img class="logo" src="/Images/shopping-bag.png" alt=""></span>
+                    <span id="cLICKSEARCH" class="showSearchText"><img class="logo" src="../Images/search.png" alt="">
+                        <div id="clickonSearchOption">
+                            <div>
+                                <div class="whatAreYouLookingFor">
+                                    <p> What are you Looking for?</p>
+                                    <button id="searchClose">X</button>
+                                </div>
+                                <div class="searchAndbutton">
+                                    <input type="text" name="" id="" placeholder=" Search products...">
+                                    <button><img class="btnimg" src="../Images/search.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <span id="searchtxt" class="hoversearch">Search</span>
+                    </span>
+                    <span id="clickUser" class="hoverusertext"><img class="logo" src="../Images/userlogo.png" alt="">
+                        <div id="clickedOnuser" class="clickOnUser">
+                            <p id="signIn">Sign in</p>
+                            <p>Register</p>
+                            <p>Checkout</p>
+                        </div>
+                        <span id="hoverUser" class="hoveruser">My Account</span>
+                    </span>
+                    <span class="hovercarttxt"><img class="logo" src="../Images/shopping-bag.png" alt="">
+                        <span id="hoverCart" class="hovercart">Cart</span>
+                    </span>
                 </div>
             </div>
             <div class="homeherb">
@@ -57,7 +80,7 @@
                       <p>First Name<sup>*</sup></p>
                       <p><sup>*</sup>Required Fields</p>
                   </div>
-                 <form onsubmit="signup(event)" id="myForm" action="">
+                 <form id="myForm" action="">
                     <input type="text" name="" id="firstName" placeholder="Enter First Name">
                     <p>Last Name<sup>*</sup></p>
                     <input type="text" name="" id="lastName" placeholder="Enter Last Name">
@@ -65,7 +88,7 @@
                     <input type="text" name="" id="userEmail" placeholder="Enter Email">
                     <p>Password<sup>*</sup></p>
                     <input type="text" name="" id="userPassword" placeholder="Enter Password">
-                    <input class="submit" type="submit"/>
+                    <input onclick="signup(event)" class="submit" type="submit"/>
                  </form>
                   <p>or
                    <span id="return"> Return to Store</span></p>
@@ -74,7 +97,7 @@
              
               <!-- signupEnd -->
 
-            <div id="shopOnHoverDiv">
+              <div id="shopOnHoverDiv">
                 <div class="lefthoverdiv">
                     <div class="shonOnhoverupperdiv">
                         <div>
@@ -95,7 +118,9 @@
                             <p>Balm</p>
                         </div>
                     </div>
+
                     <hr class="centerline">
+
                     <div class="shoponhoverlowerdiv">
                         <div>
                             <h4>Health Interests</h4>
@@ -130,61 +155,66 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="footdiv" class="foot">
-        <div class="footerdiv">
-            <div>
-                <h4>Info</h4>
-                <p>Contact Us</p>
-                <p>FAQ</p>
-                <p>Blog</p>
-                <p>Store Locator</p>
-                <p>Careers</p>
-            </div>
-            <div>
-                <h4>Policies</h4>
-                <p>Shipping & Returns</p>
-                <p>Terms & Conditions</p>
-                <p>Privacy</p>
-                <p>CCPA</p>
-                <p>Accessibility</p>
-            </div>
-            <div>
-                <h4>Contact Us</h4>
-                <h4>Email:</h4>
-                <p>Phone:</p>
-                <h4>1-800-869-4640</h4>
-                <p>Mon-Fri, 8am-5pm CT</p>
-                <h4>Mail:</h4>
-                <p>Himalaya Wellness</p>
-                <p>1101 Gillingham Lane</p>
-                <p>Sugar Land, TX 77478​</p>
-            </div>
-            <div class="logoandtextDiv">
-                <h4>Subscribe to Our Newsletter!</h4>
-                <input type="text" name="" id="" placeholder="Enter your e-mail">
-                <p>By entering your email, you agree to our Terms & Conditions and Privacy Policy.</p>
-                <div class="logoandtextfollowdiv">
+        <div>
+            <!-- footer -->
+
+            <div id="footdiv" class="foot">
+                <div class="footerdiv">
                     <div>
-                        <h4>Follow Us:</h4>
+                        <h4>Info</h4>
+                        <p>Contact Us</p>
+                        <p>FAQ</p>
+                        <p>Blog</p>
+                        <p>Store Locator</p>
+                        <p>Careers</p>
                     </div>
-                    <div class="logoDivbottom">
-                        <img src="/Images/fblogo.png" alt=""><img src="/Images/twitterlogo.jpg" alt=""><img
-                            src="/Images/instalogo.jpg" alt=""><img src="/Images/youtubelogo.png" alt="">
+                    <div>
+                        <h4>Policies</h4>
+                        <p>Shipping & Returns</p>
+                        <p>Terms & Conditions</p>
+                        <p>Privacy</p>
+                        <p>CCPA</p>
+                        <p>Accessibility</p>
+                    </div>
+                    <div>
+                        <h4>Contact Us</h4>
+                        <h4>Email:</h4>
+                        <p>Phone:</p>
+                        <h4>1-800-869-4640</h4>
+                        <p>Mon-Fri, 8am-5pm CT</p>
+                        <h4>Mail:</h4>
+                        <p>Himalaya Wellness</p>
+                        <p>1101 Gillingham Lane</p>
+                        <p>Sugar Land, TX 77478​</p>
+                    </div>
+                    <div class="logoandtextDiv">
+                        <h4>Subscribe to Our Newsletter!</h4>
+                        <input type="text" name="" id="" placeholder="Enter your e-mail">
+                        <p>By entering your email, you agree to our Terms & Conditions and Privacy Policy.</p>
+                        <div class="logoandtextfollowdiv">
+                            <div>
+                                <h4>Follow Us:</h4>
+                            </div>
+                            <div class="logoDivbottom">
+                                <img src="/Images/fblogo.png" alt=""><img src="/Images/twitterlogo.jpg" alt=""><img
+                                    src="/Images/instalogo.jpg" alt=""><img src="/Images/youtubelogo.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="bottomlastdiv">
+                    <p class="headtxt">
+                        © 2021 Himalaya Wellness. All rights reserved.
+                    </p>
+                    <p class="bottolasttext">
+                        *THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION. THIS PRODUCT IS
+                        NOT
+                        INTENDED TO DIAGNOSE, TREAT, CURE OR PREVENT ANY DISEASE.
+                    </p>
+                </div>
             </div>
-        </div>
-        <div class="bottomlastdiv">
-            <p class="headtxt">
-                © 2021 Himalaya Wellness. All rights reserved.
-            </p>
-            <p class="bottolasttext">
-                *THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION. THIS PRODUCT IS NOT
-                INTENDED TO DIAGNOSE, TREAT, CURE OR PREVENT ANY DISEASE.
-            </p>
-        </div>
-    </div>
+            </div>
+            </div>
 </body>
 </html>
 <script src="../JS/Signup.js"></script>

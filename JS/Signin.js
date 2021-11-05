@@ -1,5 +1,39 @@
+var dataBase=JSON.parse(localStorage.getItem("userHimalaya"))
+var bt=document.getElementById("loginbt")
+if(dataBase===null){
+bt.onclick=function(){
+    window.alert("Sign up First")
+}
+}else{
 
-// search
+  function login(event){
+    event.preventDefault()
+    
+    var loginMail=document.getElementById("loginmail").value
+    var loginPass=document.getElementById("loginpassword").value
+  
+   
+    var count=0;
+    dataBase.forEach(function(el,index){
+      if(loginMail===el.uMail && loginPass===el.uPass){
+        count++;
+        // alert("Logged In Successfully")
+      }
+      else if(loginMail===el.uMail && loginPass!==el.uPass){
+        // alert("Incorrent User Credentional")
+        count=0;
+      }
+    })
+    if (count > 0) { window.alert("logged in successfully") }
+    else if (count == 0) { window.alert("This email is not registered with us.") }
+
+    loginPass=""
+    loginMail=""
+    count=0;
+   }
+  }
+ 
+  // search
 
 var closeSearch=document.getElementById("searchClose")
 closeSearch.onmouseover=function(){
