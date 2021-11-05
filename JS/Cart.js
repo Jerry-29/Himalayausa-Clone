@@ -5,6 +5,7 @@ var click=1
 function showAddedProducts(){
     click++;
     cartHim.forEach(function(el,index){
+
         var productdiv=document.createElement("div")
         productdiv.setAttribute("id","prodiv")
    var productName=document.createElement("p")
@@ -27,7 +28,6 @@ function showAddedProducts(){
    productName.innerHTML=el.Name
    productImage.src=el.Image
    productPrice.innerHTML="$ "+el.Price
-
 productdiv.append(removeProduct,productImage,productName,productPrice,incrDecrDiv,variablePrice)
 parent.append(productdiv)
 

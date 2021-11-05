@@ -243,18 +243,41 @@ if (localStorage.getItem("HimalayaUsStorage") === null) {
   var ProductArr=JSON.parse(localStorage.getItem("HimalayaUsStorage"))
 
   function AddToCart(element){
-   for(var i=0;i<ProductArr.length;i++){
-     if(element.Image==ProductArr[i].Image){
-       alert("Product is already in Cart")
-       return
-     }
-    }
     ProductArr.push(element)
     alert("Product is Added in Cart")
    localStorage.setItem("HimalayaUsStorage",JSON.stringify(ProductArr))
   }
    
 
- 
+  // smallCart
+
+  var smallcartHim=JSON.parse(localStorage.getItem("HimalayaUsStorage"))
+var smallCartParent=document.getElementById("ProductsDivClickedOnCart")
+function showp(){
+  smallcartHim.forEach(function(el,index){
+  var sdiv=document.createElement("div")
+  sdiv.setAttribute("id","sdiv")
+var pimg=document.createElement("img")
+var pname=document.createElement("p")
+var pprice=document.createElement("p")
+pimg.src=el.Image
+pprice.innerHTML="$"+el.Price
+pname.innerHTML=el.Name
+sdiv.append(pimg,pname,pprice)
+smallCartParent.append(sdiv)
+});
+}showp()
+  // smallCart
+var cm=0;
+var smallcartShow=document.getElementById("clickonCart")
+ var clickedonCart=document.getElementById("clickToShowCart")
+ clickedonCart.onclick=function(){
+  cm++;
+  if(cm%2!==0){
+    smallcartShow.style.visibility="visible"
+  }else{
+    smallcartShow.style.visibility="hidden"
+  }
+ }
 
   
