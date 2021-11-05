@@ -231,8 +231,8 @@ var proArr=[
  
   // addcartbutton
 
-  var addcartbthovr=document.getElementById("addCartBt")
-  addcartbthovr.onmouseover=function(){
-    addcartbthovr.style.backgroundImage="none"
-    addcartbthovr.innerHTML="ADD TO CART"
-  }
+  // var addcartbthovr=document.getElementById("addCartBt")
+  // addcartbthovr.onmouseover=function(){
+  //   addcartbthovr.style.backgroundImage="none"
+  //   addcartbthovr.innerHTML="ADD TO CART"
+  // }

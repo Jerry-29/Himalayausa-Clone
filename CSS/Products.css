@@ -456,7 +456,7 @@
   }
   #hoverover{
     width: 5%;
-    height: 25%;
+    height: 9.5%;
      top: 60px;
     background-color: inherit;
     z-index: 4;
@@ -622,7 +622,7 @@
     position: relative;
   }
 
-  #addCartBt{
+  /* #addCartBt{
     content: "";
     width: 3%;
     height: 34px;
@@ -631,7 +631,7 @@
     position:absolute;
     overflow: hidden;
     /* background-image: url(/Images/shopping-bag.png); */
-    background-size: cover;
+    /* background-size: cover;
     background-color:rgb(167, 163, 121);
   }
   #addCartBt:hover{
@@ -639,8 +639,29 @@
   }
   #addCartBt::before{
    background-color: greenyellow;
-  }
+  } */
   /* #addCartBt::after{
     background-image:none;
     content: "AddToCart";
-  } */
+  } */ 
+
+  #addCartBt{
+    width: 3%;
+    height: 34px;
+    z-index: 3;
+    font-size: 0px;
+    position:absolute;
+    background-image: url(../Images/shopping-bagWhite.jpg);
+    background-color:#a3b49b;
+    background-size: contain;
+    border: none;
+  }
+  #addCartBt:hover{
+    width: 10%;
+    color: whitesmoke;
+    background-image: none;
+  }
+  #addCartBt:hover::after{
+    content: "ADD TO CART";
+    font-size: 12px;
+  }
