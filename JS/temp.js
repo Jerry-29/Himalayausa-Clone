@@ -1,4 +1,3 @@
-
 // search
 
 var closeSearch=document.getElementById("searchClose")
