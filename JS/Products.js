@@ -13,24 +13,24 @@ cLICKSEARCH.onclick=function(){
 
 // hovering on shop
 
-// var shop=document.getElementById("hoverover")
-// var upline=document.getElementById("upline")
-// var s=document.getElementById("shophover")
-// var navbar=document.getElementById("NavBar")
-// var shopOnHoverDiv=document.getElementById("shopOnHoverDiv")
-// shop.onmouseover=function(){
-//     shopOnHoverDiv.style.visibility="visible"
-//     upline.style.visibility="visible"
-// }
-// shopOnHoverDiv.onmouseleave=function(){
-//     shopOnHoverDiv.style.visibility="hidden"
-//     upline.style.visibility="hidden"
-// }
+var shop=document.getElementById("hoverover")
+var upline=document.getElementById("upline")
+var s=document.getElementById("shophover")
+var navbar=document.getElementById("NavBar")
+var shopOnHoverDiv=document.getElementById("shopOnHoverDiv")
+shop.onmouseover=function(){
+    shopOnHoverDiv.style.visibility="visible"
+    upline.style.visibility="visible"
+}
+shopOnHoverDiv.onmouseleave=function(){
+    shopOnHoverDiv.style.visibility="hidden"
+    upline.style.visibility="hidden"
+}
 
-// s.onmouseover=function(){
-//     shopOnHoverDiv.style.visibility="visible"
-//     upline.style.visibility="visible"
-// }
+s.onmouseover=function(){
+    shopOnHoverDiv.style.visibility="visible"
+    upline.style.visibility="visible"
+}
 
 // product page 
 var c=0;
@@ -451,7 +451,7 @@ var arr=Array.from(describ)
 
 var gohomebackfromProduct=document.getElementsByClassName("gohomebackfromProduct")
 Array.from(gohomebackfromProduct)[0].onclick=function(){
-  window.location.href="../HTML/Index.html"
+  window.location.href="../Index.html"
 }
 
 
