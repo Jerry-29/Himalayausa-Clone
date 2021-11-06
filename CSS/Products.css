@@ -291,6 +291,22 @@ padding: 2%;
 }
   /* clickonCartEnd */
   
+  /* shoitemNumberOnCart */
+#showItemNumber{
+  background-color: black;
+  color: white;
+  z-index: 20000;
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  font-size: 14px;
+  right: 4%;
+  top: 8.4%;
+  border-radius: 50%;
+  text-align: center;
+}
+
+  /* shoitemNumberOnCart */
   #searchAccountdiv {
     width: 30%;
     text-align: end;
@@ -446,7 +462,7 @@ padding: 2%;
     padding-right: 8%;
     background-color:#ffffff;
     visibility: hidden;    
-    top: 19%;                  /*visible*/
+    top: 19.2%;                  /*visible*/
   }
   .lefthoverdiv{
     width: 60%;
@@ -641,6 +657,7 @@ padding: 2%;
     display: flex;
     margin:0px;
     justify-content: flex-end;
+
   }
   .filtertop{
     width: 15%;
@@ -665,32 +682,96 @@ padding: 2%;
   }
   
   /* products adding to products page */
-  
-  #productsAddingMaindiv{
-    width: 100%;
-    display: grid;
-    padding: 1%;
-    grid-template-columns: repeat(4,24%);
+  .prohead{
+    margin-right: 7%;
   }
-  
+  #filterBypriceOrName,#flterbyQuant{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #222422;
+    border: 1px solid rgb(237, 237, 238);
+    cursor: pointer;
+  }
+  #filterBypriceOrName:hover{
+    color: #a3b49b;
+  }
+  #flterbyQuant:hover{
+    color: #a3b49b;
+  }
+.filterview>button{
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  border: 1px solid rgb(237, 237, 238);
+}
+  #productsAddingMaindiv{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    padding: 3%;
+  }
   #productdetailsDiv{
     width: 30%;
-    height: 250px;
   }
-  #pName{
-    margin: 4%;
-  }
-  #pImage{
-    width: 80%;
-  }
-  #btnAndPrice{
+  #secondMainDiv{
+    width: 100%;
     display: flex;
   }
-  #pPrice{
-    margin-left: 20%;
-    z-index: 0;
-    position: relative;
+  #productdetailsDiv>img{
+    width: 100%;
   }
+  #pnameDiv{
+    width: 60%;
+    /* background-color: yellow; */
+  }
+  #btnAndPrice{
+    width: 10%;
+    margin: auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: lightslategray;
+  }
+  #btnAndPrice >p{
+    width: 100%;
+  }
+  #pName{
+    text-align: left;
+    margin-left: 4%;
+  }
+  #describ{
+    display: none;
+    text-align: left;
+    margin-left: 4%;
+    width: 100%;
+  }
+  #addCartBt{
+    width: 50%;
+    height: 40px;
+    font-size: 0px;
+    z-index: 5;
+    top: 1%;
+    position: relative;
+    background-image: url(../Images/shopping-bagWhite.jpg);
+    background-color:#a3b49b;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: none;
+  }
+  #addCartBt:hover{
+    width: 100%;
+    color: whitesmoke;
+    background-image: none;
+  }
+  #addCartBt:hover::after{
+    content: "ADD TO CART";
+    font-size: 12px;
+  }
+  .gohomebackfromProduct{
+    cursor: pointer;
+  }
+
+  
 
   /* #addCartBt{
     content: "";
@@ -715,23 +796,4 @@ padding: 2%;
     content: "AddToCart";
   } */ 
 
-  #addCartBt{
-    width: 3%;
-    height: 34px;
-    z-index: 3;
-    font-size: 0px;
-    position:absolute;
-    background-image: url(../Images/shopping-bagWhite.jpg);
-    background-color:#a3b49b;
-    background-size: contain;
-    border: none;
-  }
-  #addCartBt:hover{
-    width: 10%;
-    color: whitesmoke;
-    background-image: none;
-  }
-  #addCartBt:hover::after{
-    content: "ADD TO CART";
-    font-size: 12px;
-  }
+ 

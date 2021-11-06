@@ -55,7 +55,6 @@
                         <span id="hoverUser" class="hoveruser">My Account</span>
                     </span>
                     <span id="clickToShowCart" class="hovercarttxt"><img class="logo" src="../Images/shopping-bag.png" alt="">
-
                     <!-- clickOnCart     -->
                         <div id="clickonCart">
                             <h3>Shopping Cart</h3>
@@ -70,18 +69,23 @@
                   <!-- clickOnCart     -->
                         <span id="hoverCart" class="hovercart">Cart</span>
                     </span>
+                    <!-- ItemNumer -->
+                    <span id="showItemNumber">0
+
+                    </span>
+                  <!-- ItemNumer -->
                 </div>
             </div>
             <div id="productPageDiv">
                 <div class="homeherb">
-                    <span>
+                    <span class="gohomebackfromProduct">
                         Home
                     </span>/
                     <span>
                         Herbal Supplements
                     </span>
                 </div>
-                <h1>Herbal Supplements</h1>
+                <h1 class="prohead">Herbal Supplements</h1>
                 <div id="productMainDiv">
                     <div id="productleftdiv">
                         <div id="productleftdivclick">
@@ -145,26 +149,26 @@
                     <div class="productrightDiv">
                         <div class="productTopDIv">
                             <div class="filtertop">
-                                <select name="" id="">
-                                    <option value="">Best Selling</option>
-                                    <option value="">Featured</option>
-                                    <option value="">Name Ascending</option>
-                                    <option value="">Name Descending</option>
-                                    <option value="">Price Ascending</option>
-                                    <option value="">Price Descending</option>
+                                <select name="" id="filterBypriceOrName" onchange="getSelectValue()">
+                                    <option value="BestSelling">Best Selling</option>
+                                    <option value="Featured">Featured</option>
+                                    <option value="NameAscending">Name Ascending</option>
+                                    <option value="NameDescending">Name Descending</option>
+                                    <option value="PriceAscending">Price Ascending</option>
+                                    <option value="PriceDescending">Price Descending</option>
                                 </select>
                             </div>
                             <div class="filterQuant">
-                                <select name="" id="">
-                                    <option value="">12</option>
-                                    <option value="">16</option>
-                                    <option value="">32</option>
-                                    <option value="">All</option>
+                                <select name="" id="flterbyQuant" onchange="getSelectValue()">
+                                    <option value="6">6</option>
+                                    <option value="8">8</option>
+                                    <option value="14">14</option>
+                                    <option value="All">All</option>
                                 </select>
                             </div>
                             <div class="filterview">
-                                <button>==</button>
-                                <button>==</button>
+                                <button id="showhorizontalproducts"><span><img width="15px" src="../Images/2lineslogo.png" alt=""></span></button>
+                                <button id="verticleshow"><span><img width="15px" src="../Images/4lineslogo.js" alt=""></span></button>
                             </div>
                         </div>
                         <!-- products adding -->
