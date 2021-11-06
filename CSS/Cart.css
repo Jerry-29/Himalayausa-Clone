@@ -40,7 +40,7 @@ html,body{
  
   display: flex;
   align-items: center;
-  margin-top: 0;
+  margin-top: .6%;
 }
 #logoDiv {
   margin-right: 240%;
@@ -64,7 +64,7 @@ html,body{
   position: absolute;
   z-index: 1;
   top: 18%;
-  right: 9%;
+  right: 6.5%;
   margin-left: -60px;
  font-size: 14px;
 }
@@ -91,7 +91,7 @@ html,body{
   position: absolute;
   z-index: 1;
   top: 18%;
-  right: 5%;
+  right: 2.4%;
   margin-left: -60px;
   font-size: 14px;
 }
@@ -476,17 +476,31 @@ cursor: pointer;
 
 /* navagationDivAddressBar */
 .homeherb{
-  background-color: rgb(252, 250, 250);
+  background-color: rgb(248, 248, 248);
   text-align: left;
   color: #777777;
   font-size: 12px;
-  margin-left: 4%;
+  padding: .6%;
+}
+.homeherb>.hom{
+  margin-left: 3.2%;
+  cursor: pointer;
+}
+.slash{
+  font-size: 16px;
 }
 
 /* navagationDivAddressBar */
 
 /* cart */
-
+.carthd{
+  color: #333333;
+  font-weight: 510;
+  font-style: normal;
+  font-size: 36px;
+  font-family: Poppins, sans-serif;
+  margin-left: -5%;
+}
   #cartdiv{
       width: 100%;
   }
@@ -499,7 +513,7 @@ cursor: pointer;
 .continueClearUpdate{
     width: 100%;
     display: flex;
-    gap: 35%;
+    gap: 30%;
 }
 .continue{
     width: 40%;
@@ -510,7 +524,7 @@ cursor: pointer;
 .clearUpdate{
     width: 30%;
     display: flex;
-    gap: 20%;
+    gap: 15%;
 }
 .centerline>button{
     width: 100%;
@@ -525,12 +539,18 @@ cursor: pointer;
     background-color: rgb(116, 122, 88);
     width: 40%;
     text-align: center;
-    padding: 4%;
+    padding: 3%;
     color: white;
+   
 }
 .grandTotal>button{
     width: 100%;
     padding: 2%;
+    background-color: #97aa9b;
+    border: none;
+    color: #fbfdff;
+    font-weight: 100;
+    font-family: Poppins, sans-serif;
 }
 #productAddincart{
   width: 100%;
@@ -620,5 +640,8 @@ cursor: pointer;
   background-color: inherit;
   align-items: center;
   margin-top: 4%;
+}
+.umayb{
+  margin-left: 4.5%;
 }
 /* cartEnd */

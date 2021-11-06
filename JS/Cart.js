@@ -1,9 +1,8 @@
 
 var cartHim=JSON.parse(localStorage.getItem("HimalayaUsStorage"))
 var parent=document.getElementById("productAddincart")
-var click=1
 function showAddedProducts(){
-    click++;
+    parent.innerHTML=""
     cartHim.forEach(function(el,index){
 
         var productdiv=document.createElement("div")
@@ -16,14 +15,27 @@ function showAddedProducts(){
    var incrDecrDiv=document.createElement("div")
    incrDecrDiv.setAttribute("id","incredecrediv")
    var increasebtn=document.createElement("button")
+    increasebtn.setAttribute("class","increasebtnClass")
+   increasebtn.addEventListener("click",function(){
+    showQt(index)
+   })
    var deacrese=document.createElement("button")
+   deacrese.setAttribute("class","decreaseBtClass")
+   deacrese.addEventListener("click",function(){
+    decreaseQuant(index)
+   })
    deacrese.innerHTML="-"
    increasebtn.innerHTML="+"
    var quantity=document.createElement("p")
+   quantity.setAttribute("class","qunatityClass")
    var variablePrice=document.createElement("p")
-   variablePrice.innerHTML="$ "+click*(el.Price)
-   quantity.innerHTML=1
+   variablePrice.innerHTML="$ "+(el.quant*(el.Price)).toFixed(2)
+   quantity.innerHTML=el.quant
    incrDecrDiv.append(deacrese,quantity,increasebtn)
+
+   removeProduct.addEventListener("click",function(){
+    delItemsFromCart(index)
+   })
 
    productName.innerHTML=el.Name
    productImage.src=el.Image
@@ -36,19 +48,85 @@ parent.append(productdiv)
 showAddedProducts()
 
 
+// delItemsFromCart
 
+function delItemsFromCart(index){
+cartHim.splice(index,1)
+localStorage.setItem("HimalayaUsStorage",JSON.stringify(cartHim))
+showAddedProducts(cartHim)
+}
 
+// continueshopping
+var continueshopping=document.getElementById("continueshopping")
+continueshopping.onclick=function(){
+  window.location.href="../index.html"
+}
 
+// clearCart
+var clearAllbtn=document.getElementById("clearAllbtn")
+clearAllbtn.onclick=function(){
+ cartHim=[]
+ localStorage.setItem("HimalayaUsStorage",JSON.stringify(cartHim))
+ window.location.href="../HTML/Cart.html"
+}
 
+//updateCart
+var updateLogobtn=document.getElementById("updateLogobtn")
+updateLogobtn.onclick=function(){
+  window.location.href="../HTML/Cart.html"
+}
 
+//GoHome
+var hom=document.getElementsByClassName("hom")
+Array.from(hom)[0].onclick=function(){
+  window.location.href="../index.html"
+}
 
+// subtotal
+var subtotal=document.getElementsByClassName("subtotal")
+var grandTotal=document.getElementsByClassName("grandTotalsum")
+var gt=Array.from(grandTotal)[0]
+subtotal=Array.from(subtotal)[0]
+function subtotalsum(){
+  var sum=0;
+ for(var i=0;i<cartHim.length;i++){
+  sum+=Number(cartHim[i].Price)*Number(cartHim[i].quant)
+ }subtotal.innerHTML="Subtotal: $ "+sum.toFixed(2)
+ gt.textContent="Grand Total: $ "+sum.toFixed(2)
+}
+subtotalsum()
 
+// Qunatity
 
+// increase
 
+ var incresebutton=document.getElementsByClassName("increasebtnClass")
+var increaseArr=Array.from(incresebutton)
+//var c=1
+var qunatityClass=document.getElementsByClassName("qunatityClass")
+function showQt(index){
+// increaseArr[index].onclick=function(){
+ // c++;
+ var c=cartHim[index].quant
+ c++;
+  cartHim[index].quant=c
+  //console.log(cartHim);
+  localStorage.setItem("HimalayaUsStorage",JSON.stringify(cartHim))
+  showAddedProducts(cartHim)
+}
 
-
-
-
+// decrease
+var decreaseBt=document.getElementsByClassName("decreaseBtClass")
+var decreaseArr=Array.from(decreaseBt)
+function decreaseQuant(index){
+ var d= cartHim[index].quant
+ if(d>1){
+ d--;
+ cartHim[index].quant=d
+ localStorage.setItem("HimalayaUsStorage",JSON.stringify(cartHim))
+ showAddedProducts(cartHim)
+ }
+}
 
 
 
