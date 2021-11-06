@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div>
+    <div id="container">
         <div class="headDiv">
             <p><strong>FREE SHIPPING</strong><span> ON ALL ORDERS OVER $35!</span></p>
         </div>
@@ -31,9 +31,32 @@
                     <div id="hoverover"></div>
                 </div>
                 <div id="searchAccountdiv">
-                    <span><img class="logo" src="/Images/search.png" alt=""></span>
-                    <span><img class="logo" src="/Images/userlogo.png" alt=""></span>
-                    <span><img class="logo" src="/Images/userlogo.png" alt=""></span>
+                    <span id="cLICKSEARCH" class="showSearchText"><img class="logo" src="../Images/search.png" alt="">
+                        <div id="clickonSearchOption">
+                            <div>
+                                <div class="whatAreYouLookingFor">
+                                    <p> What are you Looking for?</p>
+                                    <button id="searchClose">X</button>
+                                </div>
+                                <div class="searchAndbutton">
+                                    <input type="text" name="" id="" placeholder=" Search products...">
+                                    <button><img class="btnimg" src="../Images/search.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <span id="searchtxt" class="hoversearch">Search</span>
+                    </span>
+                    <span id="clickUser" class="hoverusertext"><img class="logo" src="../Images/userlogo.png" alt="">
+                        <div id="clickedOnuser" class="clickOnUser">
+                            <p id="signIn">Sign in</p>
+                            <p>Register</p>
+                            <p>Checkout</p>
+                        </div>
+                        <span id="hoverUser" class="hoveruser">My Account</span>
+                    </span>
+                    <span class="hovercarttxt"><img class="logo" src="../Images/shopping-bag.png" alt="">
+                        <span id="hoverCart" class="hovercart">Cart</span>
+                    </span>
                 </div>
             </div>
             <div class="navbutton">
@@ -146,6 +169,67 @@
                 </div>
             </div>
         </div>
+        <div id="shopOnHoverDiv">
+            <div class="lefthoverdiv">
+                <div class="shonOnhoverupperdiv">
+                    <div>
+                        <h4 id="hoverforproductpageToshow">Herbal Supplements</h4>
+                        <p>Single Herb Supplements</p>
+                        <p>Multi-Ingredient</p>
+                        <p>Supplements</p>
+                    </div>
+                    <div>
+                        <h4>Oral Care</h4>
+                        <p>Adult Toothpaste</p>
+                        <p>Kids Toothpaste</p>
+                    </div>
+                    <div>
+                        <h4>Personal Care</h4>
+                        <p>Face Care</p>
+                        <p>Cleansing Bars</p>
+                        <p>Balm</p>
+                    </div>
+                </div>
+
+                <hr class="centerline">
+
+                <div class="shoponhoverlowerdiv">
+                    <div>
+                        <h4>Health Interests</h4>
+                        <p>Blood Sugar</p>
+                        <p>Brain & Cognitive</p>
+                        <p>Digestion</p>
+                        <p>Energy & Vitality</p>
+                        <p>Hair, Skin & Nails</p>
+                        <p>Heart & Cardio</p>
+                    </div>
+                    <div class="lasthoverdivtext1">
+                        <p>Immune Support</p>
+                        <p>Joint & Mobility</p>
+                        <p>Liver & Cleanse</p>
+                        <p>Men's Wellness</p>
+                        <p>Respiratory</p>
+                        <p>Sleep</p>
+                    </div>
+                    <div class="lasthoverdivtext2">
+                        <p>Stress & Mood</p>
+                        <p>Urinary</p>
+                        <p>Weight Management</p>
+                        <p>Women's Wellness</p>
+                    </div>
+                </div>
+            </div>
+            <div class="righthoverdiv">
+                <img src="https://cdn.shopify.com/s/files/1/0399/1728/9633/files/HUSA_Ashwagandha_90ct_Carton_Bottle_410x.jpg?v=1603142607"
+                    alt="">
+                <p class="featuredprod">Featured Product</p>
+                <p class="everyonelove">Find out why everyone loves bestselling Organic Ashwagandha</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <!-- footer -->
+
         <div id="footdiv" class="foot">
             <div class="footerdiv">
                 <div>
@@ -195,20 +279,16 @@
                     © 2021 Himalaya Wellness. All rights reserved.
                 </p>
                 <p class="bottolasttext">
-                    *THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION. THIS PRODUCT IS NOT
+                    *THESE STATEMENTS HAVE NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION. THIS PRODUCT IS
+                    NOT
                     INTENDED TO DIAGNOSE, TREAT, CURE OR PREVENT ANY DISEASE.
                 </p>
             </div>
+        </div>
+        </div>
         </div>
        
 </body>
 
 </html>
-
-
-
-
-
-<!-- 
-"Back to Balance Cleanse™"
-$29.95 -->
+<script src="../JS/productDescription.js"></script>
