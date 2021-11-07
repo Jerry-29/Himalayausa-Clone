@@ -104,6 +104,7 @@ var proArr=[
       Price:"29.95",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
       quant:"1",
+      view:"true",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Boswellia-60---Box-Bottle_1024x.png?v=1595862802",
@@ -111,6 +112,7 @@ var proArr=[
       Price:"14.95",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
       quant:"1",
+      view:"true",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-58_1024x.png?v=1591027935",
@@ -214,6 +216,7 @@ var proArr=[
 
   var parent=document.getElementById("productsAddingMaindiv")
 function showprod(){
+ 
  parent.innerHTML=""
   proArr.forEach(function(element,index){
       var productdetailContainer=document.createElement("div")
@@ -259,11 +262,8 @@ function showprod(){
       secondmaindiv.setAttribute("class","secondmaindivClass")
       secondmaindiv.append(productdetailContainer,pnameDiv,btnAndPrice)
       parent.append(secondmaindiv)
+     
   });
-
-
-
-
 
 
 }
@@ -378,27 +378,29 @@ else if(selectedfilter.value==="BestSelling"||selectedfilter.value==="Featured")
     proArr[y] = x;
 }showprod(proArr)
 }
-else if(flterbyQuant.value==="8"){
-  var newsliceArr= proArr.slice(0,8)
-   console.log(newsliceArr);
+// else if(flterbyQuant.value==="8"){
+//   var newsliceArr= proArr.slice(0,8)
   
- } vert(newsliceArr)
+//  }
+//  console.log(newsliceArr);
+
+  vert()
 }
 
 // pending
 // limitedproductshowFilter
 
 
-// var flterbyQuant=document.getElementById("flterbyQuant")
-// function showselectedNumberProductsvalue(){
-//   if(flterbyQuant.value==="8"){
-//    var newsliceArr= proArr.slice(0,6)
-//     console.log(newsliceArr);
-//     showprod(newsliceArr)
-//   }
-   
-// }
-
+var flterbyQuant=document.getElementById("flterbyQuant")
+function getSelectValueN(){
+  if(flterbyQuant.value==="8"){
+   proArr= proArr.slice(0,6)
+    console.log(newsliceArr); 
+    //newsliceArr
+    showprod(proArr)
+  }vert(newsliceArr)
+   }
+////need debugging
 
 var v=0
 var describ=document.getElementsByClassName("describclass")
@@ -526,5 +528,19 @@ window.addEventListener("load",ref)
 function ref(){
   vert(proArr)
 }
+
+var view=true
+function viewMode(){
+var array= JSON.parse(localStorage.getItem("HimalayaUsStorage"))
+array.forEach(function(el){
+  if(el.view!==true){
+    vert(proArr)
+  }
+  else{
+    showInRow(proArr)
+  }
+})
+}
+
 
   
