@@ -384,7 +384,7 @@ else if(selectedfilter.value==="BestSelling"||selectedfilter.value==="Featured")
 //  }
 //  console.log(newsliceArr);
 
-  vert()
+  // vert()
 }
 
 // pending
@@ -393,12 +393,13 @@ else if(selectedfilter.value==="BestSelling"||selectedfilter.value==="Featured")
 
 var flterbyQuant=document.getElementById("flterbyQuant")
 function getSelectValueN(){
-  if(flterbyQuant.value==="8"){
+  if(flterbyQuant.value==="6"){
    proArr= proArr.slice(0,6)
     console.log(newsliceArr); 
     //newsliceArr
     showprod(proArr)
-  }vert(newsliceArr)
+  }
+  // vert(newsliceArr)
    }
 ////need debugging
 
@@ -428,10 +429,11 @@ var arr=Array.from(describ)
 
   arr.forEach(function(el){
     el.style.display="block"
+    el.style.width="120%"
    // el.style.visibility="visibile"
   })
   Array.from(productdetailContainerClass).forEach((el)=>{
-    el.style.width="30%"
+    el.style.width="70%"
   })
   Array.from(pImageClass).forEach((el)=>{
     el.style.width="100%"
@@ -452,19 +454,33 @@ var arr=Array.from(describ)
     // el.style.width="100%"
   })
   Array.from(prodcutPriceClass).forEach((el)=>{
-    el.style.marginLeft="300%"
+    el.style.marginLeft="20%"
   })
   Array.from(addToCartBtClass).forEach((el)=>{
-    el.style.width="50%"
-    el.style.top="-45%"
+    el.style.width="48%"
+    el.style.top="5%"
+    el.style.left="10%"
     el.style.cursor="pointer"
+    el.style.backgroundSize="20%"
+    el.style.backgroundPosition="6%"
+    el.style.fontSize="14px"
+    el.textContent="ADD TO CART"
+    el.style.textAlign="right"
+    el.style.color="white"
     el.onmouseover=function(){
-      el.style.width="150%"
-    }
-    el.onmouseout=function(){
-      el.style.width="50%"
+      el.style.width="48%"
+      el.style.top="5%"
+      el.style.left="10%"
+      el.style.cursor="pointer"
+      el.style.backgroundSize="20%"
+      el.style.backgroundPosition="6%"
+      el.style.fontSize="14px"
+      el.style.textAlign="right"
+      el.style.color="white"
+      el.style.content=""
     }
   })
+
   }
 
 var gohomebackfromProduct=document.getElementsByClassName("gohomebackfromProduct")
@@ -478,69 +494,72 @@ Array.from(gohomebackfromProduct)[0].onclick=function(){
 // verticle
 
 function vert(){
-  v=1
- if(v==1){
-  productsAddingMaindiv.style.gridTemplateColumns="24% 24% 24% 24%"
-  arr.forEach(function(el){
-    el.style.display="none"
-    //el.style.visibility="hidden"
-  })
-  Array.from(productdetailContainerClass).forEach((el)=>{
-    el.style.flexDirection="row"
-  })
-  Array.from(pImageClass).forEach((el)=>{
-    el.style.width="100%"
-  })
-  Array.from(pNameClass).forEach((el)=>{
-    el.style.fontSize="12px"
-  })
-  Array.from(pImageClass).forEach((el)=>{
-    el.style.width="300%"
-  })
-  Array.from(secondmaindivClass).forEach((el)=>{
-    el.style.flexDirection="column"
-  })
-  Array.from(btnAndPriceClass).forEach((el)=>{
-  el.style.margin="0px"
-  })
-  Array.from(addToCartBtClass).forEach((el)=>{
-    el.style.margin="0px"
-    // el.style.width="100%"
-  })
-  Array.from(prodcutPriceClass).forEach((el)=>{
-    el.style.marginLeft="300%"
-  })
-  Array.from(addToCartBtClass).forEach((el)=>{
-    el.style.width="200%"
-    el.style.top="-45%"
-    el.style.cursor="pointer"
-    el.onmouseover=function(){
-      el.style.width="520%"
-    }
-    el.onmouseout=function(){
-      el.style.width="200%"
-    }
-  })
- }
+  window.location.href="../HTML/Products.html"
+  // productsAddingMaindiv.style.gridTemplateColumns="24% 24% 24% 24%"
+  // arr.forEach(function(el){
+  //   el.style.display="none"
+  //   //el.style.visibility="hidden"
+  // })
+  // Array.from(productdetailContainerClass).forEach((el)=>{
+  //   el.style.flexDirection="row"
+  // })
+  // Array.from(pImageClass).forEach((el)=>{
+  //   el.style.width="100%"
+  // })
+  // Array.from(pNameClass).forEach((el)=>{
+  //   el.style.fontSize="12px"
+  // })
+  // Array.from(pImageClass).forEach((el)=>{
+  //   el.style.width="100%"
+  // })
+  // Array.from(secondmaindivClass).forEach((el)=>{
+  //   el.style.flexDirection="column";
+  //   el.style.width="95%";
+  // })
+  // Array.from(btnAndPriceClass).forEach((el)=>{
+  //   el.style.width="90%"
+  //   el.style.boxSizing="borderbox";
+  // })
+  // Array.from(addToCartBtClass).forEach((el)=>{
+  //   el.style.margin="5%"
+  //   //  el.style.width="19%"
+  // })
+  // Array.from(prodcutPriceClass).forEach((el)=>{
+  //   el.style.marginLeft="10%"
+  // })
+  // Array.from(addToCartBtClass).forEach((el)=>{
+  //   el.style.width="20%"
+  //   el.style.top="-55%"
+  //   el.style.cursor="pointer"
+  //   el.style.marginRight="25%"
+  //   el.onmouseover=function(){
+  //     el.style.width="60%"
+  //     // el.style.marginRight="80%"
+  //   }
+  //   el.onmouseout=function(){
+  //     el.style.width="20%"
+  //     el.style.marginLeft="0"
+  //   }
+  // })
 }
 
-window.addEventListener("load",ref)
-function ref(){
-  vert(proArr)
-}
+// window.addEventListener("load",ref)
+// function ref(){
+//   vert(proArr)
+// }
 
-var view=true
-function viewMode(){
-var array= JSON.parse(localStorage.getItem("HimalayaUsStorage"))
-array.forEach(function(el){
-  if(el.view!==true){
-    vert(proArr)
-  }
-  else{
-    showInRow(proArr)
-  }
-})
-}
+// var view=true
+// function viewMode(){
+// var array= JSON.parse(localStorage.getItem("HimalayaUsStorage"))
+// array.forEach(function(el){
+//   if(el.view!==true){
+//     vert(proArr)
+//   }
+//   else{
+//     showInRow(proArr)
+//   }
+// })
+// }
 
 
   

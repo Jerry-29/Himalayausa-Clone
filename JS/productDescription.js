@@ -1,22 +1,29 @@
 
+var proDescArr=[
+  {
+    Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1591028195",
+    Name:"Back to Balance Cleanse™",
+    Price:"29.95",
+    des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+    quant:"1",
+  },
+]
 
+var store=JSON.parse(localStorage.getItem("HimalayaUsStorage"))
+var addToCartBtn=document.getElementById("addToCartBtn")
+addToCartBtn.onclick=function(){
+  store.push(proDescArr)
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var showProductImage=document.getElementsByClassName("showProductImage")
+var showProductDetail=document.getElementsByClassName("showProductDetail")
+var proImageid=document.getElementById("proImageid")
+Array.from(showProductDetail)[0].onclick=function(){
+  proImageid.src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x1024.png?v=1591028195"
+}
+Array.from(showProductImage)[0].onclick=function(){
+  proImageid.src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Back-to-Balance-Cleanse-1_1024x1024.png?v=1595305403"
+}
 
 // search
 
