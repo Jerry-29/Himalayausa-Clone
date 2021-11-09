@@ -5,7 +5,7 @@ var showProductImage=document.getElementsByClassName("showProductImage")
 var showProductDetail=document.getElementsByClassName("showProductDetail")
 var proImageid=document.getElementById("proImageid")
 Array.from(showProductDetail)[0].onclick=function(){
-  proImageid.src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x1024.png?v=1591028195"
+  proImageid.src="https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-126_1024x.png?v=1591028001"
   // Array.from(showProductDetail)[0].style.border="1.5px"
   // Array.from(showProductImage)[0].style.border="none"
 }
@@ -60,13 +60,13 @@ smallCartParent.append(sdiv)
 // prodes
 
 var proDescArr=
-  {
-    Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1591028195",
-    Name:"Back to Balance Cleanse™",
-    Price:"29.95",
-    des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
-    quant:"1",
-  }
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-126_1024x.png?v=1591028001",
+  Name:"GlucoCare®",
+  Price:"24.95",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+   quant:"1", 
+}
   var count=1
 var countershow=document.getElementById("countershow")
 countershow.innerHTML=count
