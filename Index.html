@@ -48,7 +48,7 @@
                           </div>
                         <span id="searchtxt" class="hoversearch">Search</span>
                     </span>
-                    <span id="clickUser" class="hoverusertext"><img class="logo" src="/Images/userlogo.png" alt="">
+                    <span id="clickUser" class="hoverusertext"><img class="logo" src="../Images/userlogo.png" alt="">
                         <div id="clickedOnuser" class="clickOnUser">
                             <p id="signIn">Sign in</p>
                             <p>Register</p>
@@ -56,9 +56,26 @@
                         </div>
                         <span id="hoverUser" class="hoveruser">My Account</span>
                     </span>
-                    <span class="hovercarttxt"><img class="logo" src="./Images/shopping-bag.png" alt="">
+                    <span id="clickToShowCart" class="hovercarttxt"><img class="logo" src="../Images/shopping-bag.png" alt="">
+                    <!-- clickOnCart     -->
+                        <div id="clickonCart">
+                            <h3>Shopping Cart</h3>
+
+                            <div id="ProductsDivClickedOnCart"  >
+
+                            </div>
+                            <span><h4>Total :</h4></span>
+                            <button>PROCEED TO CHECKOUT</button>
+                            <p id="viewCartpage">View Cart</p>
+                        </div>
+                  <!-- clickOnCart     -->
                         <span id="hoverCart" class="hovercart">Cart</span>
                     </span>
+                    <!-- ItemNumer -->
+                    <span id="showItemNumber">0
+
+                    </span>
+                  <!-- ItemNumer -->
                 </div>
             </div>
             <div id="shopOnHoverDiv">
@@ -80,113 +97,6 @@
                             <p>Face Care</p>
                             <p>Cleansing Bars</p>
                             <p>Balm</p>
-                        </div>
-
-                        <!-- 3rd layer -->
-
-                <div id="productPageDiv">
-                          <div class="homeherb">
-                              <span>
-                                  Home
-                              </span>/
-                              <span>
-                                  Herbal Supplements
-                              </span>
-                          </div>
-                     <div id="productMainDiv">
-                         <div id="productleftdiv">
-                             <div id="productleftdivclick">
-                                <h4 id="click1toshowhidden">Health Interests</h4>
-                                <div id="hidden1">
-                                    <p>Blood Sugar</p>
-                                    <p>Brain & Cognitive</p>
-                                    <p>Digestion</p>
-                                    <p>Energy & Vitality</p>
-                                    <p>Hair,Skin & Nails</p>
-                                    <p>Heart & Cardio</p>
-                                    <p>Immune Support</p>
-                                    <p>Joint & Mobility</p>
-                                    <p>Liver & Cleanse</p>
-                                    <p>Men's Wellness</p>
-                                    <p>Respiratory</p>
-                                    <p>Sleep</p>
-                                    <p>Stress & Mood</p>
-                                    <p>Urinary</p>
-                                    <p>Weight Management</p>
-                                    <p>Women's Wellness</p>
-                                  </div>
-                            </div>
-                            <div id="productleftdivclick2">
-                                <h4 id="click2toshowhidden">Herbal Supplements</h4>
-                              <div id="hidden2">
-                                <label> <input type="radio" name="" id="">All</label>
-                                <label for=""> <input type="radio" name="" id="">Formulas</label>
-                              </div>
-                            </div>
-
-                             <div id="productleftdivclick3">
-                                  <h4 id="click3toshowhidden">Product Form</h4>
-                                 <div id="hidden3">
-                                    <label> <input type="radio" name="" id="">All</label>
-                                    <label for=""> <input type="radio" name="" id="">Capsules</label>
-                                 </div>
-                                </div>
-
-                            <div id="productleftdivclick4">
-                                <h4 id="click4toshowhidden">Herbs</h4>
-                               <div id="hidden4">
-                                 <label for=""><input type="checkbox" name="" id=""> Shatavari</label>
-                                 <label for=""><input type="checkbox" name="" id="">Tribulus</label>
-                               </div>
-                            </div>  
-                            <div id="productleftdivclick5">
-                                <h4 id="click5toshowhidden">Attributes</h4>
-                               <div id="hidden5">
-                                <label><input type="checkbox" name="" id="">Non-GMO</label>
-                                <label><input type="checkbox" name="" id="">Vegan</label>
-                                <label><input type="checkbox" name="" id="">Gluten Free</label>
-                                <label><input type="checkbox" name="" id="">Additive Free</label>
-                                <label><input type="checkbox" name="" id="">Wheat Free</label>
-                                <label><input type="checkbox" name="" id="">Corn Free</label>
-                                <label><input type="checkbox" name="" id="">Soy Free</label>
-                                <label><input type="checkbox" name="" id="">Dairy Free</label>
-                               </div>
-                            </div>
-                             </div>
-                             <div class="productrightDiv">
-                               <h1>Herbal Supplements</h1>
-                               <div class="productTopDIv">
-                                <div class="filtertop">
-                                   <select name="" id="">
-                                    <option value="">Best Selling</option>
-                                    <option value="">Featured</option>
-                                    <option value="">Name Ascending</option>
-                                    <option value="">Name Descending</option>
-                                    <option value="">Price Ascending</option>
-                                    <option value="">Price Descending</option>
-                                </select>
-                                </div>
-                                <div class="filterQuant">
-                                    <select name="" id="">
-                                    <option value="">12</option>
-                                    <option value="">16</option>
-                                    <option value="">32</option>
-                                    <option value="">All</option>
-                                </select>
-                                </div>
-                                <div class="filterview">
-                                    <button>==</button>
-                                    <button>==</button>
-                                </div>
-                               </div>
-
-                             <!-- products adding -->
-                             <div id="productsAddingMaindiv">
-                             
-                            </div>
-
-                             </div>
-                          </div>
                         </div>
                     </div>
                     <hr class="centerline">
@@ -437,6 +347,10 @@
      <!-- footerEnd -->
 
     </div>
+        <!-- scroll -->
+   <div>
+    <button id="goToTOP"><img width="20px" src="../Images/upArro-removebg-preview.png" alt=""></button>
+   </div>
 </body>
 
 </html>

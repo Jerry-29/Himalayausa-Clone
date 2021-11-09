@@ -105,6 +105,7 @@ var proArr=[
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
       quant:"1",
       view:"true",
+      productPage:"../HTML/productDescription.html",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Boswellia-60---Box-Bottle_1024x.png?v=1595862802",
@@ -113,6 +114,7 @@ var proArr=[
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
       quant:"1",
       view:"true",
+      productPage:"../HTML/productDescription2.html",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-58_1024x.png?v=1591027935",
@@ -120,13 +122,15 @@ var proArr=[
       Price:"13.95",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
        quant:"1", 
+       productPage:"../HTML/productDescription3.html",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-33_1024x.png?v=1591027962",
       Name:"ComfortCleanse®",
       Price:"24.99",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
-       quant:"1", 
+       quant:"1",
+       productPage:"../HTML/productDescription4.html", 
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-30_1024x.png?v=1590836814",
@@ -134,6 +138,7 @@ var proArr=[
       Price:"18.99",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
        quant:"1", 
+       productPage:"../HTML/productDescription5.html",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-34_1024x.png?v=1591027900",
@@ -141,6 +146,7 @@ var proArr=[
       Price:"22.95",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
        quant:"1", 
+       productPage:"../HTML/productDescription6.html",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-69_1024x.png?v=1590836866",
@@ -148,6 +154,7 @@ var proArr=[
       Price:"39.95",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
        quant:"1", 
+       productPage:"../HTML/productDescription7.html",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-126_1024x.png?v=1591028001",
@@ -155,6 +162,7 @@ var proArr=[
       Price:"24.95",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
        quant:"1", 
+       productPage:"../HTML/productDescription8.html",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-36_1024x.png?v=1590836878",
@@ -162,6 +170,7 @@ var proArr=[
       Price:"15.95",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
        quant:"1", 
+       productPage:"../HTML/productDescription9.html",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-36_fbc92680-5171-436b-acc1-6a5a6a2ac59c_1024x.png?v=1591028013",
@@ -169,6 +178,7 @@ var proArr=[
       Price:"22.95",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
        quant:"1", 
+       productPage:"../HTML/productDescription10.html",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOENERGYBOX_BOTTLE_1024x.jpg?v=1608243299",
@@ -176,6 +186,7 @@ var proArr=[
       Price:"23.99",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
        quant:"1", 
+       productPage:"../HTML/productDescription11.html",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOJOYBOX_BOTTLE_1024x.jpg?v=1608241956",
@@ -183,6 +194,7 @@ var proArr=[
       Price:"23.99",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
        quant:"1", 
+       productPage:"../HTML/productDescription12.html",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOPEACEBOX_BOTTLE_1024x.jpg?v=1608243907",
@@ -190,6 +202,7 @@ var proArr=[
       Price:"23.99",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
        quant:"1", 
+       productPage:"../HTML/productDescription13.html",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HolyBasil-30-box-bottle_1024x.png?v=1591028027",
@@ -197,6 +210,7 @@ var proArr=[
       Price:"12.95",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
        quant:"1", 
+       productPage:"../HTML/productDescription14.html",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/ImmunoCare-120---Box-Bottle_1024x.png?v=1595814320",
@@ -204,6 +218,7 @@ var proArr=[
       Price:"23.95",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
        quant:"1", 
+       productPage:"../HTML/productDescription15.html",
     },
     {
       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/JointCare-120---Box-Bottle_1024x.png?v=1595814579",
@@ -211,6 +226,7 @@ var proArr=[
       Price:"21.49",
       des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
       quant:"1", 
+      productPage:"../HTML/productDescription16.html",
     },
   ]
 
@@ -231,6 +247,11 @@ function showprod(){
       pnameDiv.setAttribute("id","pnameDiv")
 
       productdetailContainer.setAttribute("id","productdetailsDiv")
+      productdetailContainer.style.cursor="pointer"
+      productdetailContainer.onclick=function(){
+      
+        window.location.href=element.productPage
+      }
       productImage.setAttribute("id","pImage")
       productImage.setAttribute("class","pImageClass")
       productName.setAttribute("id","pName")
