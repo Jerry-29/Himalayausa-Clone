@@ -562,4 +562,7 @@ function vert(){
 // }
 
 
-  
+  var viewCartpage=document.getElementById("viewCartpage")
+  viewCartpage.onclick=function(){
+    window.location.href="../HTML/Cart.html"
+  }
