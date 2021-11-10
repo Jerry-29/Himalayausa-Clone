@@ -265,9 +265,16 @@ function showprod(){
       descrp.setAttribute("id","describ")
       descrp.setAttribute("class","describclass")
       
+      // var popUpTotal=document.getElementsByClassName("popProductPrice")
+      // var body=document.querySelector("#container")
+      // popupcartDetailDiv.style.display="block"
+      // body.style.opacity=".7"
     addToCartBt.onclick=function(){
       AddToCart(element)
-      window.location.href="../HTML/Products.html"
+     // window.location.href="../HTML/Products.html"
+      var body=document.querySelector("#container")
+      popupcartDetailDiv.style.display="block"
+      body.style.opacity=".7"
      
     }
     
@@ -322,8 +329,38 @@ if (localStorage.getItem("HimalayaUsStorage") === null) {
 
   function AddToCart(element){
     ProductArr.push(element)
-    alert("Product is Added in Cart")
+  //  alert("Product is Added in Cart")
    localStorage.setItem("HimalayaUsStorage",JSON.stringify(ProductArr))
+
+   var store=JSON.parse(localStorage.getItem("HimalayaUsStorage"))
+
+   var showcartItemsNumber=document.getElementById("showItemNumber")
+
+   showcartItemsNumber.innerHTML=store.length
+   console.log(store.length);
+var itemsInCart=document.getElementsByClassName("itemsInCart")
+Array.from(itemsInCart)[0].innerHTML="There are " +((store.length))+" items in your Cart"
+var total=document.getElementsByClassName("popUpTotal")
+
+var popProductImage=document.getElementsByClassName("popProductImage")
+Array.from(popProductImage)[0].src=store[store.length-1].Image
+
+var sum=0;
+for(var i=0;i<store.length;i++){
+sum+=Number(store[i].Price)*Number(store[i].quant)
+}
+Array.from(total)[0].innerHTML="Total : $"+sum.toFixed(2)
+
+var popProductName=document.getElementsByClassName("popProductName")
+Array.from(popProductName)[0].innerHTML=store[store.length-1].Name
+
+var popUpTotal=document.getElementsByClassName("popProductPrice")
+Array.from(popUpTotal)[0].innerHTML=store[store.length-1].quant+" x "+"$"+store[store.length-1].Price
+// popupDiv
+  //  window.location.href="../index.html"
+  var body=document.querySelector("#container")
+   popupcartDetailDiv.style.display="block"
+   body.style.opacity=".7"
   }
    
 
@@ -587,3 +624,12 @@ function vert(){
   viewCartpage.onclick=function(){
     window.location.href="../HTML/Cart.html"
   }
+
+  var popupcartDetailDiv=document.getElementById("popupcartDetailDiv")
+  var closePopedScreen=document.getElementById("closePopedScreen")
+  var body=document.querySelector("#container")
+  closePopedScreen.onclick=function(){
+ popupcartDetailDiv.style.display="none"
+ body.style.opacity="1"
+  }
+ 

@@ -805,4 +805,120 @@ padding: 2%;
     content: "AddToCart";
   } */ 
 
+  
+/* popupScreenWhenAddtoCartClicked */
+#popupcartDetailDiv{
+  z-index: 100;
+  width: 40%;
+  gap: 0%;
+  height: 620px;
+  background-color: white;
+  position: absolute;
+ left: 30%;
+ top:0%;
+ display: flex;     
+ flex-direction: column;
+align-items: center;
+position: fixed;
+display: none;
+
+}
+#popupcartDetailDiv>img{
+  height: 18%;
+  width: 18%;
+  display: block;
+  margin: auto;
+}
+.itemsInCart p{
+  text-align: justify;
+}
+.itemsInCart{
+  width: 60%;
+}
+.shop2{
+  text-align: center;
+  width: 40%;
+  width: 70%;
+  margin-left: 13% !important;
+  padding: 3%;
+  border: 1px solid rgb(221, 222, 223);
+  color: white;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;;
+}
+#popupcartDetailDiv p{
+display: block;
+margin-left: 30%;
+}
+.viewCart{
+  background-color: inherit;
+  color: black;
+  box-sizing: border-box;
+}
+.viewCart:hover{
+  border: 2px solid black;
+  
+}
+.continue{
+border: 1px solid lightslategray;
+background-color: #59694f ;
+}
+.continue:hover{
+background-color:#a3b49b;
+color: white;
+}
+
+.proceed{
+background-color:#a3b49b ;
+}
+.proceed:hover{
+background-color: #59694f;
+color: white;
+}
+.popProductPrice{
+color: #a3b49b;
+font-size: 14px;
+font-weight: 700;
+font-family: Poppins, sans-serif;
+}
+.popUpTotal{
+font-family: Poppins, sans-serif;
+color: #a3b49b;
+font-size: 18px;
+font-weight: 600;
+
+}
+.bottomLine{
+opacity: .2;
+}
+.alertProductAdded{
+text-align: center;
+}
+.totalAndPrice{
+margin-left: 40% !important;
+font-family: Poppins, sans-serif;;
+}
+.showProductDetail,.showProductImage{
+display: flex;
+/* margin: auto; */
+align-items: center ;
+justify-content: center;
+box-sizing: border-box;
+}
+.changeImg:hover{
+border: 1.5px solid black;
+}
+#closePopedScreen{
+text-align: right;
+font-size: 20px;
+display: block;
+margin: auto;
+margin-right: 6%;
+cursor: pointer;
+}
+.cursor{
+cursor: pointer;
+}
  

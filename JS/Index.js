@@ -172,6 +172,12 @@ var linesArray =Array.from(chagnelineSize)
 // }
 var st=1;
 var e=5
+var backnav=document.getElementById("backnav")
+backnav.onclick=function(){
+  showSlide()
+  // linesArray[st+1].style.width="8%"
+  // linesArray[st+1].style.backgroundColor="lightseagreen"
+}
 next.addEventListener("click",showSlide)
  //var kim=myArr.slice(s,e)
 function showSlide(){
@@ -180,6 +186,7 @@ function showSlide(){
   if(e==myArr.length){
       st=1;
       e=5;
+     
   } 
   linesArray[st].style.width="8%"
   linesArray[st].style.backgroundColor="lightseagreen"
@@ -244,9 +251,10 @@ var popUpTotal=document.getElementsByClassName("popProductPrice")
 Array.from(popUpTotal)[0].innerHTML=store[store.length-1].quant+" x "+"$"+store[store.length-1].Price
 // popupDiv
   //  window.location.href="../index.html"
+  var body=document.querySelector("#container")
    popupcartDetailDiv.style.display="block"
+   body.style.opacity=".7"
    // smallcartShow(storeArr)
-   
    
   }
   //console.log(mik);
@@ -420,8 +428,10 @@ var smallcartShow=document.getElementById("clickonCart")
 
  var popupcartDetailDiv=document.getElementById("popupcartDetailDiv")
  var closePopedScreen=document.getElementById("closePopedScreen")
+ var body=document.querySelector("#container")
  closePopedScreen.onclick=function(){
 popupcartDetailDiv.style.display="none"
+body.style.opacity="1"
  }
 
 var reviewDiv=document.getElementsByClassName("sliderev")
@@ -440,3 +450,8 @@ slideArray.forEach(function(el){
 left++;
 right++;
 timer()
+
+var hoverforproductpageToshow=document.getElementById("hoverforproductpageToshow")
+hoverforproductpageToshow.onclick=function(){
+  window.location.href="../HTML/Products.html"
+}
