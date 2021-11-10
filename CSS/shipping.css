@@ -1,0 +1,145 @@
+*{
+    /* border: 1px solid black; */
+}
+.main{
+    width: 100%;
+    display: flex;
+    gap: .1%;
+}
+.mainhalf{
+    width: 50%;
+    height: 100%;
+    height: 470px;
+    padding: 5%;
+    background-color: white;
+}
+.leftmain{
+    /* height: 1200px; */
+}
+.rightmain{
+background-color:#f4f7f3;
+}
+.logoDiv{
+    width: 100%;
+}
+.leftmain>.logoDiv>img{
+    width: 30%;
+}
+.pagelocation{
+    display: flex;
+    flex-direction: row;
+    margin: 3%;
+}
+
+.continueToShip{
+    width: 40%;
+    padding: 4%;
+    margin-top:3% ;
+    border-radius: 6px;
+    border: none;
+    background-color: #a7bd9e;
+    font-weight: 500;
+    font-size: 16px;
+}
+.bottomline{
+    margin-top: 3%;
+}
+.refundpolicy{
+    width: 40%;
+    display: flex;
+}
+.refundpolicy>p{
+    width:50%;
+    font-size: 14px;
+}
+
+.coupnAndApply{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    gap: 2%;
+}
+.coupnAndApply>input{
+    width: 80%;
+    padding: 3%;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: rgb(225, 226, 228);
+}
+.coupnAndApply>button{
+    width: 20%;
+    padding: 3%;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: rgb(225, 226, 228);
+    background-color: #c3c6c2
+}
+.secondline{
+    margin-top: 5%;
+}
+.subtotal{
+    display: flex;
+    gap: 75%;
+}
+.nextstep{
+    font-size: 14px;
+    color: #6e6f6d;
+}
+.navarrow{
+    padding: 13%;
+}
+
+/* products */
+.Imagenameprice{
+    width: 90%;
+    height: 240px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightslategrey;
+    margin: auto;
+}
+.maindiv{
+    display: flex;
+}
+.pdiv{
+    width: 60%;
+    display: flex;
+    gap: 10%;
+}
+.pdiv>p{
+    font-size: 70%;
+}
+.pdiv>img{
+width: 30%;
+}
+.pPrice{
+    width: 30%;
+    font-size: 70%;
+}
+
+.bottomdivInfo{
+    display: flex;
+    align-items: center;
+    gap: 8%;
+}
+.bottomdivInfo>p{
+cursor: pointer;
+}
+.shiipingInfo{
+    width: 90%;
+    padding: 2%;
+}
+.shiipingInfo>div{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+.shiipingInfo>div>p{
+    width: 90%;
+    border: lightslategrey 1px solid;
+    padding: 4%;
+}
+.clickToChange{
+    cursor: pointer;
+}

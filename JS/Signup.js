@@ -23,6 +23,12 @@ let userLoginData={
    ulastName:ulastName,
    uMail:uMail,
    uPass:uPass,
+   uAddress:uAddress,
+   uCity:uCity,
+   uCountry: uCountry,
+   uState:uState,
+   uZip:uZip,
+   uPhon:uPhon,
 } 
 
 var count=0;
