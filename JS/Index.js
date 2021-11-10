@@ -14,73 +14,262 @@ cLICKSEARCH.onclick=function(){
 
 // Data
 
-var myArr=[{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Ashwagandha_BoxBottle_30_800x.jpg?v=1591028054",
-    productName:"Organic Ashwagandha",
-    productPrice:"13.95",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Whitening-Mint---Box-Tube_800x.png?v=1597743896",
-    productName:"Simply Mint Whitening",
-    productPrice:"5.99",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/LiverCare-90---Box-Bottle_800x.png?v=1595815804",
-    productName:"Liver Care",
-    productPrice:"27.95",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/ImmunoCare-120---Box-Bottle_800x.png?v=1595814320",
-    productName:"ImmunoCare",
-    productPrice:"23.95",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Neem-and-Pom---Box-Tube_800x.png?v=1597744049",
-    productName:"Neem & Promegranate Original Toothpaste",
-    productPrice:"5.99",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-23_800x.png?v=1590836890",
-    productName:"Organic Amla",
-    productPrice:"18.95",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Bitter-Melon-30---Box-Bottle_800x.png?v=1595862276",
-    productName:"Organic Bitter Melon",
-    productPrice:"11.95",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Gymnema_Box_Bottle_30s_800x.png?v=1591028093",
-    productName:"Organic Gymnema",
-    productPrice:"12.95",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Whitening-Mint---Box-Tube_800x.png?v=1597743896",
-    productName:"Simply Mint Whitening Toothpaste",
-    productPrice:"5.99",
+var myArr=[ {
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1591028195",
+  Name:"Back to Balance Cleanse™",
+  Price:"29.95",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+  quant:"1",
+  view:"true",
+  productPage:"../HTML/productDescription.html",
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Boswellia-60---Box-Bottle_1024x.png?v=1595862802",
+  Name:"Boswellia",
+  Price:"14.95",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+  quant:"1",
+  view:"true",
+  productPage:"../HTML/productDescription2.html",
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-58_1024x.png?v=1591027935",
+  Name:"Chyavanprash",
+  Price:"13.95",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+   quant:"1", 
+   productPage:"../HTML/productDescription3.html",
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-33_1024x.png?v=1591027962",
+  Name:"ComfortCleanse®",
+  Price:"24.99",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+   quant:"1",
+   productPage:"../HTML/productDescription4.html", 
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-30_1024x.png?v=1590836814",
+  Name:"Curcumin Complete™",
+  Price:"18.99",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+   quant:"1", 
+   productPage:"../HTML/productDescription5.html",
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-34_1024x.png?v=1591027900",
+  Name:"DermaCare®",
+  Price:"22.95",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+   quant:"1", 
+   productPage:"../HTML/productDescription6.html",
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-69_1024x.png?v=1590836866",
+  Name:"FlorAvani®",
+  Price:"39.95",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+   quant:"1", 
+   productPage:"../HTML/productDescription7.html",
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-126_1024x.png?v=1591028001",
+  Name:"GlucoCare®",
+  Price:"24.95",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+   quant:"1", 
+   productPage:"../HTML/productDescription8.html",
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-36_1024x.png?v=1590836878",
+  Name:"Guggul",
+  Price:"15.95",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+   quant:"1", 
+   productPage:"../HTML/productDescription9.html",
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-36_fbc92680-5171-436b-acc1-6a5a6a2ac59c_1024x.png?v=1591028013",
+  Name:"HeartCare®",
+  Price:"22.95",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+   quant:"1", 
+   productPage:"../HTML/productDescription10.html",
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOENERGYBOX_BOTTLE_1024x.jpg?v=1608243299",
+  Name:"Hello Energy®",
+  Price:"23.99",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+   quant:"1", 
+   productPage:"../HTML/productDescription11.html",
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOJOYBOX_BOTTLE_1024x.jpg?v=1608241956",
+  Name:"Hello Joy®",
+  Price:"23.99",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+   quant:"1", 
+   productPage:"../HTML/productDescription12.html",
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOPEACEBOX_BOTTLE_1024x.jpg?v=1608243907",
+  Name:"Hello Peace®",
+  Price:"23.99",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+   quant:"1", 
+   productPage:"../HTML/productDescription13.html",
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HolyBasil-30-box-bottle_1024x.png?v=1591028027",
+  Name:"Holy Basil",
+  Price:"12.95",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+   quant:"1", 
+   productPage:"../HTML/productDescription14.html",
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/ImmunoCare-120---Box-Bottle_1024x.png?v=1595814320",
+  Name:"ImmunoCare®",
+  Price:"23.95",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+   quant:"1", 
+   productPage:"../HTML/productDescription15.html",
+},
+{
+  Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/JointCare-120---Box-Bottle_1024x.png?v=1595814579",
+  Name:"JointCare®",
+  Price:"21.49",
+  des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
+  quant:"1", 
+  productPage:"../HTML/productDescription16.html",
 },
 ]
 
-// appednind data 
-
 var parent=document.getElementById("productslido")
-function showProducts(){
-myArr.forEach(function(element,index){
-var pdiv=document.createElement("div") 
-pdiv.setAttribute("id","pdetailsDiv") 
-var inlineDiv=document.createElement("div") 
-inlineDiv.setAttribute("id","inlineDivbtntxt") 
-var pImage=document.createElement("img")
-var pName=document.createElement("p")
-var pPrice=document.createElement("p")
-pPrice.setAttribute("id","priceInline")
-var addToCartButtun=document.createElement("button")
-addToCartButtun.setAttribute("id","buttonInline")
+//localStorage.setItem("HimalayaUsStorage",JSON.stringify([]))
+var storeArr=JSON.parse(localStorage.getItem("HimalayaUsStorage"))
+var pdiv=document.getElementById("pdiv")
+var next=document.getElementById("next")
 
-pImage.src=element.productImage
-pName.innerText=element.productName
-pPrice.innerText=element.productPrice
-addToCartButtun.innerText="AD"
-inlineDiv.append(addToCartButtun,pPrice)
-pdiv.append(pImage,pName,inlineDiv)
-parent.append(pdiv)
-})
+
+
+// var cl=0;
+// if(cl==0){var kim=myArr.slice(s,e)}
+// window.onload=function(){
+//   show(myArr.slice(0,4))
+// }
+//show(myArr.slice(s,e))
+
+var chagnelineSize=document.getElementsByClassName("chagnelineSize")
+var linesArray =Array.from(chagnelineSize)
+
+// if(st==1){
+//   linesArray[st].style.width="8%"
+//   linesArray[st].style.backgroundColor="lightseagreen"
+//   linesArray[st-1].style.width="4%"
+//   linesArray[st-1].style.backgroundColor="rgb(219, 215, 215)"
+// }
+var st=1;
+var e=5
+next.addEventListener("click",showSlide)
+ //var kim=myArr.slice(s,e)
+function showSlide(){
+   parent.innerText=""
+    show(myArr.slice(st,e))
+  if(e==myArr.length){
+      st=1;
+      e=5;
+  } 
+  linesArray[st].style.width="8%"
+  linesArray[st].style.backgroundColor="lightseagreen"
+  linesArray[st-1].style.width="4%"
+  linesArray[st-1].style.backgroundColor="rgb(219, 215, 215)"
+  for(var i=0;i<linesArray.length;i++){
+    linesArray[i].onmouseover=function(){
+      linesArray[i].style.backgroundColor="black"
+    }
+  }
+  //linesArray[e].style.width="4%"
+ // console.log(myArr);
+ // console.log(st);
+  st++;
+  e++;
+  console.log(e);
+}showSlide()
+
+//showSlide(myArr.slice(s,e))
+var miniArr=myArr.slice(s,e)
+function show(kim){
+    kim.forEach(function(el){
+        var pdiv=document.createElement("div") 
+  pdiv.setAttribute("id","pdetailsDiv") 
+  var inlineDiv=document.createElement("div") 
+  inlineDiv.setAttribute("id","inlineDivbtntxt") 
+  var pImage=document.createElement("img")
+  var pName=document.createElement("p")
+  var pPrice=document.createElement("p")
+  pPrice.setAttribute("id","priceInline")
+  var addToCartButtun=document.createElement("button")
+  addToCartButtun.setAttribute("id","buttonInline")
+
+  var popupcartDetailDiv=document.getElementById("popupcartDetailDiv")
+  addToCartButtun.onclick=function(){
+   storeArr.push(el)
+   localStorage.setItem("HimalayaUsStorage",JSON.stringify(storeArr))
+  
+   var store=JSON.parse(localStorage.getItem("HimalayaUsStorage"))
+
+   var showcartItemsNumber=document.getElementById("showItemNumber")
+
+   showcartItemsNumber.innerHTML=store.length
+   console.log(store.length);
+var itemsInCart=document.getElementsByClassName("itemsInCart")
+Array.from(itemsInCart)[0].innerHTML="There are " +((store.length))+" items in your Cart"
+var total=document.getElementsByClassName("popUpTotal")
+
+var popProductImage=document.getElementsByClassName("popProductImage")
+Array.from(popProductImage)[0].src=store[store.length-1].Image
+
+var sum=0;
+for(var i=0;i<store.length;i++){
+sum+=Number(store[i].Price)*Number(store[i].quant)
 }
-showProducts()
+Array.from(total)[0].innerHTML="Total : $"+sum.toFixed(2)
 
-// var imghoverinsta1=document.getElementById("imghoverinsta1")
+var popProductName=document.getElementsByClassName("popProductName")
+Array.from(popProductName)[0].innerHTML=store[store.length-1].Name
+
+var popUpTotal=document.getElementsByClassName("popProductPrice")
+Array.from(popUpTotal)[0].innerHTML=store[store.length-1].quant+" x "+"$"+store[store.length-1].Price
+// popupDiv
+  //  window.location.href="../index.html"
+   popupcartDetailDiv.style.display="block"
+   // smallcartShow(storeArr)
+   
+   
+  }
+  //console.log(mik);
+  //console.log(el);
+  pImage.src=el.Image
+  pName.innerText=el.Name
+  pPrice.innerText=el.Price
+  addToCartButtun.innerText="AD"
+  inlineDiv.append(addToCartButtun,pPrice)
+  pdiv.append(pImage,pName,inlineDiv)
+  parent.append(pdiv)
+    })
+
+  
+}
+var store=JSON.parse(localStorage.getItem("HimalayaUsStorage"))
+var showcartItemsNumber=document.getElementById("showItemNumber")
+showcartItemsNumber.innerHTML=store.length
+window.onload=function(){
+  showcartItemsNumber.innerHTML=store.length
+ }
+
+ var imghoverinsta1=document.getElementById("imghoverinsta1")
 var instalogo1=document.getElementById("instalogo1")
 var imghoverinsta4=document.getElementById("imghoverinsta1")
 var instalogo2=document.getElementById("instalogo2")
@@ -137,121 +326,6 @@ shopOnHoverDiv.onmouseleave=function(){
 //     upline.style.visibility="visible"
 // }
 
-// product page 
-
-
-// var proArr=[
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1591028195",
-//       Name:"Back to Balance Cleanse™",
-//       Price:"29.95",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Boswellia-60---Box-Bottle_1024x.png?v=1595862802",
-//       Name:"Boswellia",
-//       Price:"14.95",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-58_1024x.png?v=1591027935",
-//       Name:"Chyavanprash",
-//       Price:"13.95",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-33_1024x.png?v=1591027962",
-//       Name:"ComfortCleanse®",
-//       Price:"Sold",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-30_1024x.png?v=1590836814",
-//       Name:"Curcumin Complete™",
-//       Price:"18.99",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-34_1024x.png?v=1591027900",
-//       Name:"DermaCare®",
-//       Price:"22.95",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-69_1024x.png?v=1590836866",
-//       Name:"FlorAvani®",
-//       Price:"39.95",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-126_1024x.png?v=1591028001",
-//       Name:"GlucoCare®",
-//       Price:"24.95",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-36_1024x.png?v=1590836878",
-//       Name:"Guggul",
-//       Price:"15.95",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-36_fbc92680-5171-436b-acc1-6a5a6a2ac59c_1024x.png?v=1591028013",
-//       Name:"HeartCare®",
-//       Price:"22.95",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOENERGYBOX_BOTTLE_1024x.jpg?v=1608243299",
-//       Name:"Hello Energy®",
-//       Price:"23.99",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOJOYBOX_BOTTLE_1024x.jpg?v=1608241956",
-//       Name:"Hello Joy®",
-//       Price:"23.99",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HUSAHELLOPEACEBOX_BOTTLE_1024x.jpg?v=1608243907",
-//       Name:"Hello Peace®",
-//       Price:"23.99",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/HolyBasil-30-box-bottle_1024x.png?v=1591028027",
-//       Name:"Holy Basil",
-//       Price:"12.95",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/ImmunoCare-120---Box-Bottle_1024x.png?v=1595814320",
-//       Name:"ImmunoCare®",
-//       Price:"23.95",
-//     },
-//     {
-//       Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/JointCare-120---Box-Bottle_1024x.png?v=1595814579",
-//       Name:"JointCare®",
-//       Price:"Sold",
-//     },
-//   ]
-
-//   var parent=document.getElementById("productsAddingMaindiv")
-
-//   proArr.forEach(function(element,index){
-//       var productdetailContainer=document.createElement("div")
-//       var productImage=document.createElement("img")
-//       var productName=document.createElement("p")
-//       var productPrice=document.createElement("p")
-//       var addToCartBt=document.createElement("button")
-//       var btnAndPrice=document.createElement("div")
-
-//       productdetailContainer.setAttribute("class","productdetailsDiv")
-//       productImage.setAttribute("id","pImage")
-//       productName.setAttribute("id","pName")
-//       productPrice.setAttribute("id","pPrice")
-//       addToCartBt.setAttribute("id","addCartBt")
-//       btnAndPrice.setAttribute("id","btnAndPrice")
-      
-//       addToCartBt.addEventListener("click",addToCart)
-//       function addToCart (){
-
-//       }
-
-//       productImage.src=element.Image
-//       productName.innerHTML=element.Name
-//       productPrice.innerHTML=element.Price
-//       btnAndPrice.append(addToCartBt,productPrice)
-//       productdetailContainer.append(productImage,productName,btnAndPrice)
-//       parent.appendChild(productdetailContainer)
-//   });
 
   var productMainDiv=document.getElementById("productPageDiv")
   var slideshowMainDiv=document.getElementById("slideshowMainDiv")
@@ -305,7 +379,7 @@ window.onscroll=function(){
 }
 
   // smallCart
-  var showcartItemsNumber=document.getElementById("showItemNumber")
+  
   var smallcartHim=JSON.parse(localStorage.getItem("HimalayaUsStorage"))||[]
   
 var smallCartParent=document.getElementById("ProductsDivClickedOnCart")
@@ -313,7 +387,7 @@ function showp(smallcartHim){
   smallcartHim.forEach(function(el,index){
   var sdiv=document.createElement("div")
   sdiv.setAttribute("id","sdiv")
-showcartItemsNumber.innerHTML=smallcartHim.length
+//showcartItemsNumber.innerHTML=smallcartHim.length
 var pimg=document.createElement("img")
 var pname=document.createElement("p")
 var pprice=document.createElement("p")
@@ -321,74 +395,11 @@ pimg.src=el.Image
 pprice.innerHTML=el.quant+" x "+"$"+el.Price
 pname.innerHTML=el.Name
 
-// popupDiv
-//var store=JSON.parse(localStorage.getItem("HimalayaUsStorage"))
-// var itemsInCart=document.getElementsByClassName("itemsInCart")
-// Array.from(itemsInCart)[0].innerHTML="There are " +((smallcartHim.length))+" items in your Cart"
-// var total=document.getElementsByClassName("popUpTotal")
-
-// var sum=0;
-// for(var i=0;i<smallcartHim.length;i++){
-// sum+=Number(smallcartHim[i].Price)*Number(smallcartHim[i].quant)
-// }
-// Array.from(total)[0].innerHTML="Total : $"+sum.toFixed(2)
-
-// var popProductName=document.getElementsByClassName("popProductName")
-// Array.from(popProductName)[0].innerHTML=smallcartHim[smallcartHim.length-1].Name
-
-// var popUpTotal=document.getElementsByClassName("popProductPrice")
-// Array.from(popUpTotal)[0].innerHTML=smallcartHim[smallcartHim.length-1].quant+" x "+"$"+smallcartHim[smallcartHim.length-1].Price
-// popupDiv
 
 sdiv.append(pimg,pname,pprice)
-smallCartParent.append(sdiv)
+smallCartParent.append(sdiv) 
 });
 
-// prodes
-
-// var proDescArr=
-//   {
-//     Image:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-3_1024x.png?v=1591028195",
-//     Name:"Back to Balance Cleanse™",
-//     Price:"29.95",
-//     des:"Helps eliminate waste and relieves occasional bloating. Restores regularity by supporting digestive metabolism. Doesn’t rely on harsh detox herbs or fad diet ingredients. Clinically studied for comfortable, cleansing bowel movements....",
-//     quant:"1",
-//   }
-//   var count=1
-// var countershow=document.getElementById("countershow")
-// countershow.innerHTML=count
-// var buttoncounterIncr=document.getElementById("buttoncounter2")
-// buttoncounterIncr.onclick=function(){
-//   count++;
-// proDescArr.quant=count
-// countershow.innerHTML=count
-
-// }
-
-//-------------------- decreaseQuantity
-// var buttoncounter1=document.getElementById("buttoncounter1")
-// buttoncounter1.onclick=function(){
-//   if(countershow.innerHTML>1){
-//     count--;
-//     proDescArr.quant=count;
-//     countershow.innerHTML=count
-//   }
-// }
-
-// prodesc
-
-// var store=JSON.parse(localStorage.getItem("HimalayaUsStorage"))||[]
-// var addToCartBtn=document.getElementById("addToCartBtn")
-// var popupcartDetailDiv=document.getElementById("popupcartDetailDiv")
-// addToCartBtn.onclick=function(){
-//   store.push(proDescArr)
-//  // window.location.href="../HTML/productDescription.html"
-//   popupcartDetailDiv.style.display="block"
- 
-//   localStorage.setItem("HimalayaUsStorage",JSON.stringify(store))
-//   showp(store)
-//  // window.scrollTo(0,document.body.scrollHeight);
-// }
 
 
 
@@ -406,3 +417,26 @@ var smallcartShow=document.getElementById("clickonCart")
     smallcartShow.style.visibility="hidden"
   }
  }
+
+ var popupcartDetailDiv=document.getElementById("popupcartDetailDiv")
+ var closePopedScreen=document.getElementById("closePopedScreen")
+ closePopedScreen.onclick=function(){
+popupcartDetailDiv.style.display="none"
+ }
+
+var reviewDiv=document.getElementsByClassName("sliderev")
+var revdiv=Array.from(reviewDiv)
+var left=0;
+var right=3;
+window.setInterval(timer,1000)
+var slideArray=revdiv.slice(left,right)
+function timer(){
+slideArray.forEach(function(el){
+  el.style.display="block"
+
+})
+
+}
+left++;
+right++;
+timer()

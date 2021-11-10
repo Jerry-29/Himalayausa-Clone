@@ -1,8 +1,8 @@
 * {
   font-family: Poppins, sans-serif;
   font-style: normal;
-
-  /* border: 1px solid black; */
+/* 
+  border: 1px solid black; */
 }
 
 html,body{
@@ -477,13 +477,15 @@ text-align: center;
 }
 
 #slideshowMainDiv {
-  width: 100%;
+  width: 98%;
   text-align: center;
-  overflow: scroll;
-  cursor:grabbing;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 #productslido {
-  width: 98%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(16, 25%);
   flex-direction: column;
@@ -491,13 +493,18 @@ text-align: center;
   justify-items: center;
   margin: auto;
 }
+.sliderev{
+  display: none;
+}
 #pdetailsDiv {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 #pdetailsDiv > img {
-  width: 100%;
+  width: 85%;
+  margin: auto;
 }
 
 #pdetailsDiv > p {
@@ -508,19 +515,41 @@ text-align: center;
   display: flex;
 }
 #inlineDivbtntxt>button {
-  width: 18%;
  height: 44px;
-}
-#inlineDivbtntxt>p{
-margin-left: 8%;
+ width: 3%;
+height: 38px;
+font-size: 0px;
+margin-left: 1%;
+z-index: 1;
+position: absolute;
+background-image: url(../Images/shopping-bagWhite.jpg);
+background-color:#a3b49b;
+background-size: 90% 100%;
+background-repeat: no-repeat;
+background-position:center;
+border: none;
 }
 #inlineDivbtntxt>button:hover{
+width: 10%;
+height: 38px;
+color: whitesmoke;
+background-image: none;
+}
+#inlineDivbtntxt>button:hover::after{
+content: "ADD TO CART";
+font-size: 12px;
+}
+
+#inlineDivbtntxt>p{
+margin-left: 26%;
+}
+/* #inlineDivbtntxt>button:hover{
   color:  #a3b49bd3;
   width: 14%;
   z-index: 1;
   position: absolute;
   height: 7%;
-}
+} */
 #unlockWisdomDivid{
   display: flex;
   align-items: center;
@@ -559,7 +588,6 @@ background-color: #f7f8fa;
   gap: 5% 2%;
   padding: 8%;
   padding-top: .1%;
-  overflow-x: scroll;
 }
 .reviewDiv>div{
   border: 1px solid rgba(119, 136, 153, 0.383);
@@ -802,6 +830,124 @@ cursor: pointer;
   margin-left: 4%;
 }
 
+
+/* popupScreenWhenAddtoCartClicked */
+#popupcartDetailDiv{
+  z-index: 100;
+  width: 40%;
+  gap: 0%;
+  height: 620px;
+  background-color: white;
+  position: absolute;
+ left: 30%;
+ top:0%;
+ display: flex;     
+ flex-direction: column;
+align-items: center;
+position: fixed;
+display: none;
+
+}
+#popupcartDetailDiv>img{
+  height: 18%;
+  width: 18%;
+  display: block;
+  margin: auto;
+}
+.itemsInCart p{
+  text-align: justify;
+}
+.itemsInCart{
+  width: 60%;
+}
+.shop2{
+  text-align: center;
+  width: 40%;
+  width: 70%;
+  margin-left: 13% !important;
+  padding: 3%;
+  border: 1px solid rgb(221, 222, 223);
+  color: white;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;;
+}
+#popupcartDetailDiv p{
+display: block;
+margin-left: 30%;
+}
+.viewCart{
+  background-color: inherit;
+  color: black;
+  box-sizing: border-box;
+}
+.viewCart:hover{
+  border: 2px solid black;
+  
+}
+.continue{
+border: 1px solid lightslategray;
+background-color: #59694f ;
+}
+.continue:hover{
+background-color:#a3b49b;
+color: white;
+}
+
+.proceed{
+background-color:#a3b49b ;
+}
+.proceed:hover{
+background-color: #59694f;
+color: white;
+}
+.popProductPrice{
+color: #a3b49b;
+font-size: 14px;
+font-weight: 700;
+font-family: Poppins, sans-serif;
+}
+.popUpTotal{
+font-family: Poppins, sans-serif;
+color: #a3b49b;
+font-size: 18px;
+font-weight: 600;
+
+}
+.bottomLine{
+opacity: .2;
+}
+.alertProductAdded{
+text-align: center;
+}
+.totalAndPrice{
+margin-left: 40% !important;
+font-family: Poppins, sans-serif;;
+}
+.showProductDetail,.showProductImage{
+display: flex;
+/* margin: auto; */
+align-items: center ;
+justify-content: center;
+box-sizing: border-box;
+}
+.changeImg:hover{
+border: 1.5px solid black;
+}
+#closePopedScreen{
+text-align: right;
+font-size: 20px;
+display: block;
+margin: auto;
+margin-right: 6%;
+cursor: pointer;
+}
+.cursor{
+cursor: pointer;
+}
+
+
 /* goToTOP */
 #goToTOP{
   background-color: yellowgreen;
@@ -820,3 +966,44 @@ cursor: pointer;
     background-color: #5b6d5fd8;
   }
   
+  /* slidebutton */
+  .slideButton{
+    width: 3%;
+    height: 50px;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+  #next{
+    background-image: url(../Images/download.png);
+    background-size: cover;
+  }
+  #backnav{
+    background-image: url(../Images/backArrowlogo.png);
+    background-size: cover;
+  }
+  .lineOnClick{
+  display: flex;
+  width: 40%;
+  gap: 2%;
+  margin: auto;
+  height: 4px;
+  margin-top: 2%;
+  justify-content: center;
+  }
+  .lineOnClick>span{
+    width: 5%;
+    cursor: pointer;
+  }
+  .lineOnClick span{
+    height: 4px;
+    width: 4%;
+    background-color: rgb(219, 215, 215);
+  }
+ .lineOnClick>.line1{
+    width: 8%;
+    background-color: lightseagreen
+  }
+  .lineOnClick>span:hover{
+    background-color: black;
+  }

@@ -70,14 +70,15 @@ var i=0;
 var n=4
 for(var i=0;i<n;i++){
     pImage.src=myArr[i].productImage
-    // bt.innerText="remove"
-    // bt.onclick=function(){
-    //     myArr.splice(i,1)
-    // }pdiv.append(pImage,bt)
+    bt.innerText="remove"
+    bt.onclick=function(){
+        myArr.splice(i,1)
+    }
+    pdiv.append(pImage,bt)
     parent.append(pdiv)
     
 }
-</script>
+
 // var p1div=document.createElement("div") 
 // var p2div=document.createElement("div") 
 // var p3div=document.createElement("div") 
@@ -144,24 +145,25 @@ for(var i=0;i<n;i++){
 //       }
 //   }
 
- var pdiv=document.createElement("div") 
-pdiv.setAttribute("id","pdetailsDiv")
-var pImage=document.createElement("img")
-var bt=document.createElement("button")
-var i=0;
-var j=0;
-while(j<4){
-while(i<4){
-    pImage.src=myArr[i++].productImage
-    pImage.src=myArr[i++].productImage
-    pImage.src=myArr[i++].productImage
-    pImage.src=myArr[i++].productImage
-    bt.innerText="remove"
-    pdiv.append(pImage,bt)
-    parent.append(pdiv)
-    bt.onclick=function(){
-        myArr.splice(i,1)
-    }
-}
-j++;
-}
+// var pdiv=document.createElement("div") 
+// pdiv.setAttribute("id","pdetailsDiv")
+// var pImage=document.createElement("img")
+// var bt=document.createElement("button")
+// var i=0;
+// var j=0;
+// while(j<4){
+// while(i<4){
+//     pImage.src=myArr[i++].productImage
+//     pImage.src=myArr[i++].productImage
+//     pImage.src=myArr[i++].productImage
+//     pImage.src=myArr[i++].productImage
+//     bt.innerText="remove"
+//     pdiv.append(pImage,bt)
+//     parent.append(pdiv)
+//     bt.onclick=function(){
+//         myArr.splice(i,1)
+//     }
+// }
+// j++;
+// }
+</script>
