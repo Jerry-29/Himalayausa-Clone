@@ -47,15 +47,15 @@
                 </div>
             </div>
 
-          <form id="form" action="" onsubmit="submitInfo(event)">
-            <input class="emailInp" type="text" name="" id="enteremailorMob" placeholder="Email or mobile phone number ">
-            <label class="newsSelterlabel" for="newselter"><input type="checkbox" name="" id="newselter">	Email me with news and offers</label>
+          <form id="form" action="" >
+            <input  class="emailInp" type="text" id="enteremailorMob" placeholder="Email or mobile phone number ">
+            <label class="newsSelterlabel" for="newselter"><input type="checkbox" name="" id="newselter">Email me with news and offers</label>
             <p class="shipaddress">Shipping address</p>
             <div class="firstlastname">
                 <input class="nameInp" type="text" name="" id="" placeholder="First Name (Optional)">
                 <input class="lastInp" type="text" name="" id="" placeholder="Last Name">
             </div>
-            <input  class="detailinpaddress address" type="text" name="" id="" placeholder="Address">
+            <input class="detailinpaddress address" type="text" name="" id="addressInp" placeholder="Address">
             <input class="detailinpaddress appartment" type="text" name="" id="" placeholder="Appartment,suit,etc.(optional)">
             <input class="detailinpaddress city" type="text" name="" id="" placeholder="City">
              <div class="countryStateZip">
@@ -65,10 +65,9 @@
              </div>
              <input class="detailinpaddress phon" type="text" name="" id="" placeholder="Phone">
           <div class="bottomdivInfo">
-            <button class="continueToShip">Continue to shipping</button>
+            <button onclick="verify(event)" class="continueToShip">Continue to shipping</button>
             <p>Return to cart</p>
           </div>
-             
           </form>
              <hr class="bottomline">
              <div class="refundpolicy">

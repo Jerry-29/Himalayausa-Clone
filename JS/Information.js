@@ -27,52 +27,47 @@
 
 // }
 
-var address=document.getElementsByClassName(".address")
-var k=Array.from(address)[1]
-console.log(k.value);
+
+
+function verify(e){
+e.preventDefault()
+var form=document.getElementById("form")
+var address=document.getElementById("addressInp").value
 var appartment=document.querySelector(".appartment").value
 var city=document.querySelector(".city").value
 var Country=document.querySelector(".Country").value
 var State=document.querySelector(".State").value
 var Zip=document.querySelector(".Zip").value
-//var detailinpaddress=document.querySelector(".detailinpaddress")
 var phon=document.querySelector(".phon").value
 var continueToShip=document.querySelector(".continueToShip")
 
 var addressArr=JSON.parse(localStorage.getItem("UserAddress"))
-
-function submitInfo(event){
-event.preventDefault()
-// let userAddress={
-//     uAddress:address,
-//     uapparment:appartment,
-//     uCity:city,
-//     uCountry: Country,    
-//     uState:State,
-//     uZip:Zip,
-//     uPhon:phon,
-//  } 
-//  continueToShip.onclick=function(){
-    // if(address==""||appartment==""||city==""||State==""||Zip==""||phon==""){
-        // alert("Field can not empty")
-        console.log(address);
-        console.log(appartment);
-        console.log(city);
-        console.log(State);
-        console.log(Zip);
-        console.log(phon);
-    // }
-    // // else if(phon.length!=10){
-    // //     alert("Invalid Phone Number")
-    // // }
-    // else{
-    //     addressArr.push(userAddress)
-    //    localStorage.setItem("UserAddress",JSON.stringify(addressArr))
-    //    window.location.href="../HTML/Shipping.html"
-    // }
-
-
-
+let userAddress={
+    uAddress:address,
+    uapparment:appartment,
+    uCity:city,
+    uCountry: Country,    
+    uState:State,
+    uZip:Zip,
+    uPhon:phon,
+ } 
+    if(address==""||appartment==""||city==""||State==""||Zip==""||phon==""){
+        alert("Field can not empty")
+        // console.log(address);
+        // console.log(appartment);
+        // console.log(city);
+        // console.log(State);
+        // console.log(Zip);
+        // console.log(phon);
+    }
+    else if(phon.length!=10){
+        alert("Phone no. should be 10 digit only")
+    }
+    else{
+        addressArr.push(userAddress)
+       localStorage.setItem("UserAddress",JSON.stringify(addressArr))
+       window.location.href="../HTML/Shipping.html"
+    }
 }
 
 if(localStorage.getItem("UserAddress")===null){
