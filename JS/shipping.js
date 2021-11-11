@@ -85,13 +85,16 @@ addressInfo.innerHTML=info[info.length-1].uAddress+" , "+info[info.length-1].uap
        var bottomline=document.querySelector(".bottomline")
        var paymentSpanNav=document.querySelector(".paymentSpanNav")
        var shippingSpanNav=document.querySelector(".shippingSpanNav")
+       var divup=document.querySelector(".divup")
        continueToShip.onclick=function(){
           shippingMethodDiv.style.display="none"
           bottomdivInfo.style.display="none"
           paymentDiv.style.display="block"
-          bottomline.style.marginTop="100%"
+          bottomline.style.marginTop="104%"
           paymentSpanNav.style.fontWeight="bold"
           shippingSpanNav.style.fontWeight="normal"
+          divup.style.borderTopRightRadius="5px"
+          divup.style.borderTopLeftRadius="5px"
        }
 
 
@@ -138,6 +141,6 @@ addressInfo.innerHTML=info[info.length-1].uAddress+" , "+info[info.length-1].uap
        var clickOnAmazonPAy=document.querySelector(".clickOnAmazonPAy")
        clickOnAmazonPAy.onclick=function(){
            clickOnAmazonPAy.checked=false
-           alert("Sorry ! This payment method currently not Available")
+           alert("Sorry ! This payment method is currently not Available")
            
        }

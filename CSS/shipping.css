@@ -150,8 +150,7 @@ font-size: 14px;
 .shiipingInfo>div{
     display: flex;
     align-items: center;
-    gap: 2%;
-    margin-top: 2%;
+   
 }
 .shiipingInfo>div>p{
     width: 50%;
@@ -194,6 +193,12 @@ font-size: 14px;
 }
 .contactANdAddress{
     border: 1px solid lightslategrey;
+}
+
+.divup{
+    border-bottom: none;
+    /* border-top-right-radius: 5px;
+    border-top-left-radius: 5px; */
 }
 .contactANdAddress>p{
     font-size: 14px;
@@ -249,10 +254,10 @@ font-size: 14px;
 
 .paymentDiv{
     width: 44.5%;
-    height: 445px;
+    height: 460px;
     z-index: 2;
     position: absolute;
-    top: 59%;
+    top: 50%;
     background-color: white;
     display: none;
 
@@ -383,4 +388,22 @@ font-size: 14px;
 }
 .div1 input{
     cursor: pointer;
+}
+.topPaydiv{
+    width: 82.3%;
+    display: flex;
+    gap: 4%;
+    border: 1px solid lightslategrey;
+    padding: 3%;
+    margin-top: -1%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    margin-bottom: 3%;
+}
+.topPaydivspan1{
+    margin-left: 1%;
+}
+.topPaydivspan2{
+    margin-left: -12%;
 }
