@@ -1,5 +1,6 @@
 *{
     /* border: 1px solid black; */
+    font-family: "Open Sans", sans-serif !important;
 }
 .main{
     width: 100%;
@@ -30,6 +31,10 @@ background-color:#f4f7f3;
     flex-direction: row;
     margin: 3%;
 }
+.pagelocation>span{
+    font-size: 12px;
+    color: #55624f;
+}
 .paybuttonsdiv{
     width: 85%;
     display: flex;
@@ -47,7 +52,7 @@ background-color:#f4f7f3;
 .expcheckout{
     z-index: 1;
     position: absolute;
-    top: 27%;
+    top: 25.8%;
     width: 12%;
     background-color: white;
     left: 18%;
@@ -56,6 +61,9 @@ background-color:#f4f7f3;
 }
 .lineOr{
     width: 92%;
+    font-size: 12px;
+    opacity: 0.4;
+    color: #737373 ;
 }
 .lineOr>hr{
     margin-top: 6%;
@@ -65,18 +73,37 @@ background-color:#f4f7f3;
     position: absolute;
     text-align: center;
     position: sticky;
-  margin-top: -4%;
+    margin-top: -3.3%;
     left: 22%;
     width: 8%;
     background-color: white;
 }
 .contatctinfoAndlogin{
     display: flex;
-    gap: 22%;
+    gap: 13%;
     margin-top: 6%;
+}
+.newsSelterlabel{
+    font-size: 14px;
+    color: #545454;
+    font-weight: 400;
+    line-height: 18px;
+    opacity: .9;
 }
 .loginOrSignup{
     display: flex;
+    font-size: 14px;
+    color: #545454;
+    font-family: "Open Sans", sans-serif;
+    line-height: 23px;
+    opacity: .9;
+}
+.loginOrSignup span{
+    font-size: 14px;
+    color: #545454;
+    font-family: "Open Sans", sans-serif;
+    line-height: 21px;
+    opacity: .9;
 }
 #enteremailorMob{
     width: 100%;
@@ -91,8 +118,14 @@ background-color:#f4f7f3;
 }
 .shipaddress{
     margin-top: 6%;
-    font-size: 18px;
     font-family:"Open Sans", sans-serif;
+    font-size: 18px;
+    color: #333333;
+    font-family: "Open Sans", sans-serif;
+    line-height: 23px;
+    width: 40%;
+    opacity: .9;
+
 }
 .firstlastname{
     width: 100%;
@@ -147,9 +180,10 @@ border-color: rgb(225, 226, 228);
 }
 .refundpolicy>p{
     width:50%;
-    font-size: 14px;
+    font-size: 12px;
+    color: #55624f;
+    font-weight: 400;
 }
-
 .coupnAndApply{
     margin-top: 5%;
     width: 100%;
@@ -182,9 +216,7 @@ border-color: rgb(225, 226, 228);
     font-size: 14px;
     color: #6e6f6d;
 }
-.navarrow{
-    padding: 13%;
-}
+
 
 /* products */
 .Imagenameprice{
@@ -205,14 +237,46 @@ border-color: rgb(225, 226, 228);
     gap: 10%;
 }
 .pdiv>p{
-    font-size: 70%;
+   font-size: 14px;
+   color: #313131;
+   font-weight: 600;
+   font-family: "Open Sans", sans-serif;;
+}
+.sub{
+    font-size: 14px;
+    color: #515250;
+}
+.onInfo{
+    font-weight: bold;
+}
+.tot{
+    font-size: 16px;
+    color: #313131;
+    font-weight: 400;
+}
+.subtotal #usd{
+    color: #6e6f6d;
+    font-size: 12px;
+}
+.totalSum{
+    font-size: 24px;
+    color: #313131;
+    font-weight: 600;
+}
+.totalfinal{
+    display: flex;
+    align-items: center;
 }
 .pdiv>img{
 width: 30%;
 }
 .pPrice{
-    width: 30%;
-    font-size: 70%;
+    font-size: 14px;
+    color: #313131;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    opacity: .7;
+    
 }
 .shopPay{
     background-image: url(../Images/shopPay.png);
@@ -245,4 +309,12 @@ width: 30%;
 }
 .bottomdivInfo>p{
 cursor: pointer;
+}
+.ctInfo{
+    font-size: 18px;
+    color: #333333;
+    font-family: "Open Sans", sans-serif;
+    line-height: 23px;
+    width: 40%;
+    opacity: .9;
 }

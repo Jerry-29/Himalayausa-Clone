@@ -13,10 +13,7 @@
     height: 719px;
     padding: 5%;
     background-color: white;
-}
-.leftmain{
-    /* height: 1200px; */
-}
+} 
 .rightmain{
 background-color:#f4f7f3;
 }
@@ -358,7 +355,6 @@ font-size: 14px;
     margin-top: 4%;
     gap: 6%;
     align-items: center;
-
 }
 #payNow{
     width: 24%;
