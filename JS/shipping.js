@@ -16,7 +16,7 @@ function showProducts(){
         Pimg.setAttribute("class","Pimg")
         
         Pimg.src=element.Image
-        price.innerHTML="$ "+element.Price+" x "+element.quant
+        price.innerHTML="$"+element.Price+" x "+element.quant
         name.innerHTML=element.Name
         // pQt.innerHTML=element.quant
         pdiv.append(Pimg,name)
@@ -32,14 +32,14 @@ var totalSum=document.querySelector(".totalSum")
 for(var i=0;i<prodArr.length;i++){
     sum+=Number(prodArr[i].Price)*Number(prodArr[i].quant)
 }
-subtotal.innerHTML="$ "+sum.toFixed(2)
-totalSum.innerHTML="USD $"+sum.toFixed(2)
+subtotal.innerHTML=" $"+sum.toFixed(2)
+totalSum.innerHTML=" $"+sum.toFixed(2)
 
 var coupn=document.getElementById("coupn")
 var coupnBt=document.querySelector(".coupnBt")
 coupnBt.onclick=function(){
 if(coupn.value==="FIRSTUSER50"){
-    totalSum.innerHTML="USD $"+((sum*50)/100).toFixed(2)
+    totalSum.innerHTML="$"+((sum*50)/100).toFixed(2)
 }else{
     alert("Invalid Coupon Code .Try FIRSTUSER50")
 }
@@ -48,8 +48,8 @@ if(coupn.value==="FIRSTUSER50"){
 var info=JSON.parse(localStorage.getItem("UserAddress"))
 var addressInfo=document.querySelector(".addressInfo")
 var contactInfo=document.querySelector(".contactInfo")
-contactInfo.innerHTML="Contact : "+info[info.length-1].uPhon
-addressInfo.innerHTML="Ship to : "+info[info.length-1].uAddress+" , "+info[info.length-1].uapparment+" , "+info[info.length-1].uCity+" , "+
+contactInfo.innerHTML=info[info.length-1].uPhon
+addressInfo.innerHTML=info[info.length-1].uAddress+" , "+info[info.length-1].uapparment+" , "+info[info.length-1].uCity+" , "+
                     info[info.length-1].uCity+"-"+info[info.length-1].uZip+","+info[info.length-1].uState+","+info[info.length-1].uCountry;
 
 
@@ -63,3 +63,81 @@ addressInfo.innerHTML="Ship to : "+info[info.length-1].uAddress+" , "+info[info.
            }
        })
 
+
+       var gotoCart=document.querySelector(".gotoCart")
+       gotoCart.onclick=function(){
+           window.location.href="../HTML/Cart.html"
+       }
+
+
+
+       var goToInfo=document.querySelectorAll(".goToInfo")
+       goToInfo.forEach((el)=>{
+        el.onclick=function(){
+            window.location.href="../HTML/Information.html"
+        }
+       })
+
+       var shippingMethodDiv=document.querySelector(".shippingMethodDiv")
+       var continueToShip=document.querySelector(".continueToShip")
+       var bottomdivInfo=document.querySelector(".bottomdivInfo")
+       var paymentDiv=document.querySelector(".paymentDiv")
+       var bottomline=document.querySelector(".bottomline")
+       var paymentSpanNav=document.querySelector(".paymentSpanNav")
+       var shippingSpanNav=document.querySelector(".shippingSpanNav")
+       continueToShip.onclick=function(){
+          shippingMethodDiv.style.display="none"
+          bottomdivInfo.style.display="none"
+          paymentDiv.style.display="block"
+          bottomline.style.marginTop="100%"
+          paymentSpanNav.style.fontWeight="bold"
+          shippingSpanNav.style.fontWeight="normal"
+       }
+
+
+
+// payment--------------------------------------------------------------------------------------------------------
+
+
+       var retToinfo=document.querySelector(".retToinfo")
+       retToinfo.onclick=function(){
+        window.location.href="../HTML/Information.html"
+       }
+
+       var payNow=document.getElementById("payNow")
+       payNow.onclick=function(){
+          // alert("Thankyou for shopping with us")
+       }
+
+       function pay(event){
+           event.preventDefault()
+
+           var creditCardNumber=document.querySelector(".creditCardNumber").value
+           var nameOnCard=document.querySelector(".nameOnCard").value
+           var expdate=document.querySelector(".expdate").value
+           var cvv=document.querySelector(".cvv").value
+
+           if(creditCardNumber==""||nameOnCard==""||expdate==""||cvv==""){
+               alert("All fields are compulsory")
+           }else if(creditCardNumber.length!=16){
+                   alert("Invalid Card Number")
+               }
+           else if(expdate.length!=5){
+               alert("Invalid Expiry Date")
+           }
+           else if(cvv.length!=3){
+               alert("Invalid CVV")
+           }
+          else if(creditCardNumber.length===16 && nameOnCard.length>3 && expdate.length==5 && cvv.length==3){
+               alert("Payment Successful")
+           }
+
+
+       }
+
+       var clickOnAmazonPAy=document.querySelector(".clickOnAmazonPAy")
+       clickOnAmazonPAy.onclick=function(){
+           clickOnAmazonPAy.checked=false
+           alert("Sorry ! This payment method currently not Available")
+           
+       }
