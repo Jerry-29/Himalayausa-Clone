@@ -459,12 +459,23 @@ var flterbyQuant=document.getElementById("flterbyQuant")
 function getSelectValueN(){
   if(flterbyQuant.value==="6"){
    proArr= proArr.slice(0,6)
-    console.log(newsliceArr); 
+   // console.log(newsliceArr); 
     //newsliceArr
     showprod(proArr)
+  }else if(flterbyQuant.value==="8"){
+    proArr=proArr.slice(0,8)
+    showprod(proArr)
   }
-  // vert(newsliceArr)
+  else if(flterbyQuant.value==="14"){
+    proArr=proArr.slice(0,14)
+    showprod(proArr)
+  }
+  else if(flterbyQuant.value=="All"){
+    showprod(proArr)
+  }
+  // vert(newsliceArr)=
    }
+  // getSelectValueN(proArr)
 ////need debugging
 
 var v=0

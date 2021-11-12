@@ -261,6 +261,8 @@ function show(kim){
   var pImage=document.createElement("img")
   var pName=document.createElement("p")
   var pPrice=document.createElement("p")
+  var pdivimg=document.createElement("div")
+  pdivimg.setAttribute("id","pdivImgonly")
   pPrice.setAttribute("id","priceInline")
   var addToCartButtun=document.createElement("button")
   addToCartButtun.setAttribute("id","buttonInline")
@@ -304,15 +306,17 @@ Array.from(popUpTotal)[0].innerHTML=store[store.length-1].quant+" x "+"$"+store[
   }
   //console.log(mik);
   //console.log(el);
+  
   pImage.src=el.Image
   pName.innerText=el.Name
   pPrice.innerText=el.Price
   addToCartButtun.innerText="AD"
-  pdiv.onclick=function(){
+  pdivimg.onclick=function(){
     window.location.href=el.productPage
   }
+  pdivimg.append(pImage)
   inlineDiv.append(addToCartButtun,pPrice)
-  pdiv.append(pImage,pName,inlineDiv)
+  pdiv.append(pdivimg,pName,inlineDiv)
   parent.append(pdiv)
     })
 
@@ -523,4 +527,15 @@ timer()
 var hoverforproductpageToshow=document.getElementById("hoverforproductpageToshow")
 hoverforproductpageToshow.onclick=function(){
   window.location.href="../HTML/Products.html"
+}
+
+document.querySelector(".continue").onclick=function(){
+  popupcartDetailDiv.style.display="none"
+body.style.opacity="1"
+}
+document.querySelector(".viewCart").onclick=function(){
+  window.location.href="../HTML/Cart.html"
+}
+document.querySelector(".proceed").onclick=function(){
+  window.location.href="../HTML/Information.html"
 }
