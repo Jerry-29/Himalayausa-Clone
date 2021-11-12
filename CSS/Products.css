@@ -934,4 +934,20 @@ cursor: pointer;
 .ScartName{
   margin-left: -20% !important;
 }
- 
+#goToTOP{
+  background-color: yellowgreen;
+  right: 2%;
+  box-sizing: border-box;
+  z-index: 10000000000000000000000000000000000;
+  position:fixed;
+  top: 87%;
+  width: 5%;
+  height: 60px;
+  border: none;
+  background-color: #5b6d5f;
+  display: none;
+  }
+  #goToTOP:hover{
+    background-color: #5b6d5fd8;
+  }
+  

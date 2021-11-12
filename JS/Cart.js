@@ -188,3 +188,17 @@ proceedToCheckout.onclick=function(){
   // window.location.href="../HTML/"
   window.location.href="../HTML/Information.html"
 }
+   // scrollToTop
+
+   var goToTOP=document.getElementById("goToTOP")
+   goToTOP.onclick=function(){
+     document.body.scrollTop = 0;
+     document.documentElement.scrollTop = 0;
+   }
+   window.onscroll=function(){
+     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+       goToTOP.style.display = "block";
+     } else {
+       goToTOP.style.display = "none";
+     }
+   }

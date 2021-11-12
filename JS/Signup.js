@@ -116,3 +116,57 @@ shopOnHoverDiv.onmouseleave=function(){
       }
      
   }
+
+  // smallCart
+  var showcartItemsNumber=document.getElementById("showItemNumber")
+  var smallcartHim=JSON.parse(localStorage.getItem("HimalayaUsStorage"))
+  
+var smallCartParent=document.getElementById("ProductsDivClickedOnCart")
+function showp(){
+  smallcartHim.forEach(function(el,index){
+  var sdiv=document.createElement("div")
+  sdiv.setAttribute("id","sdiv")
+showcartItemsNumber.innerHTML=smallcartHim.length
+var pimg=document.createElement("img")
+var pname=document.createElement("p")
+pname.setAttribute("class","ScartName")
+var pprice=document.createElement("p")
+pimg.src=el.Image
+pprice.innerHTML="$"+el.Price
+pname.innerHTML=el.Name
+sdiv.append(pimg,pname,pprice)
+smallCartParent.append(sdiv)
+});
+
+
+}showp()
+  // smallCart
+var cm=0;
+var smallcartShow=document.getElementById("clickonCart")
+ var clickedonCart=document.getElementById("clickToShowCart")
+ clickedonCart.onclick=function(){
+  cm++;
+  if(cm%2!==0){
+    smallcartShow.style.visibility="visible"
+  }else{
+    smallcartShow.style.visibility="hidden"
+  }
+ }
+ document.querySelector(".Scheckout").onclick=function(){
+  window.location.href="../HTML/Information.html"
+}
+document.querySelector(".viewCartpage").onclick=function(){
+  window.location.href="../HTML/Cart.html"
+}
+document.querySelector("#hoverforproductpageToshow").onclick=function(){
+  window.location.href="../HTML/Products.html"
+}
+document.querySelector(".viewCartpage").onclick=function(){
+  window.location.href="../HTML/Cart.html"
+}
+document.querySelectorAll(".regopt").onclick=function(){
+  window.location.href="../HTML/Signup.html"
+}
+document.querySelectorAll("checkoutopt").onclick=function(){
+  window.location.href="../HTML/Information.html"
+}
