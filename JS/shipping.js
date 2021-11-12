@@ -141,7 +141,7 @@ function pay(event) {
     expdate.length == 5 &&
     cvv.length == 3
   ) {
-    window.location.href = "../HTML/Thankyou.js";
+    window.location.href = "../HTML/Thankyou.html";
   }
 }
 
