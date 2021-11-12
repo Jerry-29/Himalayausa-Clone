@@ -254,3 +254,13 @@ window.onscroll=function(){
     goToTOP.style.display = "none";
   }
 }
+document.querySelector(".continue").onclick=function(){
+  popupcartDetailDiv.style.display="none"
+body.style.opacity="1"
+}
+document.querySelector(".viewCart").onclick=function(){
+  window.location.href="../HTML/Cart.html"
+}
+document.querySelector(".proceed").onclick=function(){
+  window.location.href="../HTML/Information.html"
+}
