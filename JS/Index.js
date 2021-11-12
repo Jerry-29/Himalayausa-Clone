@@ -275,7 +275,7 @@ function show(kim){
    var showcartItemsNumber=document.getElementById("showItemNumber")
 
    showcartItemsNumber.innerHTML=store.length
-   console.log(store.length);
+   //console.log(store.length);
 var itemsInCart=document.getElementsByClassName("itemsInCart")
 Array.from(itemsInCart)[0].innerHTML="There are " +((store.length))+" items in your Cart"
 var total=document.getElementsByClassName("popUpTotal")
@@ -308,6 +308,9 @@ Array.from(popUpTotal)[0].innerHTML=store[store.length-1].quant+" x "+"$"+store[
   pName.innerText=el.Name
   pPrice.innerText=el.Price
   addToCartButtun.innerText="AD"
+  pdiv.onclick=function(){
+    window.location.href=el.productPage
+  }
   inlineDiv.append(addToCartButtun,pPrice)
   pdiv.append(pImage,pName,inlineDiv)
   parent.append(pdiv)
