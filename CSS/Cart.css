@@ -5,15 +5,16 @@
   /* border: 1px solid black; */
 }
 
-html,body{
+html,
+body {
   max-width: 100%;
   margin: 0%;
   padding: 0%;
 }
 #container {
-  max-width:100%;
+  max-width: 100%;
   /* height: 100%; */
-} 
+}
 .headDiv {
   width: 100%;
   height: 40px;
@@ -37,10 +38,9 @@ html,body{
   font-weight: 400;
 }
 #NavBar {
- 
   display: flex;
   align-items: center;
-  margin-top: .6%;
+  margin-top: 0.6%;
 }
 #logoDiv {
   margin-right: 240%;
@@ -55,7 +55,7 @@ html,body{
   height: 38%;
   cursor: pointer;
 }
-.hoversearch{
+.hoversearch {
   visibility: hidden;
   background-color: black;
   color: #fff;
@@ -66,9 +66,9 @@ html,body{
   top: 18%;
   right: 6.5%;
   margin-left: -60px;
- font-size: 14px;
+  font-size: 14px;
 }
-.hoversearch::after{
+.hoversearch::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -78,11 +78,11 @@ html,body{
   border-style: solid;
   border-color: transparent transparent black transparent;
 }
-.showSearchText:hover .hoversearch{
+.showSearchText:hover .hoversearch {
   visibility: visible;
 }
 
-.hoveruser{
+.hoveruser {
   visibility: hidden;
   background-color: black;
   color: #fff;
@@ -95,7 +95,7 @@ html,body{
   margin-left: -60px;
   font-size: 14px;
 }
-.hoveruser::after{
+.hoveruser::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -105,11 +105,11 @@ html,body{
   border-style: solid;
   border-color: transparent transparent black transparent;
 }
-.hoverusertext:hover .hoveruser{
+.hoverusertext:hover .hoveruser {
   visibility: visible;
 }
 
-.hovercart{
+.hovercart {
   visibility: hidden;
   background-color: black;
   color: #fff;
@@ -122,7 +122,7 @@ html,body{
   margin-left: -60px;
   font-size: 14px;
 }
-.hovercart::after{
+.hovercart::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -132,13 +132,13 @@ html,body{
   border-style: solid;
   border-color: transparent transparent black transparent;
 }
-.hovercarttxt:hover .hovercart{
+.hovercarttxt:hover .hovercart {
   visibility: visible;
 }
 
 /* clickOnUser */
 
-.clickOnUser{
+.clickOnUser {
   visibility: hidden;
   position: absolute;
   z-index: 1;
@@ -151,7 +151,7 @@ html,body{
   padding: 6%;
   padding-top: 2%;
 }
-.clickOnUser>p{
+.clickOnUser > p {
   margin-left: -50%;
   text-align: start;
   font-size: 14px;
@@ -161,51 +161,50 @@ html,body{
 /* clickOnUserEnd */
 
 /* searchStart */
-#clickonSearchOption{
-  visibility: hidden;                  
+#clickonSearchOption {
+  visibility: hidden;
   position: absolute;
   z-index: 5;
   width: 92%;
-  right:0%;
+  right: 0%;
   top: 0%;
   height: 26%;
   padding: 4%;
   padding-top: 2%;
   background-color: white;
- 
-}                                
-                                                        /* visibility */
-.whatAreYouLookingFor{
+}
+/* visibility */
+.whatAreYouLookingFor {
   width: 100%;
   display: flex;
   gap: 76%;
   margin-left: 2%;
 }
-.whatAreYouLookingFor>p{
+.whatAreYouLookingFor > p {
   color: #777777;
   font-size: 16px;
 }
-.whatAreYouLookingFor>button{
+.whatAreYouLookingFor > button {
   width: 5%;
   border: none;
   font-size: 20px;
   background-color: inherit;
   cursor: pointer;
 }
-.searchAndbutton{
+.searchAndbutton {
   display: flex;
 }
-.searchAndbutton>input{
+.searchAndbutton > input {
   padding: 2%;
   width: 80%;
   margin-top: 1%;
   font-size: 24px;
   font-weight: 500;
-  color:#333333;
+  color: #333333;
   border: none;
   border-bottom: 1px solid lightslategray;
 }
-.searchAndbutton>button{
+.searchAndbutton > button {
   width: 20%;
   margin-top: 1%;
   margin-left: 60%;
@@ -213,17 +212,14 @@ html,body{
   border: none;
   cursor: pointer;
 }
-.btnimg{
+.btnimg {
   width: 30px;
   height: 30px;
 }
 
-
 /* searchEnd */
 
 /* clickonCart */
-
-
 
 #searchAccountdiv {
   width: 30%;
@@ -244,7 +240,6 @@ html,body{
   position: relative;
   cursor: pointer;
   z-index: 5;
-
 }
 #shopAboutStore > span:before {
   content: "";
@@ -310,51 +305,51 @@ html,body{
 
 /* footer start */
 
-.foot{
+.foot {
   margin-top: 1%;
   background-color: #eef2f0;
   padding: 5%;
   padding-top: 1%;
   padding-bottom: 2%;
 }
-.footerdiv{
-  display: flex     ;
+.footerdiv {
+  display: flex;
 }
-.footerdiv>div{
+.footerdiv > div {
   width: 24%;
 }
-.footerdiv>div>p{
+.footerdiv > div > p {
   color: #919795;
   line-height: 18px;
 }
-.footerdiv>div>h4{
+.footerdiv > div > h4 {
   color: #595c5b;
 }
-.logoandtextDiv>input{
-   width: 82%;
+.logoandtextDiv > input {
+  width: 82%;
   height: 10%;
   border: none;
 }
-.logoandtextfollowdiv{
-   width: 100%;
+.logoandtextfollowdiv {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 2%;
 }
-.logoDivbottom>img{
+.logoDivbottom > img {
   width: 15px;
   height: 15px;
   margin-left: 16px;
   opacity: 0.3;
 }
-.bottomlastdiv{
+.bottomlastdiv {
   color: #595c5b;
 }
-.headtxt{
+.headtxt {
   font-size: 14px;
-  opacity: .6;
+  opacity: 0.6;
 }
-.bottolasttext{
+.bottolasttext {
   width: 100%;
   border: 1px solid #8d8d8d;
   opacity: 0.6;
@@ -370,7 +365,7 @@ html,body{
 
 /* navshop */
 
-#shopOnHoverDiv{
+#shopOnHoverDiv {
   width: 82.8%;
   height: 500px;
   z-index: 2;
@@ -378,36 +373,37 @@ html,body{
   display: flex;
   padding-left: 8%;
   padding-right: 8%;
-  background-color:#ffffff;
-  visibility: hidden;    
-  top: 19%;                  /*visible*/
+  background-color: #ffffff;
+  visibility: hidden;
+  top: 19%; /*visible*/
 }
-.lefthoverdiv{
+.lefthoverdiv {
   width: 60%;
   height: 100%;
 }
-.lefthoverdiv h4,p:hover{
-color: #838b7e;
-cursor: pointer;
+.lefthoverdiv h4,
+p:hover {
+  color: #838b7e;
+  cursor: pointer;
 }
-.righthoverdiv{
+.righthoverdiv {
   width: 25%;
   height: 100%;
   display: flex;
- align-items: center;
- height: 440px;
- flex-direction: column;
- text-align: center;
+  align-items: center;
+  height: 440px;
+  flex-direction: column;
+  text-align: center;
 }
-.righthoverdiv>img{
+.righthoverdiv > img {
   width: 100%;
   height: 300px;
 }
-.shonOnhoverupperdiv{
+.shonOnhoverupperdiv {
   border-top: 1px solid rgb(235, 233, 233);
   display: flex;
 }
-.featuredprod{
+.featuredprod {
   background-color: tomato;
   width: 50%;
   color: white;
@@ -417,83 +413,83 @@ cursor: pointer;
   position: relative;
   bottom: 30px;
 }
-.featuredprod+p{
+.featuredprod + p {
   margin-top: -12%;
   padding: 0px;
 }
-.shonOnhoverupperdiv>div{
+.shonOnhoverupperdiv > div {
   width: 33%;
 }
-.lefthoverdiv h4{
+.lefthoverdiv h4 {
   color: rgb(70, 70, 60);
-  opacity: .9;
+  opacity: 0.9;
   font-weight: 900;
 }
-.lefthoverdiv h4:hover{
+.lefthoverdiv h4:hover {
   opacity: 0.4;
 }
-.shonOnhoverupperdiv>div>p{
+.shonOnhoverupperdiv > div > p {
   line-height: 10px;
 }
-.shoponhoverlowerdiv{
+.shoponhoverlowerdiv {
   display: flex;
 }
-.shoponhoverlowerdiv>div{
+.shoponhoverlowerdiv > div {
   width: 33%;
 }
-.shoponhoverlowerdiv>div>p{
+.shoponhoverlowerdiv > div > p {
   line-height: 10px;
 }
-.lasthoverdivtext1{
+.lasthoverdivtext1 {
   margin-top: 5.7%;
 }
-.lasthoverdivtext2{
+.lasthoverdivtext2 {
   margin-top: 5.7%;
 }
-.centerline{
-  background-color:#777777 ;
-  opacity: .1;
+.centerline {
+  background-color: #777777;
+  opacity: 0.1;
 }
-.upperLine{
-  opacity: .2;
+.upperLine {
+  opacity: 0.2;
   visibility: hidden;
 }
-#hoverover{
+#hoverover {
   width: 5%;
   height: 9.5%;
-   top: 60px;
+  top: 60px;
   background-color: inherit;
   z-index: 4;
-  position:absolute;
+  position: absolute;
   cursor: pointer;
 }
 
-#productPageDiv{
+#productPageDiv {
   background-color: white;
   width: 100%;
   text-align: center;
 }
 
 /* navagationDivAddressBar */
-.homeherb{
+.homeherb {
   background-color: rgb(248, 248, 248);
   text-align: left;
   color: #777777;
   font-size: 12px;
-  padding: .6%;
+  padding: 0.6%;
 }
-.homeherb>.hom{
+.homeherb > .hom {
   margin-left: 3.2%;
   cursor: pointer;
 }
-.slash{
+.slash {
   font-size: 16px;
 }
 
 /* navagationDivAddressBar */
 
 /* cart */
-.carthd{
+.carthd {
   color: #333333;
   font-weight: 510;
   font-style: normal;
@@ -501,68 +497,67 @@ cursor: pointer;
   font-family: Poppins, sans-serif;
   margin-left: -5%;
 }
-  #cartdiv{
-      width: 100%;
-  }
-#cartdiv>h1{
-    text-align: center;
+#cartdiv {
+  width: 100%;
 }
-.upperline{
-    margin-top: 3.5%;
+#cartdiv > h1 {
+  text-align: center;
 }
-.continueClearUpdate{
-    width: 100%;
-    display: flex;
-    gap: 30%;
+.upperline {
+  margin-top: 3.5%;
 }
-.continue{
-    width: 40%;
+.continueClearUpdate {
+  width: 100%;
+  display: flex;
+  gap: 30%;
 }
-.continue>button{
-    width: 50%;
+.continue {
+  width: 40%;
 }
-.clearUpdate{
-    width: 30%;
-    display: flex;
-    gap: 15%;
+.continue > button {
+  width: 50%;
 }
-.centerline>button{
-    width: 100%;
+.clearUpdate {
+  width: 30%;
+  display: flex;
+  gap: 15%;
 }
-.grandTotalshiftleft{
-    width: 95%;
-    margin-top: 4%;
-    display: flex;
-    justify-content: flex-end;
+.centerline > button {
+  width: 100%;
 }
-.grandTotal{
-    background-color: rgb(116, 122, 88);
-    width: 40%;
-    text-align: center;
-    padding: 3%;
-    color: white;
-   
+.grandTotalshiftleft {
+  width: 95%;
+  margin-top: 4%;
+  display: flex;
+  justify-content: flex-end;
 }
-.grandTotal>button{
-    width: 100%;
-    padding: 2%;
-    background-color: #97aa9b;
-    border: none;
-    color: #fbfdff;
-    font-weight: 100;
-    font-family: Poppins, sans-serif;
+.grandTotal {
+  background-color: rgb(116, 122, 88);
+  width: 40%;
+  text-align: center;
+  padding: 3%;
+  color: white;
 }
-.grandTotal>button:hover{
+.grandTotal > button {
+  width: 100%;
+  padding: 2%;
+  background-color: #97aa9b;
+  border: none;
+  color: #fbfdff;
+  font-weight: 100;
+  font-family: Poppins, sans-serif;
+}
+.grandTotal > button:hover {
   background-color: white;
   color: black;
 }
-#productAddincart{
+#productAddincart {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(1,100%);
+  grid-template-columns: repeat(1, 100%);
   flex-direction: column;
 }
-#prodiv{
+#prodiv {
   width: 90%;
   display: flex;
   align-items: center;
@@ -570,16 +565,15 @@ cursor: pointer;
   justify-content: space-between;
   border-bottom: 1px solid lightslategray;
 }
-#prodiv>img{
+#prodiv > img {
   width: 28%;
   height: 60%;
-  
 }
-#prodiv>button{
+#prodiv > button {
   width: 30px;
   height: 30px;
 }
-#incredecrediv{
+#incredecrediv {
   display: flex;
   width: 30%;
   justify-content: center;
@@ -588,7 +582,7 @@ cursor: pointer;
   overflow: hidden;
   align-items: center;
 }
-#incredecrediv>button{
+#incredecrediv > button {
   width: 15%;
   height: 55px;
   padding: 3%;
@@ -599,7 +593,7 @@ cursor: pointer;
   padding-top: 4%;
   cursor: pointer;
 }
-#incredecrediv>p{
+#incredecrediv > p {
   width: 10%;
   background-color: #f7f8fa;
   height: 30px;
@@ -611,23 +605,23 @@ cursor: pointer;
   font-size: 20px;
   cursor: default;
 }
-#removeItembtn{
+#removeItembtn {
   background-image: url(../Images/trashicon.png);
   background-size: contain;
   border: none;
   cursor: pointer;
 }
-#continueshopping{
+#continueshopping {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 14px;
-  background-color:inherit;
+  background-color: inherit;
   border: none;
   cursor: pointer;
   margin-top: 4%;
 }
-#clearAllbtn{
+#clearAllbtn {
   font-size: 14px;
   display: flex;
   border: none;
@@ -636,7 +630,7 @@ cursor: pointer;
   align-items: center;
   margin-top: 4%;
 }
-#updateLogobtn{
+#updateLogobtn {
   font-size: 14px;
   display: flex;
   border: none;
@@ -645,27 +639,26 @@ cursor: pointer;
   align-items: center;
   margin-top: 4%;
 }
-.umayb{
+.umayb {
   margin-left: 4.5%;
 }
-.proceedToCheckout{
+.proceedToCheckout {
   cursor: pointer;
 }
 /* cartEnd */
-#goToTOP{
+#goToTOP {
   background-color: yellowgreen;
   right: 2%;
   box-sizing: border-box;
   z-index: 10000000000000000000000000000000000;
-  position:fixed;
+  position: fixed;
   top: 87%;
   width: 5%;
   height: 60px;
   border: none;
   background-color: #5b6d5f;
   display: none;
-  }
-  #goToTOP:hover{
-    background-color: #5b6d5fd8;
-  }
-  
+}
+#goToTOP:hover {
+  background-color: #5b6d5fd8;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
         type="image/png">
     <link rel="stylesheet" href="../CSS/Signup.css">
 </head>
+
 <body>
     <div id="container">
         <div class="headDiv">
@@ -54,28 +56,31 @@
                         <span id="hoverUser" class="hoveruser">My Account</span>
                     </span>
                     <!-- <span class="hovercarttxt"><img class="logo" src="../Images/shopping-bag.png" alt=""> -->
+                    <span id="hoverCart" class="hovercart">Cart</span>
+                    </span>
+                    <span id="clickToShowCart" class="hovercarttxt"><img class="logo" src="../Images/shopping-bag.png"
+                            alt="">
+                        <!-- clickOnCart     -->
+                        <div id="clickonCart">
+                            <h3>Shopping Cart</h3>
+
+                            <div id="ProductsDivClickedOnCart">
+
+                            </div>
+                            <span>
+                                <h4 class="smallCartTotalh4">Total :</h4>
+                            </span>
+                            <button class="Scheckout">PROCEED TO CHECKOUT</button>
+                            <p class="viewCartpage">View Cart</p>
+                        </div>
+                        <!-- clickOnCart     -->
                         <span id="hoverCart" class="hovercart">Cart</span>
                     </span>
-                    <span id="clickToShowCart" class="hovercarttxt"><img class="logo" src="../Images/shopping-bag.png" alt="">
-                        <!-- clickOnCart     -->
-                            <div id="clickonCart">
-                                <h3>Shopping Cart</h3>
-    
-                                <div id="ProductsDivClickedOnCart"  >
-    
-                                </div>
-                                <span><h4 class="smallCartTotalh4">Total :</h4></span>
-                                <button class="Scheckout">PROCEED TO CHECKOUT</button>
-                                <p class="viewCartpage">View Cart</p>
-                            </div>
-                      <!-- clickOnCart     -->
-                            <span id="hoverCart" class="hovercart">Cart</span>
-                        </span>
-                        <!-- ItemNumer -->
-                        <span id="showItemNumber">0
-    
-                        </span>
-                      <!-- ItemNumer -->
+                    <!-- ItemNumer -->
+                    <span id="showItemNumber">0
+
+                    </span>
+                    <!-- ItemNumer -->
                 </div>
             </div>
             <div class="homeherb">
@@ -90,34 +95,35 @@
                 </span>
             </div>
 
-              <!-- signUp -->
-              
-              <div class="createAccount">
-                <div class="createAccountdetail">
-                  <h1>Create an Account</h1>
-                  <h2>Personal Information</h2>
-                  <div class="firstAndLastName">
-                      <p>First Name<sup>*</sup></p>
-                      <p><sup>*</sup>Required Fields</p>
-                  </div>
-                 <form id="myForm" action="">
-                    <input type="text" name="" id="firstName" placeholder="Enter First Name">
-                    <p>Last Name<sup>*</sup></p>
-                    <input type="text" name="" id="lastName" placeholder="Enter Last Name">
-                    <p>Email<sup>*</sup></p>
-                    <input type="text" name="" id="userEmail" placeholder="Enter Email">
-                    <p>Password<sup>*</sup></p>
-                    <input type="text" name="" id="userPassword" placeholder="Enter Password">
-                    <input onclick="signup(event)" class="submit" type="submit"/>
-                 </form>
-                  <p>or
-                   <span id="return"> Return to Store</span></p>
-                </div>
-              </div>
-             
-              <!-- signupEnd -->
+            <!-- signUp -->
 
-              <div id="shopOnHoverDiv">
+            <div class="createAccount">
+                <div class="createAccountdetail">
+                    <h1>Create an Account</h1>
+                    <h2>Personal Information</h2>
+                    <div class="firstAndLastName">
+                        <p>First Name<sup>*</sup></p>
+                        <p><sup>*</sup>Required Fields</p>
+                    </div>
+                    <form id="myForm" action="">
+                        <input type="text" name="" id="firstName" placeholder="Enter First Name">
+                        <p>Last Name<sup>*</sup></p>
+                        <input type="text" name="" id="lastName" placeholder="Enter Last Name">
+                        <p>Email<sup>*</sup></p>
+                        <input type="text" name="" id="userEmail" placeholder="Enter Email">
+                        <p>Password<sup>*</sup></p>
+                        <input type="text" name="" id="userPassword" placeholder="Enter Password">
+                        <input onclick="signup(event)" class="submit" type="submit" />
+                    </form>
+                    <p>or
+                        <span id="return"> Return to Store</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- signupEnd -->
+
+            <div id="shopOnHoverDiv">
                 <div class="lefthoverdiv">
                     <div class="shonOnhoverupperdiv">
                         <div>
@@ -233,8 +239,9 @@
                     </p>
                 </div>
             </div>
-            </div>
-            </div>
+        </div>
+    </div>
 </body>
+
 </html>
 <script src="../JS/Signup.js"></script>
