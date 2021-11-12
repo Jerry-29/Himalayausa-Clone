@@ -276,6 +276,30 @@ cursor: pointer;
   visibility: visible;
   transform: scaleX(1);
 }
+
+.cAllSippleH4{
+  /* border: 2px solid black; */
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
+}
+.cAllSippleH4:before {
+  content: "";
+  position: absolute;
+  width: 28%;
+  height: 2px;
+  top: 16px;
+  bottom: 0px;
+  left: 36.5%;
+  background-color: #a3b49b;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.cAllSippleH4:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
 #ProductsDivClickedOnCart{
 display: flex;
 width: 100%;
@@ -512,10 +536,10 @@ text-align: center;
   cursor: pointer;
   font-weight: 500;
 }
-.cAllSippleH4:hover{
+/* .cAllSippleH4:hover{
   text-decoration: underline;
   text-underline-offset: 2px;
-}
+} */
 #slideshowMainDiv {
   width: 98%;
   text-align: center;
@@ -944,6 +968,7 @@ margin-left: 30%;
   border: 2px solid black;
   
 }
+
 .continue{
 border: 1px solid lightslategray;
 background-color: #59694f ;
