@@ -125,3 +125,7 @@ goToCart.onclick=function(){
     window.location.href="../HTML/Cart.html"
 }
 
+document.querySelector(".alredyHaveAnAccount").onclick=function(){
+    window.location.href="../HTML/Signin.html"
+}
+

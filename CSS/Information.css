@@ -318,3 +318,18 @@ cursor: pointer;
     width: 40%;
     opacity: .9;
 }
+.goToCart{
+    cursor: pointer;
+}
+.continueToShip{
+    cursor: pointer;
+}
+.coupnBt{
+    cursor: pointer;
+}
+.alredyHaveAnAccount{
+    cursor: pointer;
+}
+.alredyHaveAnAccount:hover{
+    color: #6e6f6d;
+}

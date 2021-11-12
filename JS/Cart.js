@@ -186,5 +186,5 @@ shopOnHoverDiv.onmouseleave=function(){
 var proceedToCheckout=document.querySelector(".proceedToCheckout")
 proceedToCheckout.onclick=function(){
   // window.location.href="../HTML/"
-  alert("Checkout Page")
+  window.location.href="../HTML/Information.html"
 }

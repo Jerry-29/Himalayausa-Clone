@@ -886,3 +886,6 @@ background-color: rgb(89, 207, 253);
     background-color: black !important;
     color: whitesmoke !important;
     }
+    .ScartName{
+      margin-left: -20% !important;
+    }

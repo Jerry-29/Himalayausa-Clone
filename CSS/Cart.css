@@ -648,4 +648,7 @@ cursor: pointer;
 .umayb{
   margin-left: 4.5%;
 }
+.proceedToCheckout{
+  cursor: pointer;
+}
 /* cartEnd */

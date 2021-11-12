@@ -132,7 +132,7 @@ addressInfo.innerHTML=info[info.length-1].uAddress+" , "+info[info.length-1].uap
                alert("Invalid CVV")
            }
           else if(creditCardNumber.length===16 && nameOnCard.length>3 && expdate.length==5 && cvv.length==3){
-               alert("Payment Successful")
+               window.location.href="../HTML/Thankyou.js"
            }
 
 
@@ -141,6 +141,6 @@ addressInfo.innerHTML=info[info.length-1].uAddress+" , "+info[info.length-1].uap
        var clickOnAmazonPAy=document.querySelector(".clickOnAmazonPAy")
        clickOnAmazonPAy.onclick=function(){
            clickOnAmazonPAy.checked=false
-           alert("Sorry ! This payment method is currently not Available")
+           alert("Sorry ! This payment method is currently not Available.Try payment using Credit card Option")
            
        }

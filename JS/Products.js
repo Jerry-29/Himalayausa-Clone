@@ -10,7 +10,12 @@ cLICKSEARCH.onclick=function(){
   clickonSearchOption.style.visibility="visible"
 }
 
-
+document.querySelector(".Scheckout").onclick=function(){
+  window.location.href="../HTML/Information.html"
+}
+document.querySelector(".viewCartpage").onclick=function(){
+  window.location.href="../HTML/Cart.html"
+}
 // hovering on shop
 
 var shop=document.getElementById("hoverover")
@@ -376,6 +381,7 @@ function showp(){
 showcartItemsNumber.innerHTML=smallcartHim.length
 var pimg=document.createElement("img")
 var pname=document.createElement("p")
+pname.setAttribute("class","ScartName")
 var pprice=document.createElement("p")
 pimg.src=el.Image
 pprice.innerHTML="$"+el.Price
