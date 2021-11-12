@@ -380,7 +380,12 @@ function AddToCart(element) {
 // smallCart
 var showcartItemsNumber = document.getElementById("showItemNumber");
 var smallcartHim = JSON.parse(localStorage.getItem("HimalayaUsStorage"));
-
+var smallCartTotalh4=document.querySelector(".smallCartTotalh4")
+var pSum=0;
+for(var i=0;i<smallcartHim.length;i++){
+  pSum+=Number(smallcartHim[i].Price)*Number(smallcartHim[i].quant)
+}
+smallCartTotalh4.innerHTML="Total : $"+pSum.toFixed(2)
 var smallCartParent = document.getElementById("ProductsDivClickedOnCart");
 function showp() {
   smallcartHim.forEach(function (el, index) {
