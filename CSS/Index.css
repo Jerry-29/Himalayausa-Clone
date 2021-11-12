@@ -32,6 +32,9 @@ html,body{
   font-size: 17px;
   color: white;
 }
+.noCursorEvent>p{
+pointer-events: none;
+}
 .headDiv > span {
   color: white;
   font-weight: 400;
@@ -164,7 +167,7 @@ html,body{
 #clickonSearchOption{
   visibility: hidden;                  
   position: absolute;
-  z-index: 5;
+  z-index: 10000000000;
   width: 92%;
   right:0%;
   top: 0%;
@@ -189,7 +192,6 @@ html,body{
   width: 5%;
   border: none;
   font-size: 20px;
-  background-color: inherit;
   cursor: pointer;
 }
 .searchAndbutton{
@@ -224,14 +226,20 @@ html,body{
 #clickonCart{
   visibility: hidden;
   width: 20%;
-  max-height: 250px;
+  max-height: 350px;
   z-index: 1000000;
   position: absolute;
   background-color: white;
   padding: 3%;
   background-color: white;
-  overflow: scroll;
+  overflow: hidden;
   text-align: left;
+  right: 3%;
+  top: 19%;
+  border: 1px solid rgb(238, 239, 240);
+}
+#clickonCart:hover{
+  overflow-y: scroll;
 }
 #clickonCart>button{
 width: 100%;
@@ -273,6 +281,9 @@ display: flex;
 width: 100%;
 flex-direction: column;
 }
+/* #ProductsDivClickedOnCart:hover{
+  overflow-y: scroll;
+} */
 #ProductsDivClickedOnCart img{
 width: 25%;
 height: 50px;
@@ -282,6 +293,13 @@ padding: 2%;
 width: 30px;
 font-size: 12px;
 margin-left: 1%;
+
+}
+.ScartName{
+  margin-left: -20% !important;
+}
+#ProductsDivClickedOnCart p:hover{
+  color: #a3b49b;
 }
 #sdiv{
 width: 100%;
@@ -372,6 +390,7 @@ text-align: center;
   font-weight: 500;
   font-size: 13px;
   line-height: 33px;
+  cursor: pointer;
 }
 .showNowDiv > button:hover {
   background-color: #3b3b3b;
@@ -467,6 +486,9 @@ text-align: center;
   width: 100%;
   text-align: center;
 }
+.shopbycatflex > div{
+  overflow: hidden;
+}
 .shopbycatflex {
   display: flex;
   width: 95%;
@@ -474,8 +496,26 @@ text-align: center;
 }
 .shopbycatflex > div > img {
   width: 86%;
+  -webkit-transition: all 5s ease;
+  -moz-transition: all 5s ease;
+  -ms-transition: all 3s ease;
+  transition: all 3s ease;
+  cursor: pointer;
 }
-
+.shopbycatflex > div > img:hover{
+  transform: scale(1.15);
+  -webkit-transition:all 0.3s ease-out;
+}
+.cAllSippleH4{
+  font-size: 14px;
+  color: #a3b49b;
+  cursor: pointer;
+  font-weight: 500;
+}
+.cAllSippleH4:hover{
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 #slideshowMainDiv {
   width: 98%;
   text-align: center;
@@ -510,6 +550,10 @@ text-align: center;
 #pdetailsDiv > p {
   text-align: center;
   margin: 0%;
+}
+#pdetailsDiv>p:hover{
+  text-decoration: underline !important;
+  color: inherit;
 }
 #inlineDivbtntxt{
   display: flex;
@@ -713,7 +757,17 @@ opacity: 0.5;
   padding-top: 1%;
   padding-bottom: 1%;
 }
-
+.socialMediaLink:hover{
+background-color: white;
+cursor: pointer;
+opacity: 1;
+}
+.clickForInsta{
+  cursor: pointer;
+}
+.clickForFb{
+  cursor: pointer;
+}
 /* footer End */
 
 /* navshop */
@@ -747,6 +801,9 @@ cursor: pointer;
  flex-direction: column;
  text-align: center;
 }
+.righthoverdiv:hover{
+  pointer-events: none !important;
+}
 .righthoverdiv>img{
   width: 100%;
   height: 300px;
@@ -761,9 +818,10 @@ cursor: pointer;
   color: white;
   font-weight: 600;
   padding: 3%;
-  z-index: 3;
+  z-index: 4;
   position: relative;
   bottom: 30px;
+  cursor: pointer;
 }
 .featuredprod+p{
   margin-top: -12%;
@@ -1007,3 +1065,7 @@ cursor: pointer;
   .lineOnClick>span:hover{
     background-color: black;
   }
+.Scheckout:hover{
+background-color: black !important;
+color: whitesmoke !important;
+}

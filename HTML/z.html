@@ -6,164 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #main{
-            width: 300px;
-        }
-        #ij{
-            width: 250px;
-        }
     </style>
 </head>
 <body>
-    <div id="main">
-        
-    </div>
+    <input type="text" id="myInput" onkeyup="mySearchFunction()" placeholder="Search">
+<ul id="stateList">
+  <li>Alabama</li>
+  <li>Alaska</li>
+  <li>Arizona</li>
+  <li>Arkansas</li>
+  <li>California</li>
+  <li>Colorado</li>
+  <li>Connecticut</li>
+  <li>Delaware</li>
+  <li>Florida</li>
+  <li>Georgia</li>
+  <li>Hawaii</li>
+  <li>Idaho</li>
+  <li>Illinois</li>
+  <li>Indiana</li>
+  <li>Iowa</li>
+  <li>Kansas</li>
+  <li>Kentucky</li>
+  <li>Louisiana</li>
+  <li>Maine</li>
+  <li>Maryland</li>
+  <li>Massachusetts</li>
+  <li>Michigan</li>
+  <li>Minnesota</li>
+  <li>Mississippi</li>
+  <li>Missouri</li>
+  <li>Montana</li>
+  <li>Nebraska</li>
+  <li>Nevada</li>
+  <li>New Hampshire</li>
+  <li>New Jersey</li>
+  <li>New Mexico</li>
+  <li>New York</li>
+  <li>North Carolina</li>
+  <li>North Dakota</li>
+  <li>Ohio</li>
+  <li>Oklahoma</li>
+  <li>Oregon</li>
+  <li>Pennsylvania</li>
+  <li>Rhode Island</li>
+  <li>South Carolina</li>
+  <li>South Dakota</li>
+  <li>Tennessee</li>
+  <li>Texas</li>
+  <li>Utah</li>
+  <li>Vermont</li>
+  <li>Virginia</li>
+  <li>Washington</li>
+  <li>West Virginia</li>
+  <li>Wisconsin</li>
+  <li>Wyoming</li>
+</ul>
 </body>
 </html>
 <script>
-    var myArr=[{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Ashwagandha_BoxBottle_30_800x.jpg?v=1591028054",
-    productName:"Organic Ashwagandha",
-    productPrice:"13.95",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Whitening-Mint---Box-Tube_800x.png?v=1597743896",
-    productName:"Simply Mint Whitening",
-    productPrice:"5.99",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/LiverCare-90---Box-Bottle_800x.png?v=1595815804",
-    productName:"Liver Care",
-    productPrice:"27.95",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/ImmunoCare-120---Box-Bottle_800x.png?v=1595814320",
-    productName:"ImmunoCare",
-    productPrice:"23.95",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Neem-and-Pom---Box-Tube_800x.png?v=1597744049",
-    productName:"Neem & Promegranate Original Toothpaste",
-    productPrice:"5.99",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/image-23_800x.png?v=1590836890",
-    productName:"Organic Amla",
-    productPrice:"18.95",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Bitter-Melon-30---Box-Bottle_800x.png?v=1595862276",
-    productName:"Organic Bitter Melon",
-    productPrice:"11.95",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Gymnema_Box_Bottle_30s_800x.png?v=1591028093",
-    productName:"Organic Gymnema",
-    productPrice:"12.95",
-},{
-    productImage:"https://cdn.shopify.com/s/files/1/0399/1728/9633/products/Whitening-Mint---Box-Tube_800x.png?v=1597743896",
-    productName:"Simply Mint Whitening Toothpaste",
-    productPrice:"5.99",
-},
-]
+    function mySearchFunction() {
+  // Declare variables
+  var input, filter, ul, li, item, i, txtValue;
+  // User Input
+  input = document.getElementById("myInput");
+  // Filter, makes search not case sensitive
+  filter = input.value.toUpperCase();
+  // Grabs the parent element by id
+  ul = document.getElementById("stateList");
+  // Individual item on list
+  li = ul.getElementsByTagName("li");
 
-var parent=document.getElementById("main")
-var pdiv=document.createElement("div") 
-pdiv.setAttribute("id","pdetailsDiv")
-var pImage=document.createElement("img")
-pImage.setAttribute("id","ij")
-var bt=document.createElement("button")
-var i=0;
-var n=4
-for(var i=0;i<n;i++){
-    pImage.src=myArr[i].productImage
-    bt.innerText="remove"
-    bt.onclick=function(){
-        myArr.splice(i,1)
+  // Treats lists items like an array, where each item can be accessed through      it's index
+  for (i = 0; i < li.length; i++) {
+    item = li[i];
+   // Iterate over each list item to see if the value of the input, ignoring         case, matches the inner text or inner html of the item.
+    txtValue = item.textContent || item.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+    // Displays list items that are a match, and nothing if no match
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
     }
-    pdiv.append(pImage,bt)
-    parent.append(pdiv)
-    
+  }
 }
 
-// var p1div=document.createElement("div") 
-// var p2div=document.createElement("div") 
-// var p3div=document.createElement("div") 
-// var p4div=document.createElement("div") 
-
-// var pImage1=document.createElement("img")
-// var pImage2=document.createElement("img")
-// var pImage3=document.createElement("img")
-// var pImage4=document.createElement("img")
-
-// // addToCartButtun1.innerText="ADDTOCART"
-// // addToCartButtun2.innerText="ADDTOCART"
-// // addToCartButtun3.innerText="ADDTOCART"
-// // addToCartButtun4.innerText="ADDTOCART"
-
-// var pName1=document.createElement("p")
-// var pName2=document.createElement("p")
-// var pName3=document.createElement("p")
-// var pName4=document.createElement("p")
-
-// var btn=document.getElementById("slido")
-
-// var i=0;
-// var j=1;
-// var k=2;
-// var l=3;
-// pImage1.src=myArr[i].productImage
-// pImage2.src=myArr[j].productImage
-// pImage3.src=myArr[k].productImage
-// pImage4.src=myArr[l].productImage
-// p1div.append(pImage1)
-// p2div.append(pImage2)
-// p3div.append(pImage3)
-// p4div.append(pImage4)
-
-// var bt1=document.createElement("button")
-// var bt2=document.createElement("button")
-// var bt3=document.createElement("button")
-// var bt4=document.createElement("button")
-// bt1.innerText=i
-// bt2.innerText=j
-// bt3.innerText=k
-// bt4.innerText=l
-// parent.append(p1div,p2div,p3div,p4div)
-//   btn.onclick=function(){
-//     pImage1.src=myArr[++i].productImage
-//     pImage2.src=myArr[++j].productImage
-//     pImage3.src=myArr[++k].productImage
-//     pImage4.src=myArr[++l].productImage
-//     p1div.append(pImage1,btn)
-//     p2div.append(pImage2)
-//     p3div.append(pImage3)
-//     p4div.append(pImage4)
-//     parent.append(p1div,p2div,p3div,p4div)
-//     if(l==myArr.length-1){
-//         var i=0;
-//         var j=1;
-//         var k=2;
-//         var l=3;
-//     }
-//     btn.onclick=function(){
-//         var index=bt
-//         myArr.splice(index,1)
-//       }
-//   }
-
-// var pdiv=document.createElement("div") 
-// pdiv.setAttribute("id","pdetailsDiv")
-// var pImage=document.createElement("img")
-// var bt=document.createElement("button")
-// var i=0;
-// var j=0;
-// while(j<4){
-// while(i<4){
-//     pImage.src=myArr[i++].productImage
-//     pImage.src=myArr[i++].productImage
-//     pImage.src=myArr[i++].productImage
-//     pImage.src=myArr[i++].productImage
-//     bt.innerText="remove"
-//     pdiv.append(pImage,bt)
-//     parent.append(pdiv)
-//     bt.onclick=function(){
-//         myArr.splice(i,1)
-//     }
-// }
-// j++;
-// }
 </script>

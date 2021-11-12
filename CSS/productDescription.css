@@ -177,7 +177,7 @@ html,body{
 #clickonCart{
   visibility: hidden;
   width: 20%;
-  max-height: 250px;
+  max-height: 350px;
   z-index: 1000000;
   position: absolute;
   background-color: white;
@@ -882,4 +882,7 @@ background-color: rgb(89, 207, 253);
   #goToTOP:hover{
     background-color: #5b6d5fd8;
   }
-  
+  .Scheckout:hover{
+    background-color: black !important;
+    color: whitesmoke !important;
+    }

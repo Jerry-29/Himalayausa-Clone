@@ -224,14 +224,24 @@
   #clickonCart{
     visibility: hidden;
     width: 20%;
-    max-height: 250px;
+    max-height: 350px;
     z-index: 1000000;
     position: absolute;
     background-color: white;
     padding: 3%;
     background-color: white;
-    overflow: scroll;
+    overflow: hidden;
     text-align: left;
+    right: 3%;
+    top: 19%;
+    border: 1px solid rgb(238, 239, 240);
+  }
+  .Scheckout:hover{
+    background-color: black !important;
+    color: whitesmoke !important;
+    }
+  #clickonCart:hover{
+    overflow-y: scroll;
   }
   #clickonCart>button{
   width: 100%;

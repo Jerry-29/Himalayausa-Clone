@@ -1,17 +1,62 @@
 
 // search
-
-var closeSearch=document.getElementById("searchClose")
-closeSearch.onmouseover=function(){
+var clickonSearchOption=document.getElementById("clickonSearchOption")
+var closeSearch=document.getElementsByClassName("closeSearchBox")
+Array.from(closeSearch)[0].onmouseover=function(){
   clickonSearchOption.style.visibility="hidden"
 }
-var cLICKSEARCH=document.getElementById("cLICKSEARCH")
-var clickonSearchOption=document.getElementById("clickonSearchOption")
-cLICKSEARCH.onclick=function(){
+// var cLICKSEARCH=document.getElementById("cLICKSEARCH")
+// var clickonSearchOption=document.getElementById("clickonSearchOption")
+var showSearch=document.getElementById("cLICKSEARCH")
+showSearch.onclick=function(){
   clickonSearchOption.style.visibility="visible"
 }
   
+document.querySelector(".clickForSignup").onclick=function(){
+  window.location.href="../HTML/Signup.html"
+}
+document.querySelector(".clickForCheckout").onclick=function(){
+  window.location.href="../HTML/Information.html"
+}
+var shopNowbg=document.querySelector(".shopNowbg")
+shopNowbg.onclick=function(){
+  window.location.href="../HTML/Products.html"
+}
 
+var zoomOutImage=document.querySelectorAll(".zoomOutImage")
+
+Array.from(zoomOutImage).forEach((e)=>{
+e.onclick=function(){
+  window.location.href="../HTML/Products.html"
+}})
+
+var socialMediaLink=document.getElementsByClassName("socialMediaLink")
+Array.from(socialMediaLink).forEach((e)=>{
+  e.onclick=function(){
+    window.alert("Connect With Social Media")
+  }
+})
+
+var clickForInsta=document.getElementsByClassName("clickForInsta")
+Array.from(clickForInsta).forEach((e)=>{
+  e.onclick=function(){
+    alert("Instagram.com")
+  }
+})
+
+document.querySelector(".clickForFb").onclick=function(){
+  alert("facebook.com")
+}
+
+document.querySelector(".Scheckout").onclick=function(){
+  window.location.href="../HTML/Information.html"
+}
+document.getElementById("viewCartpage").onclick=function(){
+  window.location.href="../HTML/Cart.html"
+}
+document.querySelector(".featuredprod").onclick=function(){
+  window.location.href="../HTML/Products.html"
+}
 // Data
 
 var myArr=[ {
@@ -320,6 +365,7 @@ var shop=document.getElementById("hoverover")
 var upline=document.getElementById("upline")
 var s=document.getElementById("shophover")
 var navbar=document.getElementById("NavBar")
+var shopAboutStore=document.getElementById("shopAboutStore")
 var shopOnHoverDiv=document.getElementById("shopOnHoverDiv")
 shop.onmouseover=function(){
     shopOnHoverDiv.style.visibility="visible"
@@ -329,6 +375,18 @@ shopOnHoverDiv.onmouseleave=function(){
     shopOnHoverDiv.style.visibility="hidden"
     upline.style.visibility="hidden"
 }
+var about=document.querySelector(".about")
+about.onmouseover=function(){
+  shopOnHoverDiv.style.visibility="hidden"
+}
+var storeLocator=document.querySelector(".storeLocator")
+storeLocator.onmouseover=function(){
+  shopOnHoverDiv.style.visibility="hidden"
+}
+// shopAboutStore.onmouseenter=function(){
+//   shopOnHoverDiv.style.visibility="hidden"
+// }
+
 // s.onmouseover=function(){
 //     shopOnHoverDiv.style.visibility="visible"
 //     upline.style.visibility="visible"
@@ -391,6 +449,13 @@ window.onscroll=function(){
   var smallcartHim=JSON.parse(localStorage.getItem("HimalayaUsStorage"))||[]
   
 var smallCartParent=document.getElementById("ProductsDivClickedOnCart")
+
+var Ssum=0;
+for(var i=0;i<smallcartHim.length;i++){
+Ssum+=Number(smallcartHim[i].Price)
+}
+document.querySelector(".smallCartTotalh4").innerHTML="Total : $"+Ssum.toFixed(2)
+
 function showp(smallcartHim){
   smallcartHim.forEach(function(el,index){
   var sdiv=document.createElement("div")
@@ -398,6 +463,7 @@ function showp(smallcartHim){
 //showcartItemsNumber.innerHTML=smallcartHim.length
 var pimg=document.createElement("img")
 var pname=document.createElement("p")
+pname.setAttribute("class","ScartName")
 var pprice=document.createElement("p")
 pimg.src=el.Image
 pprice.innerHTML=el.quant+" x "+"$"+el.Price
