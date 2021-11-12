@@ -1,3 +1,7 @@
+if (localStorage.getItem("HimalayaUsStorage") === null) {
+  localStorage.setItem("HimalayaUsStorage", JSON.stringify([]));
+}
+
 // search
 var clickonSearchOption = document.getElementById("clickonSearchOption");
 var closeSearch = document.getElementsByClassName("closeSearchBox");
@@ -330,9 +334,12 @@ function show(kim) {
         showcartItemsNumber.style.visibility = "visible";
         showcartItemsNumber.innerHTML = store.length;
       }
-      location.setItem("HimalayaUsStorage", JSON.stringify(store));
-      show(store);
+     
+      
     };
+   
+      // localStorage.setItem("HimalayaUsStorage", JSON.stringify(store));
+      // show(store);
     //console.log(mik);
     //console.log(el);
 

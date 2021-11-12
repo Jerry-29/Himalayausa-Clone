@@ -1,5 +1,5 @@
 * {
-  /* border: 1px solid black; */
+  
   font-family: "Open Sans", sans-serif !important;
 }
 .main {
@@ -13,9 +13,6 @@
   height: 900px;
   padding: 5%;
   background-color: white;
-}
-.leftmain {
-  /* height: 1200px; */
 }
 .rightmain {
   background-color: #f4f7f3;

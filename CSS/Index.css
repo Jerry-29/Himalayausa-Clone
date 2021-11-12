@@ -275,7 +275,6 @@ body {
 }
 
 .cAllSippleH4 {
-  /* border: 2px solid black; */
   position: relative;
   cursor: pointer;
   z-index: 5;
@@ -302,9 +301,6 @@ body {
   width: 100%;
   flex-direction: column;
 }
-/* #ProductsDivClickedOnCart:hover{
-  overflow-y: scroll;
-} */
 #ProductsDivClickedOnCart img {
   width: 25%;
   height: 50px;
@@ -529,10 +525,6 @@ body {
   cursor: pointer;
   font-weight: 500;
 }
-/* .cAllSippleH4:hover{
-  text-decoration: underline;
-  text-underline-offset: 2px;
-} */
 #slideshowMainDiv {
   width: 98%;
   text-align: center;
@@ -606,13 +598,7 @@ body {
 #inlineDivbtntxt > p {
   margin-left: 26%;
 }
-/* #inlineDivbtntxt>button:hover{
-  color:  #a3b49bd3;
-  width: 14%;
-  z-index: 1;
-  position: absolute;
-  height: 7%;
-} */
+
 #unlockWisdomDivid {
   display: flex;
   align-items: center;
