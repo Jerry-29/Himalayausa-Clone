@@ -1,5 +1,5 @@
 
-# <a href="">Himalayausa</a>
+# <a href="https://himalayausa.com/">Himalayausa</a>
 <h2>Introduction</h2>
 <p>HimalayaUsa.com Project had been assigned to me during my construct week in 2nd unit at masai school. The Project was about to clone the HimalayaUsa.com E-commerce Website.Himalaya offers a full line of clinically-studied herbal formulations, certified USDA organic Single herbs, and a full line of body care products. Integrating the principles of traditional medicine with modern science, Himalaya is a worldwide pioneer in the field of scientifically validated herbal healthcare.
 </p>
@@ -23,6 +23,6 @@
   <li>Google Images for logo</li>
   </ul>
 <h1>ClonedBy</h1>
-#<a href="">Govind Singh</a>
+#<a href="https://github.com/Govindsingh29">Govind Singh</a>
  
     
