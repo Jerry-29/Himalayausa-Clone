@@ -22,8 +22,6 @@
   <li>https://fontawesome.com/</li>
   <li>Google Images for logo</li>
   </ul>
-<h1>ClonedBy</h1>
-
-# <a href="https://github.com/Govindsingh29">Govind&nbsp;Singh</a>
+<h1>ClonedBy :</h1><ul>  <h3> <a href="https://github.com/Govindsingh29">Govind&nbsp;Singh</a></h3></ul>
  
     
