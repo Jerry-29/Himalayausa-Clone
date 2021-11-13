@@ -23,6 +23,7 @@
   <li>Google Images for logo</li>
   </ul>
 <h1>ClonedBy</h1>
-# <a href="https://github.com/Govindsingh29">Govind Singh</a>
+
+# <a href="https://github.com/Govindsingh29">GovindSingh</a>
  
     
