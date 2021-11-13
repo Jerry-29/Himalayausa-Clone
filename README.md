@@ -3,7 +3,7 @@
 <h2>Introduction</h2>
 <p>HimalayaUsa.com Project had been assigned to me during my construct week in 2nd unit at masai school. The Project was about to clone the HimalayaUsa.com E-commerce Website.Himalaya offers a full line of clinically-studied herbal formulations, certified USDA organic Single herbs, and a full line of body care products. Integrating the principles of traditional medicine with modern science, Himalaya is a worldwide pioneer in the field of scientifically validated herbal healthcare.
 </p>
-<h2>Concepts Used In Clonning this Project</h2>
+<h2>Concepts Used In Cloning this Project</h2>
 <p>I have used many properties of CSS,HTML and Javascripts to acheive output.For Storing my data,I used Local Storage.
   New concepts I learned during this projects are Z-index,Position,pseudoCss Elements,scrollBottomToTop etc.
 </p>
