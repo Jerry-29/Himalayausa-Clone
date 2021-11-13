@@ -14,15 +14,15 @@
 <p>This was my first individual Project.I enjoyed doing this.Many Problems I faced during doing this project still able to finish it.Key is Time Managememt and dividing work in simple steps.Most challenging part in whole project was creating infinte loop of products page on Home Page and adding add to cart  them.It took almost my 1.5 days to try different approaches .It was tough for me because I have to do this without using External Libraries.After this,every thing was medium and easy level but time consuming .I tried to do only few of them.I added products in only <strong>Herbal Supplements</strong> and added all functionality to them.I realised importance of commenting and using suitable className and ids ,it will be helpful in debugging and if you are building similer Page,you can reuse them. Thats how i cloned this Project.
 </p>
 
-<h1>Website which I Referenced</h1>
+<h1>Website which I Referred</h1>
 <ul>
   <li>https://www.w3schools.com/</li>
   <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript</li>
   <li>https://stackoverflow.com/</li>
   <li>https://fontawesome.com/</li>
   <li>Google Images for logo</li>
-  <ul/>
+  </ul>
 <h1>ClonedBy</h1>
-<li><h2>Govind Singh</h2></li>
-
+#<a href="">Govind Singh</a>
  
+    
